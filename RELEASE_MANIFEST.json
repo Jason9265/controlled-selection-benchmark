@@ -10,8 +10,8 @@
     },
     {
       "path": "CITATION.cff",
-      "bytes": 803,
-      "sha256": "6c696ddca6aa0ac4cc81cae9fe42f5b31e6a86aac0012e4806401e6c356f3bd8"
+      "bytes": 834,
+      "sha256": "a303c24c9f07c037ad2fa9705f298990b9953416caba0b5ddd032b126a5a3d1a"
     },
     {
       "path": "DATA_ACCESS.md",
@@ -25,8 +25,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 3135,
-      "sha256": "7f522b212444eee2a7a666817ec0443244544dfb98bcf35a67cf55f18437eb99"
+      "bytes": 3127,
+      "sha256": "1abb60f114a3eb1a209aab14fc4829f7686ed989e20467c4d3cf6ef7c54d91c6"
     },
     {
       "path": "RELEASE_NOTES.md",
@@ -315,8 +315,8 @@
     },
     {
       "path": "scripts/build_release_manifest.py",
-      "bytes": 1288,
-      "sha256": "14dbb0d6fe1f115934c2dbb5fe474ef0e8d33f29e0a4e8352b88aa0b238afb8f"
+      "bytes": 1372,
+      "sha256": "6b5ebe3d042e51283277c9c73441ddcba233d053781de563abd2e18199ab0cf6"
     },
     {
       "path": "selection-benchmark",
@@ -340,8 +340,8 @@
     },
     {
       "path": "tests/test_release.py",
-      "bytes": 2471,
-      "sha256": "639ef12096cdf1329aa7dc706f601647bd358c3a3523a0109f127b2d245a0ceb"
+      "bytes": 2512,
+      "sha256": "69d96839884342064aa84cabc8ebdf601b7c6f36a45632271c6e0a5a888d16c0"
     }
   ]
 }

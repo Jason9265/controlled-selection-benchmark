@@ -19,7 +19,12 @@ def main():
     rows = []
     prohibited = {".pt", ".pth", ".zip", ".tif", ".tiff"}
     for path in sorted(ROOT.rglob("*")):
-        if not path.is_file() or path == OUT or "__pycache__" in path.parts:
+        if (
+            not path.is_file()
+            or path == OUT
+            or ".git" in path.parts
+            or "__pycache__" in path.parts
+        ):
             continue
         relative = path.relative_to(ROOT)
         if path.suffix.lower() in prohibited:

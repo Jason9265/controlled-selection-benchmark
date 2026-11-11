@@ -44,6 +44,7 @@ class ReleaseTests(unittest.TestCase):
             for path in ROOT.rglob("*")
             if path.is_file()
             and path.name != "RELEASE_MANIFEST.json"
+            and ".git" not in path.parts
             and "__pycache__" not in path.parts
             and path.suffix != ".pyc"
         }

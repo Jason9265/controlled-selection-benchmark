@@ -17,7 +17,8 @@ python selection-benchmark summarize --output outputs/rebuilt
 The first command verifies 648 OEM saved-record adaptations, 162 LoveDA
 saved-record adaptations, 180 v4f confirmation records, 72 ISPRS blind-holdout
 scores, and the 54/18 ISPRS receipt sets. The second recreates the released
-pairwise table and copies the data-linked figure assets into `outputs/rebuilt`.
+audit result. The third recreates the released pairwise table and copies the
+data-linked figure assets into `outputs/rebuilt`.
 
 ## Dataset-dependent ISPRS reproduction
 
@@ -66,5 +67,5 @@ not a full RIPU reproduction.
 
 Read [DATA_ACCESS.md](DATA_ACCESS.md) and [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)
 before using the package. Create a GitHub release from this directory, then archive
-that exact release tarball in Zenodo and replace the placeholders in `CITATION.cff`
-with the author list, repository URL, release tag, and DOI.
+that exact release tarball in Zenodo and add the version-specific DOI to
+`CITATION.cff`.
