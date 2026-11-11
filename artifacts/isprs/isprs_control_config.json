@@ -1,0 +1,11 @@
+{
+  "status": "frozen-before-adaptation",
+  "adaptation_steps": 300,
+  "batch_size_source": 2,
+  "batch_size_target": 2,
+  "optimizer": "SGD momentum=0.9 weight_decay=0.0001",
+  "learning_rate": 0.001,
+  "schedule": "constant",
+  "target_holdout_label_access_for_training": false,
+  "target_holdout_label_access_for_selection": false
+}

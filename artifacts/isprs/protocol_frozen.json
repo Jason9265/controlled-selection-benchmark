@@ -1,0 +1,213 @@
+{
+  "status": "frozen-before-training",
+  "salt": "isprs-v1-20261001",
+  "classes": [
+    "impervious_surface",
+    "building",
+    "low_vegetation",
+    "tree",
+    "car",
+    "clutter_background"
+  ],
+  "ignore_rgb": [
+    0,
+    0,
+    0
+  ],
+  "crop": 512,
+  "edge_policy": "non-overlapping full crops only; drop partial edges",
+  "budget_fractions": [
+    0.01,
+    0.03,
+    0.05
+  ],
+  "seed_pairs": [
+    [
+      2026,
+      17
+    ],
+    [
+      2027,
+      42
+    ],
+    [
+      2028,
+      73
+    ]
+  ],
+  "architectures": [
+    "deeplabv3plus_resnet101"
+  ],
+  "directions": {
+    "potsdam_to_vaihingen": {
+      "source_train": [
+        "top_potsdam_6_13",
+        "top_potsdam_3_13",
+        "top_potsdam_4_15",
+        "top_potsdam_3_12",
+        "top_potsdam_2_12",
+        "top_potsdam_6_11",
+        "top_potsdam_6_8",
+        "top_potsdam_7_12",
+        "top_potsdam_5_10",
+        "top_potsdam_7_9",
+        "top_potsdam_3_11",
+        "top_potsdam_6_9",
+        "top_potsdam_4_10",
+        "top_potsdam_5_15",
+        "top_potsdam_3_10",
+        "top_potsdam_4_14",
+        "top_potsdam_6_12",
+        "top_potsdam_5_11",
+        "top_potsdam_3_14",
+        "top_potsdam_6_10",
+        "top_potsdam_7_13",
+        "top_potsdam_2_11",
+        "top_potsdam_7_10",
+        "top_potsdam_5_12",
+        "top_potsdam_2_14",
+        "top_potsdam_5_14",
+        "top_potsdam_6_14",
+        "top_potsdam_7_8"
+      ],
+      "source_val": [
+        "top_potsdam_7_11",
+        "top_potsdam_6_15",
+        "top_potsdam_2_13",
+        "top_potsdam_5_13",
+        "top_potsdam_4_11",
+        "top_potsdam_7_7",
+        "top_potsdam_2_10",
+        "top_potsdam_4_13"
+      ],
+      "target_pool": [
+        "top_mosaic_09cm_area11",
+        "top_mosaic_09cm_area31",
+        "top_mosaic_09cm_area14",
+        "top_mosaic_09cm_area1",
+        "top_mosaic_09cm_area22",
+        "top_mosaic_09cm_area38",
+        "top_mosaic_09cm_area17",
+        "top_mosaic_09cm_area24",
+        "top_mosaic_09cm_area6",
+        "top_mosaic_09cm_area7",
+        "top_mosaic_09cm_area15",
+        "top_mosaic_09cm_area4",
+        "top_mosaic_09cm_area37",
+        "top_mosaic_09cm_area5",
+        "top_mosaic_09cm_area13",
+        "top_mosaic_09cm_area10",
+        "top_mosaic_09cm_area32",
+        "top_mosaic_09cm_area33",
+        "top_mosaic_09cm_area20",
+        "top_mosaic_09cm_area26",
+        "top_mosaic_09cm_area30",
+        "top_mosaic_09cm_area23",
+        "top_mosaic_09cm_area34",
+        "top_mosaic_09cm_area2"
+      ],
+      "target_holdout": [
+        "top_mosaic_09cm_area28",
+        "top_mosaic_09cm_area16",
+        "top_mosaic_09cm_area3",
+        "top_mosaic_09cm_area21",
+        "top_mosaic_09cm_area27",
+        "top_mosaic_09cm_area8",
+        "top_mosaic_09cm_area35",
+        "top_mosaic_09cm_area12",
+        "top_mosaic_09cm_area29"
+      ]
+    },
+    "vaihingen_to_potsdam": {
+      "source_train": [
+        "top_mosaic_09cm_area11",
+        "top_mosaic_09cm_area31",
+        "top_mosaic_09cm_area14",
+        "top_mosaic_09cm_area1",
+        "top_mosaic_09cm_area22",
+        "top_mosaic_09cm_area38",
+        "top_mosaic_09cm_area17",
+        "top_mosaic_09cm_area24",
+        "top_mosaic_09cm_area6",
+        "top_mosaic_09cm_area7",
+        "top_mosaic_09cm_area15",
+        "top_mosaic_09cm_area4",
+        "top_mosaic_09cm_area37",
+        "top_mosaic_09cm_area5",
+        "top_mosaic_09cm_area13",
+        "top_mosaic_09cm_area10",
+        "top_mosaic_09cm_area32",
+        "top_mosaic_09cm_area33",
+        "top_mosaic_09cm_area20",
+        "top_mosaic_09cm_area26",
+        "top_mosaic_09cm_area30",
+        "top_mosaic_09cm_area23",
+        "top_mosaic_09cm_area34",
+        "top_mosaic_09cm_area2",
+        "top_mosaic_09cm_area28"
+      ],
+      "source_val": [
+        "top_mosaic_09cm_area16",
+        "top_mosaic_09cm_area3",
+        "top_mosaic_09cm_area21",
+        "top_mosaic_09cm_area27",
+        "top_mosaic_09cm_area8",
+        "top_mosaic_09cm_area35",
+        "top_mosaic_09cm_area12",
+        "top_mosaic_09cm_area29"
+      ],
+      "target_pool": [
+        "top_potsdam_6_13",
+        "top_potsdam_3_13",
+        "top_potsdam_4_15",
+        "top_potsdam_3_12",
+        "top_potsdam_2_12",
+        "top_potsdam_6_11",
+        "top_potsdam_6_8",
+        "top_potsdam_7_12",
+        "top_potsdam_5_10",
+        "top_potsdam_7_9",
+        "top_potsdam_3_11",
+        "top_potsdam_6_9",
+        "top_potsdam_4_10",
+        "top_potsdam_5_15",
+        "top_potsdam_3_10",
+        "top_potsdam_4_14",
+        "top_potsdam_6_12",
+        "top_potsdam_5_11",
+        "top_potsdam_3_14",
+        "top_potsdam_6_10",
+        "top_potsdam_7_13",
+        "top_potsdam_2_11",
+        "top_potsdam_7_10",
+        "top_potsdam_5_12",
+        "top_potsdam_2_14",
+        "top_potsdam_5_14",
+        "top_potsdam_6_14"
+      ],
+      "target_holdout": [
+        "top_potsdam_7_8",
+        "top_potsdam_7_11",
+        "top_potsdam_6_15",
+        "top_potsdam_2_13",
+        "top_potsdam_5_13",
+        "top_potsdam_4_11",
+        "top_potsdam_7_7",
+        "top_potsdam_2_10",
+        "top_potsdam_4_13"
+      ]
+    }
+  },
+  "excluded_potsdam_tiles": [
+    "top_potsdam_4_12",
+    "top_potsdam_6_7"
+  ],
+  "input_convention": "three-channel IRRG container for Potsdam and the three-channel Vaihingen semantic imagery; author paper does not explicitly state ISPRS channel selection",
+  "source_archives": {
+    "3_Ortho_IRRG.zip": "a194e4df821e759be12e37ecfc051203365b2916f12aa4b1ed20175cca5ee9bc",
+    "5_Labels_all_noBoundary.zip": "453d602b57fa1fad5e3549413ccfb3a26296a681e9f71cc9b4bb8cd4281d4359",
+    "ISPRS_semantic_labeling_Vaihingen.zip": "2039eb9ad929d590e516fb136c4f132d5c3656d07424e4950a556d825674bd18",
+    "ISPRS_semantic_labeling_Vaihingen_ground_truth_COMPLETE.zip": "bcf8959c0479988d68dca4361a380cf9405be6dd83b7730ed8f682d54e1ee9f7"
+  },
+  "target_holdout_label_access_for_selection": false
+}

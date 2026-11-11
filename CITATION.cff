@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this release, please cite the accompanying IGARSS 2027 submission and this archived release."
+title: "Controlled Selection Benchmark for Cross-Region Remote-Sensing Segmentation"
+type: software
+authors:
+  - family-names: "Feng"
+    given-names: "Jiansong"
+    affiliation: "School of Intelligent Engineering, Fuzhou University of International Studies and Trade"
+    orcid: "https://orcid.org/0009-0006-9932-3695"
+version: 0.1.0
+date-released: 2026-11-11
+license: MIT
+repository-code: "https://github.com/Jason9265/controlled-selection-benchmark"
+abstract: "Audit and reproduction material for a controlled empirical evaluation of target-region selection strategies."
+keywords:
+  - remote sensing
+  - semantic segmentation
+  - active learning
+  - reproducibility

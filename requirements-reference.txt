@@ -1,0 +1,7 @@
+# Reference environment used for the archived ISPRS evidence
+torch==2.14.0+cu130
+numpy
+Pillow
+matplotlib
+# Obtain the MIT-licensed model source separately at the pinned commit:
+# https://github.com/VainF/DeepLabV3Plus-Pytorch/tree/4e1087de98bc49d55b9239ae92810ef7368660db

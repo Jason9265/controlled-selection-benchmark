@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "synthetic_fixture": false,
+  "evidence_scope": "formal completed experiment artifacts",
+  "architectures": [
+    {
+      "architecture": "resnet18_unet",
+      "expected_runs": 324,
+      "verified_runs": 324
+    },
+    {
+      "architecture": "segformer_b0",
+      "expected_runs": 324,
+      "verified_runs": 324
+    }
+  ],
+  "no_label_pixels_read": true,
+  "limitations": [
+    "Timestamp check uses filesystem mtimes plus barrier receipts; not cryptographic access logs.",
+    "Cannot prove absence of unlogged holdout reads; checks pool-only IDs, split separation and recorded barrier.",
+    "Does not decode or rehash target labels; manifest row hashes are bound by receipt, not independently revalidated data bytes.",
+    "Checkpoint file SHA binds bytes, not an independent rerun of training."
+  ]
+}

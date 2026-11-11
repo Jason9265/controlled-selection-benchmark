@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+workspace/
+outputs/
+*.pt
+*.pth
+*.zip
+*.tif
+artifacts/isprs/prepared/

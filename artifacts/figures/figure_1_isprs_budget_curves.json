@@ -1,0 +1,251 @@
+{
+  "source_files": [
+    "baseline_v5/isprs_external/control_summary.json",
+    "baseline_v5/isprs_external/ripu_summary.json"
+  ],
+  "metric": "target-holdout fixed-class mIoU (%)",
+  "error_bars": "sample SD, n=3 paired seeds",
+  "individual_points": "three paired seed results",
+  "data": [
+    {
+      "direction": "potsdam_to_vaihingen",
+      "method": "original_quota",
+      "budget_fraction": 0.01,
+      "n": 3,
+      "miou_mean": 0.4727494522482873,
+      "miou_sd": 0.019692480369370796,
+      "paired_gain_mean": 0.2514118570125351,
+      "paired_gain_sd": 0.04915672566228839
+    },
+    {
+      "direction": "potsdam_to_vaihingen",
+      "method": "original_quota",
+      "budget_fraction": 0.03,
+      "n": 3,
+      "miou_mean": 0.5116709886211941,
+      "miou_sd": 0.024523815440774647,
+      "paired_gain_mean": 0.29033339338544184,
+      "paired_gain_sd": 0.0649933967877505
+    },
+    {
+      "direction": "potsdam_to_vaihingen",
+      "method": "original_quota",
+      "budget_fraction": 0.05,
+      "n": 3,
+      "miou_mean": 0.5207581118065899,
+      "miou_sd": 0.012773941582628949,
+      "paired_gain_mean": 0.29942051657083774,
+      "paired_gain_sd": 0.0524718012676502
+    },
+    {
+      "direction": "potsdam_to_vaihingen",
+      "method": "original_uniform",
+      "budget_fraction": 0.01,
+      "n": 3,
+      "miou_mean": 0.4603548643673428,
+      "miou_sd": 0.0351189806874646,
+      "paired_gain_mean": 0.23901726913159058,
+      "paired_gain_sd": 0.0724564240900558
+    },
+    {
+      "direction": "potsdam_to_vaihingen",
+      "method": "original_uniform",
+      "budget_fraction": 0.03,
+      "n": 3,
+      "miou_mean": 0.5008283280156428,
+      "miou_sd": 0.012647159649700998,
+      "paired_gain_mean": 0.2794907327798906,
+      "paired_gain_sd": 0.04586257481881616
+    },
+    {
+      "direction": "potsdam_to_vaihingen",
+      "method": "original_uniform",
+      "budget_fraction": 0.05,
+      "n": 3,
+      "miou_mean": 0.5059849338631092,
+      "miou_sd": 0.004296269765342388,
+      "paired_gain_mean": 0.28464733862735697,
+      "paired_gain_sd": 0.048289435503842286
+    },
+    {
+      "direction": "potsdam_to_vaihingen",
+      "method": "patch_uniform",
+      "budget_fraction": 0.01,
+      "n": 3,
+      "miou_mean": 0.45994146044584827,
+      "miou_sd": 0.014652662482364425,
+      "paired_gain_mean": 0.23860386521009605,
+      "paired_gain_sd": 0.06522321005041885
+    },
+    {
+      "direction": "potsdam_to_vaihingen",
+      "method": "patch_uniform",
+      "budget_fraction": 0.03,
+      "n": 3,
+      "miou_mean": 0.5037051196601083,
+      "miou_sd": 0.0024894435409742203,
+      "paired_gain_mean": 0.28236752442435614,
+      "paired_gain_sd": 0.050354799984744465
+    },
+    {
+      "direction": "potsdam_to_vaihingen",
+      "method": "patch_uniform",
+      "budget_fraction": 0.05,
+      "n": 3,
+      "miou_mean": 0.5071413597279367,
+      "miou_sd": 0.014298520298745319,
+      "paired_gain_mean": 0.28580376449218453,
+      "paired_gain_sd": 0.03784666045502823
+    },
+    {
+      "direction": "vaihingen_to_potsdam",
+      "method": "original_quota",
+      "budget_fraction": 0.01,
+      "n": 3,
+      "miou_mean": 0.5815854730289057,
+      "miou_sd": 0.007552949703652995,
+      "paired_gain_mean": 0.26915613057273174,
+      "paired_gain_sd": 0.005385091740538181
+    },
+    {
+      "direction": "vaihingen_to_potsdam",
+      "method": "original_quota",
+      "budget_fraction": 0.03,
+      "n": 3,
+      "miou_mean": 0.6135230464283468,
+      "miou_sd": 0.005402458847395261,
+      "paired_gain_mean": 0.3010937039721728,
+      "paired_gain_sd": 0.01482653245663467
+    },
+    {
+      "direction": "vaihingen_to_potsdam",
+      "method": "original_quota",
+      "budget_fraction": 0.05,
+      "n": 3,
+      "miou_mean": 0.6201410400232895,
+      "miou_sd": 0.0059728816896242026,
+      "paired_gain_mean": 0.3077116975671155,
+      "paired_gain_sd": 0.016953924863089
+    },
+    {
+      "direction": "vaihingen_to_potsdam",
+      "method": "original_uniform",
+      "budget_fraction": 0.01,
+      "n": 3,
+      "miou_mean": 0.5743077837027944,
+      "miou_sd": 0.016733144986959454,
+      "paired_gain_mean": 0.2618784412466204,
+      "paired_gain_sd": 0.01638698863133764
+    },
+    {
+      "direction": "vaihingen_to_potsdam",
+      "method": "original_uniform",
+      "budget_fraction": 0.03,
+      "n": 3,
+      "miou_mean": 0.6039366708943672,
+      "miou_sd": 0.009871484717825903,
+      "paired_gain_mean": 0.2915073284381932,
+      "paired_gain_sd": 0.022227876128347222
+    },
+    {
+      "direction": "vaihingen_to_potsdam",
+      "method": "original_uniform",
+      "budget_fraction": 0.05,
+      "n": 3,
+      "miou_mean": 0.6173496066470175,
+      "miou_sd": 0.006417140246244687,
+      "paired_gain_mean": 0.30492026419084356,
+      "paired_gain_sd": 0.016024360284056523
+    },
+    {
+      "direction": "vaihingen_to_potsdam",
+      "method": "patch_uniform",
+      "budget_fraction": 0.01,
+      "n": 3,
+      "miou_mean": 0.5654589060557897,
+      "miou_sd": 0.004059755383817672,
+      "paired_gain_mean": 0.2530295635996157,
+      "paired_gain_sd": 0.01346781341260048
+    },
+    {
+      "direction": "vaihingen_to_potsdam",
+      "method": "patch_uniform",
+      "budget_fraction": 0.03,
+      "n": 3,
+      "miou_mean": 0.6242683719662957,
+      "miou_sd": 0.005236421333823946,
+      "paired_gain_mean": 0.31183902951012166,
+      "paired_gain_sd": 0.012700211056930814
+    },
+    {
+      "direction": "vaihingen_to_potsdam",
+      "method": "patch_uniform",
+      "budget_fraction": 0.05,
+      "n": 3,
+      "miou_mean": 0.6240836123545314,
+      "miou_sd": 0.0033390362661879277,
+      "paired_gain_mean": 0.3116542698983574,
+      "paired_gain_sd": 0.01565923762775345
+    },
+    {
+      "direction": "potsdam_to_vaihingen",
+      "method": "ripu_acquisition_only",
+      "budget_fraction": 0.01,
+      "n": 3,
+      "miou_mean": 0.4486900634657972,
+      "miou_sd": 0.01693070766782272,
+      "paired_gain_mean": 0.22735246823004504,
+      "paired_gain_sd": 0.05079222156625117
+    },
+    {
+      "direction": "potsdam_to_vaihingen",
+      "method": "ripu_acquisition_only",
+      "budget_fraction": 0.03,
+      "n": 3,
+      "miou_mean": 0.48813552936161636,
+      "miou_sd": 0.01356278316288955,
+      "paired_gain_mean": 0.2667979341258641,
+      "paired_gain_sd": 0.03911005713113271
+    },
+    {
+      "direction": "potsdam_to_vaihingen",
+      "method": "ripu_acquisition_only",
+      "budget_fraction": 0.05,
+      "n": 3,
+      "miou_mean": 0.4988598372259825,
+      "miou_sd": 0.005606018137202382,
+      "paired_gain_mean": 0.2775222419902303,
+      "paired_gain_sd": 0.048584840146974596
+    },
+    {
+      "direction": "vaihingen_to_potsdam",
+      "method": "ripu_acquisition_only",
+      "budget_fraction": 0.01,
+      "n": 3,
+      "miou_mean": 0.564486669781823,
+      "miou_sd": 0.03148341282700691,
+      "paired_gain_mean": 0.252057327325649,
+      "paired_gain_sd": 0.041372810411060224
+    },
+    {
+      "direction": "vaihingen_to_potsdam",
+      "method": "ripu_acquisition_only",
+      "budget_fraction": 0.03,
+      "n": 3,
+      "miou_mean": 0.6014909027671244,
+      "miou_sd": 0.00941555809474748,
+      "paired_gain_mean": 0.28906156031095037,
+      "paired_gain_sd": 0.003248552601080522
+    },
+    {
+      "direction": "vaihingen_to_potsdam",
+      "method": "ripu_acquisition_only",
+      "budget_fraction": 0.05,
+      "n": 3,
+      "miou_mean": 0.6249699468318577,
+      "miou_sd": 0.005676832343849485,
+      "paired_gain_mean": 0.31254060437568365,
+      "paired_gain_sd": 0.013068531259207108
+    }
+  ]
+}

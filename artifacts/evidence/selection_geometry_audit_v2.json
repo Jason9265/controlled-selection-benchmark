@@ -1,0 +1,2782 @@
+{
+  "metric": "Euclidean distances between selected 256-patch centers in each region's projected CRS; never pooled across regions",
+  "independence_unit": "one frozen selection per (method, region, query seed, budget); architecture duplicates removed from summary",
+  "all_architecture_rows": [
+    {
+      "method": "uniform_patch",
+      "region": "svaneti",
+      "arch": "resnet18_unet",
+      "train_seed": 2026,
+      "query_seed": 17,
+      "budget": 10,
+      "selected_patches": 10,
+      "unique_originals": 9,
+      "repeat_fraction": 0.09999999999999998,
+      "mean_pair_distance_m": 17461.36656619601,
+      "mean_nearest_distance_m": 3154.948834827076,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "uniform_patch",
+      "region": "svaneti",
+      "arch": "resnet18_unet",
+      "train_seed": 2026,
+      "query_seed": 17,
+      "budget": 16,
+      "selected_patches": 16,
+      "unique_originals": 12,
+      "repeat_fraction": 0.25,
+      "mean_pair_distance_m": 21069.088440722717,
+      "mean_nearest_distance_m": 303.1547834701711,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "uniform_patch",
+      "region": "svaneti",
+      "arch": "resnet18_unet",
+      "train_seed": 2026,
+      "query_seed": 17,
+      "budget": 4,
+      "selected_patches": 4,
+      "unique_originals": 4,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 13656.60466443483,
+      "mean_nearest_distance_m": 6550.434112932525,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "uniform_patch",
+      "region": "svaneti",
+      "arch": "resnet18_unet",
+      "train_seed": 2027,
+      "query_seed": 42,
+      "budget": 10,
+      "selected_patches": 10,
+      "unique_originals": 8,
+      "repeat_fraction": 0.19999999999999996,
+      "mean_pair_distance_m": 10452.630674988475,
+      "mean_nearest_distance_m": 442.9684805318881,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "uniform_patch",
+      "region": "svaneti",
+      "arch": "resnet18_unet",
+      "train_seed": 2027,
+      "query_seed": 42,
+      "budget": 16,
+      "selected_patches": 16,
+      "unique_originals": 12,
+      "repeat_fraction": 0.25,
+      "mean_pair_distance_m": 14264.7869327521,
+      "mean_nearest_distance_m": 2041.6253491711948,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "uniform_patch",
+      "region": "svaneti",
+      "arch": "resnet18_unet",
+      "train_seed": 2027,
+      "query_seed": 42,
+      "budget": 4,
+      "selected_patches": 4,
+      "unique_originals": 4,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 4781.346635838249,
+      "mean_nearest_distance_m": 1180.8904653132465,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "uniform_patch",
+      "region": "svaneti",
+      "arch": "resnet18_unet",
+      "train_seed": 2028,
+      "query_seed": 73,
+      "budget": 10,
+      "selected_patches": 10,
+      "unique_originals": 8,
+      "repeat_fraction": 0.19999999999999996,
+      "mean_pair_distance_m": 17184.618184782274,
+      "mean_nearest_distance_m": 2992.1160424155796,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "uniform_patch",
+      "region": "svaneti",
+      "arch": "resnet18_unet",
+      "train_seed": 2028,
+      "query_seed": 73,
+      "budget": 16,
+      "selected_patches": 16,
+      "unique_originals": 11,
+      "repeat_fraction": 0.3125,
+      "mean_pair_distance_m": 18469.64431991346,
+      "mean_nearest_distance_m": 327.5340424974838,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "uniform_patch",
+      "region": "svaneti",
+      "arch": "resnet18_unet",
+      "train_seed": 2028,
+      "query_seed": 73,
+      "budget": 4,
+      "selected_patches": 4,
+      "unique_originals": 4,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 13859.459888755904,
+      "mean_nearest_distance_m": 6496.861969922943,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "uniform_patch",
+      "region": "svaneti",
+      "arch": "segformer_b0",
+      "train_seed": 2026,
+      "query_seed": 17,
+      "budget": 10,
+      "selected_patches": 10,
+      "unique_originals": 9,
+      "repeat_fraction": 0.09999999999999998,
+      "mean_pair_distance_m": 17461.36656619601,
+      "mean_nearest_distance_m": 3154.948834827076,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "uniform_patch",
+      "region": "svaneti",
+      "arch": "segformer_b0",
+      "train_seed": 2026,
+      "query_seed": 17,
+      "budget": 16,
+      "selected_patches": 16,
+      "unique_originals": 12,
+      "repeat_fraction": 0.25,
+      "mean_pair_distance_m": 21069.088440722717,
+      "mean_nearest_distance_m": 303.1547834701711,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "uniform_patch",
+      "region": "svaneti",
+      "arch": "segformer_b0",
+      "train_seed": 2026,
+      "query_seed": 17,
+      "budget": 4,
+      "selected_patches": 4,
+      "unique_originals": 4,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 13656.60466443483,
+      "mean_nearest_distance_m": 6550.434112932525,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "uniform_patch",
+      "region": "svaneti",
+      "arch": "segformer_b0",
+      "train_seed": 2027,
+      "query_seed": 42,
+      "budget": 10,
+      "selected_patches": 10,
+      "unique_originals": 8,
+      "repeat_fraction": 0.19999999999999996,
+      "mean_pair_distance_m": 10452.630674988475,
+      "mean_nearest_distance_m": 442.9684805318881,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "uniform_patch",
+      "region": "svaneti",
+      "arch": "segformer_b0",
+      "train_seed": 2027,
+      "query_seed": 42,
+      "budget": 16,
+      "selected_patches": 16,
+      "unique_originals": 12,
+      "repeat_fraction": 0.25,
+      "mean_pair_distance_m": 14264.7869327521,
+      "mean_nearest_distance_m": 2041.6253491711948,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "uniform_patch",
+      "region": "svaneti",
+      "arch": "segformer_b0",
+      "train_seed": 2027,
+      "query_seed": 42,
+      "budget": 4,
+      "selected_patches": 4,
+      "unique_originals": 4,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 4781.346635838249,
+      "mean_nearest_distance_m": 1180.8904653132465,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "uniform_patch",
+      "region": "svaneti",
+      "arch": "segformer_b0",
+      "train_seed": 2028,
+      "query_seed": 73,
+      "budget": 10,
+      "selected_patches": 10,
+      "unique_originals": 8,
+      "repeat_fraction": 0.19999999999999996,
+      "mean_pair_distance_m": 17184.618184782274,
+      "mean_nearest_distance_m": 2992.1160424155796,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "uniform_patch",
+      "region": "svaneti",
+      "arch": "segformer_b0",
+      "train_seed": 2028,
+      "query_seed": 73,
+      "budget": 16,
+      "selected_patches": 16,
+      "unique_originals": 11,
+      "repeat_fraction": 0.3125,
+      "mean_pair_distance_m": 18469.64431991346,
+      "mean_nearest_distance_m": 327.5340424974838,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "uniform_patch",
+      "region": "svaneti",
+      "arch": "segformer_b0",
+      "train_seed": 2028,
+      "query_seed": 73,
+      "budget": 4,
+      "selected_patches": 4,
+      "unique_originals": 4,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 13859.459888755904,
+      "mean_nearest_distance_m": 6496.861969922943,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "uniform_patch",
+      "region": "tonga",
+      "arch": "resnet18_unet",
+      "train_seed": 2026,
+      "query_seed": 17,
+      "budget": 15,
+      "selected_patches": 15,
+      "unique_originals": 10,
+      "repeat_fraction": 0.33333333333333337,
+      "mean_pair_distance_m": 2602.6315261596596,
+      "mean_nearest_distance_m": 275.79173636617793,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "uniform_patch",
+      "region": "tonga",
+      "arch": "resnet18_unet",
+      "train_seed": 2026,
+      "query_seed": 17,
+      "budget": 3,
+      "selected_patches": 3,
+      "unique_originals": 2,
+      "repeat_fraction": 0.33333333333333337,
+      "mean_pair_distance_m": 3057.4285377829633,
+      "mean_nearest_distance_m": 1577.3011343058045,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "uniform_patch",
+      "region": "tonga",
+      "arch": "resnet18_unet",
+      "train_seed": 2026,
+      "query_seed": 17,
+      "budget": 9,
+      "selected_patches": 9,
+      "unique_originals": 7,
+      "repeat_fraction": 0.2222222222222222,
+      "mean_pair_distance_m": 2639.2892217164163,
+      "mean_nearest_distance_m": 571.4253287484129,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "uniform_patch",
+      "region": "tonga",
+      "arch": "resnet18_unet",
+      "train_seed": 2027,
+      "query_seed": 42,
+      "budget": 15,
+      "selected_patches": 15,
+      "unique_originals": 9,
+      "repeat_fraction": 0.4,
+      "mean_pair_distance_m": 2237.557754131749,
+      "mean_nearest_distance_m": 322.6328967911387,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "uniform_patch",
+      "region": "tonga",
+      "arch": "resnet18_unet",
+      "train_seed": 2027,
+      "query_seed": 42,
+      "budget": 3,
+      "selected_patches": 3,
+      "unique_originals": 3,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 1972.0215109198114,
+      "mean_nearest_distance_m": 1405.2645379576222,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "uniform_patch",
+      "region": "tonga",
+      "arch": "resnet18_unet",
+      "train_seed": 2027,
+      "query_seed": 42,
+      "budget": 9,
+      "selected_patches": 9,
+      "unique_originals": 6,
+      "repeat_fraction": 0.33333333333333337,
+      "mean_pair_distance_m": 2171.4644839344214,
+      "mean_nearest_distance_m": 538.4886887250061,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "uniform_patch",
+      "region": "tonga",
+      "arch": "resnet18_unet",
+      "train_seed": 2028,
+      "query_seed": 73,
+      "budget": 15,
+      "selected_patches": 15,
+      "unique_originals": 10,
+      "repeat_fraction": 0.33333333333333337,
+      "mean_pair_distance_m": 1765.5049038853306,
+      "mean_nearest_distance_m": 277.97950380311266,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "uniform_patch",
+      "region": "tonga",
+      "arch": "resnet18_unet",
+      "train_seed": 2028,
+      "query_seed": 73,
+      "budget": 3,
+      "selected_patches": 3,
+      "unique_originals": 3,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 1337.571439417349,
+      "mean_nearest_distance_m": 1302.7600365299613,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "uniform_patch",
+      "region": "tonga",
+      "arch": "resnet18_unet",
+      "train_seed": 2028,
+      "query_seed": 73,
+      "budget": 9,
+      "selected_patches": 9,
+      "unique_originals": 7,
+      "repeat_fraction": 0.2222222222222222,
+      "mean_pair_distance_m": 1818.3457341593432,
+      "mean_nearest_distance_m": 428.2566628720508,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "uniform_patch",
+      "region": "tonga",
+      "arch": "segformer_b0",
+      "train_seed": 2026,
+      "query_seed": 17,
+      "budget": 15,
+      "selected_patches": 15,
+      "unique_originals": 10,
+      "repeat_fraction": 0.33333333333333337,
+      "mean_pair_distance_m": 2602.6315261596596,
+      "mean_nearest_distance_m": 275.79173636617793,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "uniform_patch",
+      "region": "tonga",
+      "arch": "segformer_b0",
+      "train_seed": 2026,
+      "query_seed": 17,
+      "budget": 3,
+      "selected_patches": 3,
+      "unique_originals": 2,
+      "repeat_fraction": 0.33333333333333337,
+      "mean_pair_distance_m": 3057.4285377829633,
+      "mean_nearest_distance_m": 1577.3011343058045,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "uniform_patch",
+      "region": "tonga",
+      "arch": "segformer_b0",
+      "train_seed": 2026,
+      "query_seed": 17,
+      "budget": 9,
+      "selected_patches": 9,
+      "unique_originals": 7,
+      "repeat_fraction": 0.2222222222222222,
+      "mean_pair_distance_m": 2639.2892217164163,
+      "mean_nearest_distance_m": 571.4253287484129,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "uniform_patch",
+      "region": "tonga",
+      "arch": "segformer_b0",
+      "train_seed": 2027,
+      "query_seed": 42,
+      "budget": 15,
+      "selected_patches": 15,
+      "unique_originals": 9,
+      "repeat_fraction": 0.4,
+      "mean_pair_distance_m": 2237.557754131749,
+      "mean_nearest_distance_m": 322.6328967911387,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "uniform_patch",
+      "region": "tonga",
+      "arch": "segformer_b0",
+      "train_seed": 2027,
+      "query_seed": 42,
+      "budget": 3,
+      "selected_patches": 3,
+      "unique_originals": 3,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 1972.0215109198114,
+      "mean_nearest_distance_m": 1405.2645379576222,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "uniform_patch",
+      "region": "tonga",
+      "arch": "segformer_b0",
+      "train_seed": 2027,
+      "query_seed": 42,
+      "budget": 9,
+      "selected_patches": 9,
+      "unique_originals": 6,
+      "repeat_fraction": 0.33333333333333337,
+      "mean_pair_distance_m": 2171.4644839344214,
+      "mean_nearest_distance_m": 538.4886887250061,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "uniform_patch",
+      "region": "tonga",
+      "arch": "segformer_b0",
+      "train_seed": 2028,
+      "query_seed": 73,
+      "budget": 15,
+      "selected_patches": 15,
+      "unique_originals": 10,
+      "repeat_fraction": 0.33333333333333337,
+      "mean_pair_distance_m": 1765.5049038853306,
+      "mean_nearest_distance_m": 277.97950380311266,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "uniform_patch",
+      "region": "tonga",
+      "arch": "segformer_b0",
+      "train_seed": 2028,
+      "query_seed": 73,
+      "budget": 3,
+      "selected_patches": 3,
+      "unique_originals": 3,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 1337.571439417349,
+      "mean_nearest_distance_m": 1302.7600365299613,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "uniform_patch",
+      "region": "tonga",
+      "arch": "segformer_b0",
+      "train_seed": 2028,
+      "query_seed": 73,
+      "budget": 9,
+      "selected_patches": 9,
+      "unique_originals": 7,
+      "repeat_fraction": 0.2222222222222222,
+      "mean_pair_distance_m": 1818.3457341593432,
+      "mean_nearest_distance_m": 428.2566628720508,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "original_uniform",
+      "region": "svaneti",
+      "arch": "resnet18_unet",
+      "train_seed": 2026,
+      "query_seed": 17,
+      "budget": 10,
+      "selected_patches": 10,
+      "unique_originals": 7,
+      "repeat_fraction": 0.30000000000000004,
+      "mean_pair_distance_m": 5514.773117777364,
+      "mean_nearest_distance_m": 2450.7625263957502,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "original_uniform",
+      "region": "svaneti",
+      "arch": "resnet18_unet",
+      "train_seed": 2026,
+      "query_seed": 17,
+      "budget": 16,
+      "selected_patches": 16,
+      "unique_originals": 10,
+      "repeat_fraction": 0.375,
+      "mean_pair_distance_m": 5805.065663782975,
+      "mean_nearest_distance_m": 1265.2085816620145,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "original_uniform",
+      "region": "svaneti",
+      "arch": "resnet18_unet",
+      "train_seed": 2026,
+      "query_seed": 17,
+      "budget": 4,
+      "selected_patches": 4,
+      "unique_originals": 4,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 3559.8940847779063,
+      "mean_nearest_distance_m": 1860.6682671165659,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "original_uniform",
+      "region": "svaneti",
+      "arch": "resnet18_unet",
+      "train_seed": 2027,
+      "query_seed": 42,
+      "budget": 10,
+      "selected_patches": 10,
+      "unique_originals": 7,
+      "repeat_fraction": 0.30000000000000004,
+      "mean_pair_distance_m": 11762.322483874672,
+      "mean_nearest_distance_m": 882.5400286703776,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "original_uniform",
+      "region": "svaneti",
+      "arch": "resnet18_unet",
+      "train_seed": 2027,
+      "query_seed": 42,
+      "budget": 16,
+      "selected_patches": 16,
+      "unique_originals": 11,
+      "repeat_fraction": 0.3125,
+      "mean_pair_distance_m": 11875.23309989268,
+      "mean_nearest_distance_m": 336.4357750090948,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "original_uniform",
+      "region": "svaneti",
+      "arch": "resnet18_unet",
+      "train_seed": 2027,
+      "query_seed": 42,
+      "budget": 4,
+      "selected_patches": 4,
+      "unique_originals": 3,
+      "repeat_fraction": 0.25,
+      "mean_pair_distance_m": 9883.192971947357,
+      "mean_nearest_distance_m": 5049.577951279497,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "original_uniform",
+      "region": "svaneti",
+      "arch": "resnet18_unet",
+      "train_seed": 2028,
+      "query_seed": 73,
+      "budget": 10,
+      "selected_patches": 10,
+      "unique_originals": 7,
+      "repeat_fraction": 0.30000000000000004,
+      "mean_pair_distance_m": 10053.488821748417,
+      "mean_nearest_distance_m": 552.1750448229957,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "original_uniform",
+      "region": "svaneti",
+      "arch": "resnet18_unet",
+      "train_seed": 2028,
+      "query_seed": 73,
+      "budget": 16,
+      "selected_patches": 16,
+      "unique_originals": 10,
+      "repeat_fraction": 0.375,
+      "mean_pair_distance_m": 9260.010755908046,
+      "mean_nearest_distance_m": 355.84869181973465,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "original_uniform",
+      "region": "svaneti",
+      "arch": "resnet18_unet",
+      "train_seed": 2028,
+      "query_seed": 73,
+      "budget": 4,
+      "selected_patches": 4,
+      "unique_originals": 4,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 12181.121740877034,
+      "mean_nearest_distance_m": 6284.138021502616,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "original_uniform",
+      "region": "svaneti",
+      "arch": "segformer_b0",
+      "train_seed": 2026,
+      "query_seed": 17,
+      "budget": 10,
+      "selected_patches": 10,
+      "unique_originals": 7,
+      "repeat_fraction": 0.30000000000000004,
+      "mean_pair_distance_m": 5514.773117777364,
+      "mean_nearest_distance_m": 2450.7625263957502,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "original_uniform",
+      "region": "svaneti",
+      "arch": "segformer_b0",
+      "train_seed": 2026,
+      "query_seed": 17,
+      "budget": 16,
+      "selected_patches": 16,
+      "unique_originals": 10,
+      "repeat_fraction": 0.375,
+      "mean_pair_distance_m": 5805.065663782975,
+      "mean_nearest_distance_m": 1265.2085816620145,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "original_uniform",
+      "region": "svaneti",
+      "arch": "segformer_b0",
+      "train_seed": 2026,
+      "query_seed": 17,
+      "budget": 4,
+      "selected_patches": 4,
+      "unique_originals": 4,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 3559.8940847779063,
+      "mean_nearest_distance_m": 1860.6682671165659,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "original_uniform",
+      "region": "svaneti",
+      "arch": "segformer_b0",
+      "train_seed": 2027,
+      "query_seed": 42,
+      "budget": 10,
+      "selected_patches": 10,
+      "unique_originals": 7,
+      "repeat_fraction": 0.30000000000000004,
+      "mean_pair_distance_m": 11762.322483874672,
+      "mean_nearest_distance_m": 882.5400286703776,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "original_uniform",
+      "region": "svaneti",
+      "arch": "segformer_b0",
+      "train_seed": 2027,
+      "query_seed": 42,
+      "budget": 16,
+      "selected_patches": 16,
+      "unique_originals": 11,
+      "repeat_fraction": 0.3125,
+      "mean_pair_distance_m": 11875.23309989268,
+      "mean_nearest_distance_m": 336.4357750090948,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "original_uniform",
+      "region": "svaneti",
+      "arch": "segformer_b0",
+      "train_seed": 2027,
+      "query_seed": 42,
+      "budget": 4,
+      "selected_patches": 4,
+      "unique_originals": 3,
+      "repeat_fraction": 0.25,
+      "mean_pair_distance_m": 9883.192971947357,
+      "mean_nearest_distance_m": 5049.577951279497,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "original_uniform",
+      "region": "svaneti",
+      "arch": "segformer_b0",
+      "train_seed": 2028,
+      "query_seed": 73,
+      "budget": 10,
+      "selected_patches": 10,
+      "unique_originals": 7,
+      "repeat_fraction": 0.30000000000000004,
+      "mean_pair_distance_m": 10053.488821748417,
+      "mean_nearest_distance_m": 552.1750448229957,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "original_uniform",
+      "region": "svaneti",
+      "arch": "segformer_b0",
+      "train_seed": 2028,
+      "query_seed": 73,
+      "budget": 16,
+      "selected_patches": 16,
+      "unique_originals": 10,
+      "repeat_fraction": 0.375,
+      "mean_pair_distance_m": 9260.010755908046,
+      "mean_nearest_distance_m": 355.84869181973465,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "original_uniform",
+      "region": "svaneti",
+      "arch": "segformer_b0",
+      "train_seed": 2028,
+      "query_seed": 73,
+      "budget": 4,
+      "selected_patches": 4,
+      "unique_originals": 4,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 12181.121740877034,
+      "mean_nearest_distance_m": 6284.138021502616,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "original_uniform",
+      "region": "tonga",
+      "arch": "resnet18_unet",
+      "train_seed": 2026,
+      "query_seed": 17,
+      "budget": 15,
+      "selected_patches": 15,
+      "unique_originals": 10,
+      "repeat_fraction": 0.33333333333333337,
+      "mean_pair_distance_m": 1952.8588053933624,
+      "mean_nearest_distance_m": 401.47168425858814,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "original_uniform",
+      "region": "tonga",
+      "arch": "resnet18_unet",
+      "train_seed": 2026,
+      "query_seed": 17,
+      "budget": 3,
+      "selected_patches": 3,
+      "unique_originals": 3,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 1408.7205341486454,
+      "mean_nearest_distance_m": 952.4080131949466,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "original_uniform",
+      "region": "tonga",
+      "arch": "resnet18_unet",
+      "train_seed": 2026,
+      "query_seed": 17,
+      "budget": 9,
+      "selected_patches": 9,
+      "unique_originals": 7,
+      "repeat_fraction": 0.2222222222222222,
+      "mean_pair_distance_m": 1895.1185120324642,
+      "mean_nearest_distance_m": 451.91737402665854,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "original_uniform",
+      "region": "tonga",
+      "arch": "resnet18_unet",
+      "train_seed": 2027,
+      "query_seed": 42,
+      "budget": 15,
+      "selected_patches": 15,
+      "unique_originals": 11,
+      "repeat_fraction": 0.2666666666666667,
+      "mean_pair_distance_m": 1986.5500065911142,
+      "mean_nearest_distance_m": 411.9558109330641,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "original_uniform",
+      "region": "tonga",
+      "arch": "resnet18_unet",
+      "train_seed": 2027,
+      "query_seed": 42,
+      "budget": 3,
+      "selected_patches": 3,
+      "unique_originals": 3,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 2535.902536396696,
+      "mean_nearest_distance_m": 2096.866723954438,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "original_uniform",
+      "region": "tonga",
+      "arch": "resnet18_unet",
+      "train_seed": 2027,
+      "query_seed": 42,
+      "budget": 9,
+      "selected_patches": 9,
+      "unique_originals": 6,
+      "repeat_fraction": 0.33333333333333337,
+      "mean_pair_distance_m": 1637.7203751842474,
+      "mean_nearest_distance_m": 572.053507178638,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "original_uniform",
+      "region": "tonga",
+      "arch": "resnet18_unet",
+      "train_seed": 2028,
+      "query_seed": 73,
+      "budget": 15,
+      "selected_patches": 15,
+      "unique_originals": 9,
+      "repeat_fraction": 0.4,
+      "mean_pair_distance_m": 1564.0604870597267,
+      "mean_nearest_distance_m": 256.6227808556371,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "original_uniform",
+      "region": "tonga",
+      "arch": "resnet18_unet",
+      "train_seed": 2028,
+      "query_seed": 73,
+      "budget": 3,
+      "selected_patches": 3,
+      "unique_originals": 3,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 1698.4180474860877,
+      "mean_nearest_distance_m": 1396.4614033385842,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "original_uniform",
+      "region": "tonga",
+      "arch": "resnet18_unet",
+      "train_seed": 2028,
+      "query_seed": 73,
+      "budget": 9,
+      "selected_patches": 9,
+      "unique_originals": 6,
+      "repeat_fraction": 0.33333333333333337,
+      "mean_pair_distance_m": 1691.9062218047525,
+      "mean_nearest_distance_m": 455.399985464556,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "original_uniform",
+      "region": "tonga",
+      "arch": "segformer_b0",
+      "train_seed": 2026,
+      "query_seed": 17,
+      "budget": 15,
+      "selected_patches": 15,
+      "unique_originals": 10,
+      "repeat_fraction": 0.33333333333333337,
+      "mean_pair_distance_m": 1952.8588053933624,
+      "mean_nearest_distance_m": 401.47168425858814,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "original_uniform",
+      "region": "tonga",
+      "arch": "segformer_b0",
+      "train_seed": 2026,
+      "query_seed": 17,
+      "budget": 3,
+      "selected_patches": 3,
+      "unique_originals": 3,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 1408.7205341486454,
+      "mean_nearest_distance_m": 952.4080131949466,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "original_uniform",
+      "region": "tonga",
+      "arch": "segformer_b0",
+      "train_seed": 2026,
+      "query_seed": 17,
+      "budget": 9,
+      "selected_patches": 9,
+      "unique_originals": 7,
+      "repeat_fraction": 0.2222222222222222,
+      "mean_pair_distance_m": 1895.1185120324642,
+      "mean_nearest_distance_m": 451.91737402665854,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "original_uniform",
+      "region": "tonga",
+      "arch": "segformer_b0",
+      "train_seed": 2027,
+      "query_seed": 42,
+      "budget": 15,
+      "selected_patches": 15,
+      "unique_originals": 11,
+      "repeat_fraction": 0.2666666666666667,
+      "mean_pair_distance_m": 1986.5500065911142,
+      "mean_nearest_distance_m": 411.9558109330641,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "original_uniform",
+      "region": "tonga",
+      "arch": "segformer_b0",
+      "train_seed": 2027,
+      "query_seed": 42,
+      "budget": 3,
+      "selected_patches": 3,
+      "unique_originals": 3,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 2535.902536396696,
+      "mean_nearest_distance_m": 2096.866723954438,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "original_uniform",
+      "region": "tonga",
+      "arch": "segformer_b0",
+      "train_seed": 2027,
+      "query_seed": 42,
+      "budget": 9,
+      "selected_patches": 9,
+      "unique_originals": 6,
+      "repeat_fraction": 0.33333333333333337,
+      "mean_pair_distance_m": 1637.7203751842474,
+      "mean_nearest_distance_m": 572.053507178638,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "original_uniform",
+      "region": "tonga",
+      "arch": "segformer_b0",
+      "train_seed": 2028,
+      "query_seed": 73,
+      "budget": 15,
+      "selected_patches": 15,
+      "unique_originals": 9,
+      "repeat_fraction": 0.4,
+      "mean_pair_distance_m": 1564.0604870597267,
+      "mean_nearest_distance_m": 256.6227808556371,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "original_uniform",
+      "region": "tonga",
+      "arch": "segformer_b0",
+      "train_seed": 2028,
+      "query_seed": 73,
+      "budget": 3,
+      "selected_patches": 3,
+      "unique_originals": 3,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 1698.4180474860877,
+      "mean_nearest_distance_m": 1396.4614033385842,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "original_uniform",
+      "region": "tonga",
+      "arch": "segformer_b0",
+      "train_seed": 2028,
+      "query_seed": 73,
+      "budget": 9,
+      "selected_patches": 9,
+      "unique_originals": 6,
+      "repeat_fraction": 0.33333333333333337,
+      "mean_pair_distance_m": 1691.9062218047525,
+      "mean_nearest_distance_m": 455.399985464556,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "original_quota",
+      "region": "svaneti",
+      "arch": "resnet18_unet",
+      "train_seed": 2026,
+      "query_seed": 17,
+      "budget": 10,
+      "selected_patches": 10,
+      "unique_originals": 10,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 17525.30898123254,
+      "mean_nearest_distance_m": 3159.60921378439,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "original_quota",
+      "region": "svaneti",
+      "arch": "resnet18_unet",
+      "train_seed": 2026,
+      "query_seed": 17,
+      "budget": 16,
+      "selected_patches": 16,
+      "unique_originals": 16,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 15478.337777938346,
+      "mean_nearest_distance_m": 2106.3244302941916,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "original_quota",
+      "region": "svaneti",
+      "arch": "resnet18_unet",
+      "train_seed": 2026,
+      "query_seed": 17,
+      "budget": 4,
+      "selected_patches": 4,
+      "unique_originals": 4,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 14656.22368050067,
+      "mean_nearest_distance_m": 3406.5669681567174,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "original_quota",
+      "region": "svaneti",
+      "arch": "resnet18_unet",
+      "train_seed": 2027,
+      "query_seed": 42,
+      "budget": 10,
+      "selected_patches": 10,
+      "unique_originals": 10,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 17964.416721352085,
+      "mean_nearest_distance_m": 3198.8483311097325,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "original_quota",
+      "region": "svaneti",
+      "arch": "resnet18_unet",
+      "train_seed": 2027,
+      "query_seed": 42,
+      "budget": 16,
+      "selected_patches": 16,
+      "unique_originals": 16,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 14422.604814137356,
+      "mean_nearest_distance_m": 2131.7686930622403,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "original_quota",
+      "region": "svaneti",
+      "arch": "resnet18_unet",
+      "train_seed": 2027,
+      "query_seed": 42,
+      "budget": 4,
+      "selected_patches": 4,
+      "unique_originals": 4,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 12188.909819767216,
+      "mean_nearest_distance_m": 6367.110265167313,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "original_quota",
+      "region": "svaneti",
+      "arch": "resnet18_unet",
+      "train_seed": 2028,
+      "query_seed": 73,
+      "budget": 10,
+      "selected_patches": 10,
+      "unique_originals": 10,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 10330.997257556472,
+      "mean_nearest_distance_m": 455.68352662832893,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "original_quota",
+      "region": "svaneti",
+      "arch": "resnet18_unet",
+      "train_seed": 2028,
+      "query_seed": 73,
+      "budget": 16,
+      "selected_patches": 16,
+      "unique_originals": 16,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 10911.497936755843,
+      "mean_nearest_distance_m": 407.0255824498833,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "original_quota",
+      "region": "svaneti",
+      "arch": "resnet18_unet",
+      "train_seed": 2028,
+      "query_seed": 73,
+      "budget": 4,
+      "selected_patches": 4,
+      "unique_originals": 4,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 12952.634835568753,
+      "mean_nearest_distance_m": 6577.407274464253,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "original_quota",
+      "region": "svaneti",
+      "arch": "segformer_b0",
+      "train_seed": 2026,
+      "query_seed": 17,
+      "budget": 10,
+      "selected_patches": 10,
+      "unique_originals": 10,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 17525.30898123254,
+      "mean_nearest_distance_m": 3159.60921378439,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "original_quota",
+      "region": "svaneti",
+      "arch": "segformer_b0",
+      "train_seed": 2026,
+      "query_seed": 17,
+      "budget": 16,
+      "selected_patches": 16,
+      "unique_originals": 16,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 15478.337777938346,
+      "mean_nearest_distance_m": 2106.3244302941916,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "original_quota",
+      "region": "svaneti",
+      "arch": "segformer_b0",
+      "train_seed": 2026,
+      "query_seed": 17,
+      "budget": 4,
+      "selected_patches": 4,
+      "unique_originals": 4,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 14656.22368050067,
+      "mean_nearest_distance_m": 3406.5669681567174,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "original_quota",
+      "region": "svaneti",
+      "arch": "segformer_b0",
+      "train_seed": 2027,
+      "query_seed": 42,
+      "budget": 10,
+      "selected_patches": 10,
+      "unique_originals": 10,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 17964.416721352085,
+      "mean_nearest_distance_m": 3198.8483311097325,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "original_quota",
+      "region": "svaneti",
+      "arch": "segformer_b0",
+      "train_seed": 2027,
+      "query_seed": 42,
+      "budget": 16,
+      "selected_patches": 16,
+      "unique_originals": 16,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 14422.604814137356,
+      "mean_nearest_distance_m": 2131.7686930622403,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "original_quota",
+      "region": "svaneti",
+      "arch": "segformer_b0",
+      "train_seed": 2027,
+      "query_seed": 42,
+      "budget": 4,
+      "selected_patches": 4,
+      "unique_originals": 4,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 12188.909819767216,
+      "mean_nearest_distance_m": 6367.110265167313,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "original_quota",
+      "region": "svaneti",
+      "arch": "segformer_b0",
+      "train_seed": 2028,
+      "query_seed": 73,
+      "budget": 10,
+      "selected_patches": 10,
+      "unique_originals": 10,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 10330.997257556472,
+      "mean_nearest_distance_m": 455.68352662832893,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "original_quota",
+      "region": "svaneti",
+      "arch": "segformer_b0",
+      "train_seed": 2028,
+      "query_seed": 73,
+      "budget": 16,
+      "selected_patches": 16,
+      "unique_originals": 16,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 10911.497936755843,
+      "mean_nearest_distance_m": 407.0255824498833,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "original_quota",
+      "region": "svaneti",
+      "arch": "segformer_b0",
+      "train_seed": 2028,
+      "query_seed": 73,
+      "budget": 4,
+      "selected_patches": 4,
+      "unique_originals": 4,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 12952.634835568753,
+      "mean_nearest_distance_m": 6577.407274464253,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "original_quota",
+      "region": "tonga",
+      "arch": "resnet18_unet",
+      "train_seed": 2026,
+      "query_seed": 17,
+      "budget": 15,
+      "selected_patches": 15,
+      "unique_originals": 15,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 2063.7324013576895,
+      "mean_nearest_distance_m": 569.4471976389506,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "original_quota",
+      "region": "tonga",
+      "arch": "resnet18_unet",
+      "train_seed": 2026,
+      "query_seed": 17,
+      "budget": 3,
+      "selected_patches": 3,
+      "unique_originals": 3,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 1552.675758518233,
+      "mean_nearest_distance_m": 929.0355216102129,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "original_quota",
+      "region": "tonga",
+      "arch": "resnet18_unet",
+      "train_seed": 2026,
+      "query_seed": 17,
+      "budget": 9,
+      "selected_patches": 9,
+      "unique_originals": 9,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 2099.6842162801067,
+      "mean_nearest_distance_m": 1039.7495454703121,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "original_quota",
+      "region": "tonga",
+      "arch": "resnet18_unet",
+      "train_seed": 2027,
+      "query_seed": 42,
+      "budget": 15,
+      "selected_patches": 15,
+      "unique_originals": 15,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 2138.5199383600843,
+      "mean_nearest_distance_m": 422.96229996472323,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "original_quota",
+      "region": "tonga",
+      "arch": "resnet18_unet",
+      "train_seed": 2027,
+      "query_seed": 42,
+      "budget": 3,
+      "selected_patches": 3,
+      "unique_originals": 3,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 3414.8305005286616,
+      "mean_nearest_distance_m": 2349.484972596593,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "original_quota",
+      "region": "tonga",
+      "arch": "resnet18_unet",
+      "train_seed": 2027,
+      "query_seed": 42,
+      "budget": 9,
+      "selected_patches": 9,
+      "unique_originals": 9,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 1966.2815127135063,
+      "mean_nearest_distance_m": 760.1516913107167,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "original_quota",
+      "region": "tonga",
+      "arch": "resnet18_unet",
+      "train_seed": 2028,
+      "query_seed": 73,
+      "budget": 15,
+      "selected_patches": 15,
+      "unique_originals": 15,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 2289.96756023513,
+      "mean_nearest_distance_m": 502.27016929710277,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "original_quota",
+      "region": "tonga",
+      "arch": "resnet18_unet",
+      "train_seed": 2028,
+      "query_seed": 73,
+      "budget": 3,
+      "selected_patches": 3,
+      "unique_originals": 3,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 1732.8532402721255,
+      "mean_nearest_distance_m": 1207.2254225487711,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "original_quota",
+      "region": "tonga",
+      "arch": "resnet18_unet",
+      "train_seed": 2028,
+      "query_seed": 73,
+      "budget": 9,
+      "selected_patches": 9,
+      "unique_originals": 9,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 2229.7922472680057,
+      "mean_nearest_distance_m": 790.8778041135517,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "original_quota",
+      "region": "tonga",
+      "arch": "segformer_b0",
+      "train_seed": 2026,
+      "query_seed": 17,
+      "budget": 15,
+      "selected_patches": 15,
+      "unique_originals": 15,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 2063.7324013576895,
+      "mean_nearest_distance_m": 569.4471976389506,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "original_quota",
+      "region": "tonga",
+      "arch": "segformer_b0",
+      "train_seed": 2026,
+      "query_seed": 17,
+      "budget": 3,
+      "selected_patches": 3,
+      "unique_originals": 3,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 1552.675758518233,
+      "mean_nearest_distance_m": 929.0355216102129,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "original_quota",
+      "region": "tonga",
+      "arch": "segformer_b0",
+      "train_seed": 2026,
+      "query_seed": 17,
+      "budget": 9,
+      "selected_patches": 9,
+      "unique_originals": 9,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 2099.6842162801067,
+      "mean_nearest_distance_m": 1039.7495454703121,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "original_quota",
+      "region": "tonga",
+      "arch": "segformer_b0",
+      "train_seed": 2027,
+      "query_seed": 42,
+      "budget": 15,
+      "selected_patches": 15,
+      "unique_originals": 15,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 2138.5199383600843,
+      "mean_nearest_distance_m": 422.96229996472323,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "original_quota",
+      "region": "tonga",
+      "arch": "segformer_b0",
+      "train_seed": 2027,
+      "query_seed": 42,
+      "budget": 3,
+      "selected_patches": 3,
+      "unique_originals": 3,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 3414.8305005286616,
+      "mean_nearest_distance_m": 2349.484972596593,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "original_quota",
+      "region": "tonga",
+      "arch": "segformer_b0",
+      "train_seed": 2027,
+      "query_seed": 42,
+      "budget": 9,
+      "selected_patches": 9,
+      "unique_originals": 9,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 1966.2815127135063,
+      "mean_nearest_distance_m": 760.1516913107167,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "original_quota",
+      "region": "tonga",
+      "arch": "segformer_b0",
+      "train_seed": 2028,
+      "query_seed": 73,
+      "budget": 15,
+      "selected_patches": 15,
+      "unique_originals": 15,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 2289.96756023513,
+      "mean_nearest_distance_m": 502.27016929710277,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "original_quota",
+      "region": "tonga",
+      "arch": "segformer_b0",
+      "train_seed": 2028,
+      "query_seed": 73,
+      "budget": 3,
+      "selected_patches": 3,
+      "unique_originals": 3,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 1732.8532402721255,
+      "mean_nearest_distance_m": 1207.2254225487711,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "original_quota",
+      "region": "tonga",
+      "arch": "segformer_b0",
+      "train_seed": 2028,
+      "query_seed": 73,
+      "budget": 9,
+      "selected_patches": 9,
+      "unique_originals": 9,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 2229.7922472680057,
+      "mean_nearest_distance_m": 790.8778041135517,
+      "epsg": [
+        32701
+      ]
+    }
+  ],
+  "independent_selection_rows": [
+    {
+      "method": "uniform_patch",
+      "region": "svaneti",
+      "arch": "resnet18_unet",
+      "train_seed": 2026,
+      "query_seed": 17,
+      "budget": 10,
+      "selected_patches": 10,
+      "unique_originals": 9,
+      "repeat_fraction": 0.09999999999999998,
+      "mean_pair_distance_m": 17461.36656619601,
+      "mean_nearest_distance_m": 3154.948834827076,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "uniform_patch",
+      "region": "svaneti",
+      "arch": "resnet18_unet",
+      "train_seed": 2026,
+      "query_seed": 17,
+      "budget": 16,
+      "selected_patches": 16,
+      "unique_originals": 12,
+      "repeat_fraction": 0.25,
+      "mean_pair_distance_m": 21069.088440722717,
+      "mean_nearest_distance_m": 303.1547834701711,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "uniform_patch",
+      "region": "svaneti",
+      "arch": "resnet18_unet",
+      "train_seed": 2026,
+      "query_seed": 17,
+      "budget": 4,
+      "selected_patches": 4,
+      "unique_originals": 4,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 13656.60466443483,
+      "mean_nearest_distance_m": 6550.434112932525,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "uniform_patch",
+      "region": "svaneti",
+      "arch": "resnet18_unet",
+      "train_seed": 2027,
+      "query_seed": 42,
+      "budget": 10,
+      "selected_patches": 10,
+      "unique_originals": 8,
+      "repeat_fraction": 0.19999999999999996,
+      "mean_pair_distance_m": 10452.630674988475,
+      "mean_nearest_distance_m": 442.9684805318881,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "uniform_patch",
+      "region": "svaneti",
+      "arch": "resnet18_unet",
+      "train_seed": 2027,
+      "query_seed": 42,
+      "budget": 16,
+      "selected_patches": 16,
+      "unique_originals": 12,
+      "repeat_fraction": 0.25,
+      "mean_pair_distance_m": 14264.7869327521,
+      "mean_nearest_distance_m": 2041.6253491711948,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "uniform_patch",
+      "region": "svaneti",
+      "arch": "resnet18_unet",
+      "train_seed": 2027,
+      "query_seed": 42,
+      "budget": 4,
+      "selected_patches": 4,
+      "unique_originals": 4,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 4781.346635838249,
+      "mean_nearest_distance_m": 1180.8904653132465,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "uniform_patch",
+      "region": "svaneti",
+      "arch": "resnet18_unet",
+      "train_seed": 2028,
+      "query_seed": 73,
+      "budget": 10,
+      "selected_patches": 10,
+      "unique_originals": 8,
+      "repeat_fraction": 0.19999999999999996,
+      "mean_pair_distance_m": 17184.618184782274,
+      "mean_nearest_distance_m": 2992.1160424155796,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "uniform_patch",
+      "region": "svaneti",
+      "arch": "resnet18_unet",
+      "train_seed": 2028,
+      "query_seed": 73,
+      "budget": 16,
+      "selected_patches": 16,
+      "unique_originals": 11,
+      "repeat_fraction": 0.3125,
+      "mean_pair_distance_m": 18469.64431991346,
+      "mean_nearest_distance_m": 327.5340424974838,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "uniform_patch",
+      "region": "svaneti",
+      "arch": "resnet18_unet",
+      "train_seed": 2028,
+      "query_seed": 73,
+      "budget": 4,
+      "selected_patches": 4,
+      "unique_originals": 4,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 13859.459888755904,
+      "mean_nearest_distance_m": 6496.861969922943,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "uniform_patch",
+      "region": "tonga",
+      "arch": "resnet18_unet",
+      "train_seed": 2026,
+      "query_seed": 17,
+      "budget": 15,
+      "selected_patches": 15,
+      "unique_originals": 10,
+      "repeat_fraction": 0.33333333333333337,
+      "mean_pair_distance_m": 2602.6315261596596,
+      "mean_nearest_distance_m": 275.79173636617793,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "uniform_patch",
+      "region": "tonga",
+      "arch": "resnet18_unet",
+      "train_seed": 2026,
+      "query_seed": 17,
+      "budget": 3,
+      "selected_patches": 3,
+      "unique_originals": 2,
+      "repeat_fraction": 0.33333333333333337,
+      "mean_pair_distance_m": 3057.4285377829633,
+      "mean_nearest_distance_m": 1577.3011343058045,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "uniform_patch",
+      "region": "tonga",
+      "arch": "resnet18_unet",
+      "train_seed": 2026,
+      "query_seed": 17,
+      "budget": 9,
+      "selected_patches": 9,
+      "unique_originals": 7,
+      "repeat_fraction": 0.2222222222222222,
+      "mean_pair_distance_m": 2639.2892217164163,
+      "mean_nearest_distance_m": 571.4253287484129,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "uniform_patch",
+      "region": "tonga",
+      "arch": "resnet18_unet",
+      "train_seed": 2027,
+      "query_seed": 42,
+      "budget": 15,
+      "selected_patches": 15,
+      "unique_originals": 9,
+      "repeat_fraction": 0.4,
+      "mean_pair_distance_m": 2237.557754131749,
+      "mean_nearest_distance_m": 322.6328967911387,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "uniform_patch",
+      "region": "tonga",
+      "arch": "resnet18_unet",
+      "train_seed": 2027,
+      "query_seed": 42,
+      "budget": 3,
+      "selected_patches": 3,
+      "unique_originals": 3,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 1972.0215109198114,
+      "mean_nearest_distance_m": 1405.2645379576222,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "uniform_patch",
+      "region": "tonga",
+      "arch": "resnet18_unet",
+      "train_seed": 2027,
+      "query_seed": 42,
+      "budget": 9,
+      "selected_patches": 9,
+      "unique_originals": 6,
+      "repeat_fraction": 0.33333333333333337,
+      "mean_pair_distance_m": 2171.4644839344214,
+      "mean_nearest_distance_m": 538.4886887250061,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "uniform_patch",
+      "region": "tonga",
+      "arch": "resnet18_unet",
+      "train_seed": 2028,
+      "query_seed": 73,
+      "budget": 15,
+      "selected_patches": 15,
+      "unique_originals": 10,
+      "repeat_fraction": 0.33333333333333337,
+      "mean_pair_distance_m": 1765.5049038853306,
+      "mean_nearest_distance_m": 277.97950380311266,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "uniform_patch",
+      "region": "tonga",
+      "arch": "resnet18_unet",
+      "train_seed": 2028,
+      "query_seed": 73,
+      "budget": 3,
+      "selected_patches": 3,
+      "unique_originals": 3,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 1337.571439417349,
+      "mean_nearest_distance_m": 1302.7600365299613,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "uniform_patch",
+      "region": "tonga",
+      "arch": "resnet18_unet",
+      "train_seed": 2028,
+      "query_seed": 73,
+      "budget": 9,
+      "selected_patches": 9,
+      "unique_originals": 7,
+      "repeat_fraction": 0.2222222222222222,
+      "mean_pair_distance_m": 1818.3457341593432,
+      "mean_nearest_distance_m": 428.2566628720508,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "original_uniform",
+      "region": "svaneti",
+      "arch": "resnet18_unet",
+      "train_seed": 2026,
+      "query_seed": 17,
+      "budget": 10,
+      "selected_patches": 10,
+      "unique_originals": 7,
+      "repeat_fraction": 0.30000000000000004,
+      "mean_pair_distance_m": 5514.773117777364,
+      "mean_nearest_distance_m": 2450.7625263957502,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "original_uniform",
+      "region": "svaneti",
+      "arch": "resnet18_unet",
+      "train_seed": 2026,
+      "query_seed": 17,
+      "budget": 16,
+      "selected_patches": 16,
+      "unique_originals": 10,
+      "repeat_fraction": 0.375,
+      "mean_pair_distance_m": 5805.065663782975,
+      "mean_nearest_distance_m": 1265.2085816620145,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "original_uniform",
+      "region": "svaneti",
+      "arch": "resnet18_unet",
+      "train_seed": 2026,
+      "query_seed": 17,
+      "budget": 4,
+      "selected_patches": 4,
+      "unique_originals": 4,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 3559.8940847779063,
+      "mean_nearest_distance_m": 1860.6682671165659,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "original_uniform",
+      "region": "svaneti",
+      "arch": "resnet18_unet",
+      "train_seed": 2027,
+      "query_seed": 42,
+      "budget": 10,
+      "selected_patches": 10,
+      "unique_originals": 7,
+      "repeat_fraction": 0.30000000000000004,
+      "mean_pair_distance_m": 11762.322483874672,
+      "mean_nearest_distance_m": 882.5400286703776,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "original_uniform",
+      "region": "svaneti",
+      "arch": "resnet18_unet",
+      "train_seed": 2027,
+      "query_seed": 42,
+      "budget": 16,
+      "selected_patches": 16,
+      "unique_originals": 11,
+      "repeat_fraction": 0.3125,
+      "mean_pair_distance_m": 11875.23309989268,
+      "mean_nearest_distance_m": 336.4357750090948,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "original_uniform",
+      "region": "svaneti",
+      "arch": "resnet18_unet",
+      "train_seed": 2027,
+      "query_seed": 42,
+      "budget": 4,
+      "selected_patches": 4,
+      "unique_originals": 3,
+      "repeat_fraction": 0.25,
+      "mean_pair_distance_m": 9883.192971947357,
+      "mean_nearest_distance_m": 5049.577951279497,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "original_uniform",
+      "region": "svaneti",
+      "arch": "resnet18_unet",
+      "train_seed": 2028,
+      "query_seed": 73,
+      "budget": 10,
+      "selected_patches": 10,
+      "unique_originals": 7,
+      "repeat_fraction": 0.30000000000000004,
+      "mean_pair_distance_m": 10053.488821748417,
+      "mean_nearest_distance_m": 552.1750448229957,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "original_uniform",
+      "region": "svaneti",
+      "arch": "resnet18_unet",
+      "train_seed": 2028,
+      "query_seed": 73,
+      "budget": 16,
+      "selected_patches": 16,
+      "unique_originals": 10,
+      "repeat_fraction": 0.375,
+      "mean_pair_distance_m": 9260.010755908046,
+      "mean_nearest_distance_m": 355.84869181973465,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "original_uniform",
+      "region": "svaneti",
+      "arch": "resnet18_unet",
+      "train_seed": 2028,
+      "query_seed": 73,
+      "budget": 4,
+      "selected_patches": 4,
+      "unique_originals": 4,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 12181.121740877034,
+      "mean_nearest_distance_m": 6284.138021502616,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "original_uniform",
+      "region": "tonga",
+      "arch": "resnet18_unet",
+      "train_seed": 2026,
+      "query_seed": 17,
+      "budget": 15,
+      "selected_patches": 15,
+      "unique_originals": 10,
+      "repeat_fraction": 0.33333333333333337,
+      "mean_pair_distance_m": 1952.8588053933624,
+      "mean_nearest_distance_m": 401.47168425858814,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "original_uniform",
+      "region": "tonga",
+      "arch": "resnet18_unet",
+      "train_seed": 2026,
+      "query_seed": 17,
+      "budget": 3,
+      "selected_patches": 3,
+      "unique_originals": 3,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 1408.7205341486454,
+      "mean_nearest_distance_m": 952.4080131949466,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "original_uniform",
+      "region": "tonga",
+      "arch": "resnet18_unet",
+      "train_seed": 2026,
+      "query_seed": 17,
+      "budget": 9,
+      "selected_patches": 9,
+      "unique_originals": 7,
+      "repeat_fraction": 0.2222222222222222,
+      "mean_pair_distance_m": 1895.1185120324642,
+      "mean_nearest_distance_m": 451.91737402665854,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "original_uniform",
+      "region": "tonga",
+      "arch": "resnet18_unet",
+      "train_seed": 2027,
+      "query_seed": 42,
+      "budget": 15,
+      "selected_patches": 15,
+      "unique_originals": 11,
+      "repeat_fraction": 0.2666666666666667,
+      "mean_pair_distance_m": 1986.5500065911142,
+      "mean_nearest_distance_m": 411.9558109330641,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "original_uniform",
+      "region": "tonga",
+      "arch": "resnet18_unet",
+      "train_seed": 2027,
+      "query_seed": 42,
+      "budget": 3,
+      "selected_patches": 3,
+      "unique_originals": 3,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 2535.902536396696,
+      "mean_nearest_distance_m": 2096.866723954438,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "original_uniform",
+      "region": "tonga",
+      "arch": "resnet18_unet",
+      "train_seed": 2027,
+      "query_seed": 42,
+      "budget": 9,
+      "selected_patches": 9,
+      "unique_originals": 6,
+      "repeat_fraction": 0.33333333333333337,
+      "mean_pair_distance_m": 1637.7203751842474,
+      "mean_nearest_distance_m": 572.053507178638,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "original_uniform",
+      "region": "tonga",
+      "arch": "resnet18_unet",
+      "train_seed": 2028,
+      "query_seed": 73,
+      "budget": 15,
+      "selected_patches": 15,
+      "unique_originals": 9,
+      "repeat_fraction": 0.4,
+      "mean_pair_distance_m": 1564.0604870597267,
+      "mean_nearest_distance_m": 256.6227808556371,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "original_uniform",
+      "region": "tonga",
+      "arch": "resnet18_unet",
+      "train_seed": 2028,
+      "query_seed": 73,
+      "budget": 3,
+      "selected_patches": 3,
+      "unique_originals": 3,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 1698.4180474860877,
+      "mean_nearest_distance_m": 1396.4614033385842,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "original_uniform",
+      "region": "tonga",
+      "arch": "resnet18_unet",
+      "train_seed": 2028,
+      "query_seed": 73,
+      "budget": 9,
+      "selected_patches": 9,
+      "unique_originals": 6,
+      "repeat_fraction": 0.33333333333333337,
+      "mean_pair_distance_m": 1691.9062218047525,
+      "mean_nearest_distance_m": 455.399985464556,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "original_quota",
+      "region": "svaneti",
+      "arch": "resnet18_unet",
+      "train_seed": 2026,
+      "query_seed": 17,
+      "budget": 10,
+      "selected_patches": 10,
+      "unique_originals": 10,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 17525.30898123254,
+      "mean_nearest_distance_m": 3159.60921378439,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "original_quota",
+      "region": "svaneti",
+      "arch": "resnet18_unet",
+      "train_seed": 2026,
+      "query_seed": 17,
+      "budget": 16,
+      "selected_patches": 16,
+      "unique_originals": 16,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 15478.337777938346,
+      "mean_nearest_distance_m": 2106.3244302941916,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "original_quota",
+      "region": "svaneti",
+      "arch": "resnet18_unet",
+      "train_seed": 2026,
+      "query_seed": 17,
+      "budget": 4,
+      "selected_patches": 4,
+      "unique_originals": 4,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 14656.22368050067,
+      "mean_nearest_distance_m": 3406.5669681567174,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "original_quota",
+      "region": "svaneti",
+      "arch": "resnet18_unet",
+      "train_seed": 2027,
+      "query_seed": 42,
+      "budget": 10,
+      "selected_patches": 10,
+      "unique_originals": 10,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 17964.416721352085,
+      "mean_nearest_distance_m": 3198.8483311097325,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "original_quota",
+      "region": "svaneti",
+      "arch": "resnet18_unet",
+      "train_seed": 2027,
+      "query_seed": 42,
+      "budget": 16,
+      "selected_patches": 16,
+      "unique_originals": 16,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 14422.604814137356,
+      "mean_nearest_distance_m": 2131.7686930622403,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "original_quota",
+      "region": "svaneti",
+      "arch": "resnet18_unet",
+      "train_seed": 2027,
+      "query_seed": 42,
+      "budget": 4,
+      "selected_patches": 4,
+      "unique_originals": 4,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 12188.909819767216,
+      "mean_nearest_distance_m": 6367.110265167313,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "original_quota",
+      "region": "svaneti",
+      "arch": "resnet18_unet",
+      "train_seed": 2028,
+      "query_seed": 73,
+      "budget": 10,
+      "selected_patches": 10,
+      "unique_originals": 10,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 10330.997257556472,
+      "mean_nearest_distance_m": 455.68352662832893,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "original_quota",
+      "region": "svaneti",
+      "arch": "resnet18_unet",
+      "train_seed": 2028,
+      "query_seed": 73,
+      "budget": 16,
+      "selected_patches": 16,
+      "unique_originals": 16,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 10911.497936755843,
+      "mean_nearest_distance_m": 407.0255824498833,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "original_quota",
+      "region": "svaneti",
+      "arch": "resnet18_unet",
+      "train_seed": 2028,
+      "query_seed": 73,
+      "budget": 4,
+      "selected_patches": 4,
+      "unique_originals": 4,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 12952.634835568753,
+      "mean_nearest_distance_m": 6577.407274464253,
+      "epsg": [
+        32638
+      ]
+    },
+    {
+      "method": "original_quota",
+      "region": "tonga",
+      "arch": "resnet18_unet",
+      "train_seed": 2026,
+      "query_seed": 17,
+      "budget": 15,
+      "selected_patches": 15,
+      "unique_originals": 15,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 2063.7324013576895,
+      "mean_nearest_distance_m": 569.4471976389506,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "original_quota",
+      "region": "tonga",
+      "arch": "resnet18_unet",
+      "train_seed": 2026,
+      "query_seed": 17,
+      "budget": 3,
+      "selected_patches": 3,
+      "unique_originals": 3,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 1552.675758518233,
+      "mean_nearest_distance_m": 929.0355216102129,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "original_quota",
+      "region": "tonga",
+      "arch": "resnet18_unet",
+      "train_seed": 2026,
+      "query_seed": 17,
+      "budget": 9,
+      "selected_patches": 9,
+      "unique_originals": 9,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 2099.6842162801067,
+      "mean_nearest_distance_m": 1039.7495454703121,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "original_quota",
+      "region": "tonga",
+      "arch": "resnet18_unet",
+      "train_seed": 2027,
+      "query_seed": 42,
+      "budget": 15,
+      "selected_patches": 15,
+      "unique_originals": 15,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 2138.5199383600843,
+      "mean_nearest_distance_m": 422.96229996472323,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "original_quota",
+      "region": "tonga",
+      "arch": "resnet18_unet",
+      "train_seed": 2027,
+      "query_seed": 42,
+      "budget": 3,
+      "selected_patches": 3,
+      "unique_originals": 3,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 3414.8305005286616,
+      "mean_nearest_distance_m": 2349.484972596593,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "original_quota",
+      "region": "tonga",
+      "arch": "resnet18_unet",
+      "train_seed": 2027,
+      "query_seed": 42,
+      "budget": 9,
+      "selected_patches": 9,
+      "unique_originals": 9,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 1966.2815127135063,
+      "mean_nearest_distance_m": 760.1516913107167,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "original_quota",
+      "region": "tonga",
+      "arch": "resnet18_unet",
+      "train_seed": 2028,
+      "query_seed": 73,
+      "budget": 15,
+      "selected_patches": 15,
+      "unique_originals": 15,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 2289.96756023513,
+      "mean_nearest_distance_m": 502.27016929710277,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "original_quota",
+      "region": "tonga",
+      "arch": "resnet18_unet",
+      "train_seed": 2028,
+      "query_seed": 73,
+      "budget": 3,
+      "selected_patches": 3,
+      "unique_originals": 3,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 1732.8532402721255,
+      "mean_nearest_distance_m": 1207.2254225487711,
+      "epsg": [
+        32701
+      ]
+    },
+    {
+      "method": "original_quota",
+      "region": "tonga",
+      "arch": "resnet18_unet",
+      "train_seed": 2028,
+      "query_seed": 73,
+      "budget": 9,
+      "selected_patches": 9,
+      "unique_originals": 9,
+      "repeat_fraction": 0.0,
+      "mean_pair_distance_m": 2229.7922472680057,
+      "mean_nearest_distance_m": 790.8778041135517,
+      "epsg": [
+        32701
+      ]
+    }
+  ],
+  "summary": [
+    {
+      "method": "original_quota",
+      "region": "svaneti",
+      "budget": 4,
+      "n": 3,
+      "unique_originals_mean": 4.0,
+      "repeat_fraction_mean": 0.0,
+      "mean_pair_distance_m": 13265.922778612214,
+      "mean_nearest_distance_m": 5450.361502596094
+    },
+    {
+      "method": "original_quota",
+      "region": "svaneti",
+      "budget": 10,
+      "n": 3,
+      "unique_originals_mean": 10.0,
+      "repeat_fraction_mean": 0.0,
+      "mean_pair_distance_m": 15273.574320047032,
+      "mean_nearest_distance_m": 2271.3803571741505
+    },
+    {
+      "method": "original_quota",
+      "region": "svaneti",
+      "budget": 16,
+      "n": 3,
+      "unique_originals_mean": 16.0,
+      "repeat_fraction_mean": 0.0,
+      "mean_pair_distance_m": 13604.146842943848,
+      "mean_nearest_distance_m": 1548.3729019354384
+    },
+    {
+      "method": "original_quota",
+      "region": "tonga",
+      "budget": 3,
+      "n": 3,
+      "unique_originals_mean": 3.0,
+      "repeat_fraction_mean": 0.0,
+      "mean_pair_distance_m": 2233.453166439673,
+      "mean_nearest_distance_m": 1495.2486389185258
+    },
+    {
+      "method": "original_quota",
+      "region": "tonga",
+      "budget": 9,
+      "n": 3,
+      "unique_originals_mean": 9.0,
+      "repeat_fraction_mean": 0.0,
+      "mean_pair_distance_m": 2098.5859920872063,
+      "mean_nearest_distance_m": 863.5930136315269
+    },
+    {
+      "method": "original_quota",
+      "region": "tonga",
+      "budget": 15,
+      "n": 3,
+      "unique_originals_mean": 15.0,
+      "repeat_fraction_mean": 0.0,
+      "mean_pair_distance_m": 2164.0732999843012,
+      "mean_nearest_distance_m": 498.22655563359217
+    },
+    {
+      "method": "original_uniform",
+      "region": "svaneti",
+      "budget": 4,
+      "n": 3,
+      "unique_originals_mean": 3.6666666666666665,
+      "repeat_fraction_mean": 0.08333333333333333,
+      "mean_pair_distance_m": 8541.402932534098,
+      "mean_nearest_distance_m": 4398.128079966226
+    },
+    {
+      "method": "original_uniform",
+      "region": "svaneti",
+      "budget": 10,
+      "n": 3,
+      "unique_originals_mean": 7.0,
+      "repeat_fraction_mean": 0.30000000000000004,
+      "mean_pair_distance_m": 9110.194807800151,
+      "mean_nearest_distance_m": 1295.1591999630411
+    },
+    {
+      "method": "original_uniform",
+      "region": "svaneti",
+      "budget": 16,
+      "n": 3,
+      "unique_originals_mean": 10.333333333333334,
+      "repeat_fraction_mean": 0.3541666666666667,
+      "mean_pair_distance_m": 8980.103173194568,
+      "mean_nearest_distance_m": 652.4976828302813
+    },
+    {
+      "method": "original_uniform",
+      "region": "tonga",
+      "budget": 3,
+      "n": 3,
+      "unique_originals_mean": 3.0,
+      "repeat_fraction_mean": 0.0,
+      "mean_pair_distance_m": 1881.0137060104764,
+      "mean_nearest_distance_m": 1481.912046829323
+    },
+    {
+      "method": "original_uniform",
+      "region": "tonga",
+      "budget": 9,
+      "n": 3,
+      "unique_originals_mean": 6.333333333333333,
+      "repeat_fraction_mean": 0.29629629629629634,
+      "mean_pair_distance_m": 1741.5817030071546,
+      "mean_nearest_distance_m": 493.1236222232842
+    },
+    {
+      "method": "original_uniform",
+      "region": "tonga",
+      "budget": 15,
+      "n": 3,
+      "unique_originals_mean": 10.0,
+      "repeat_fraction_mean": 0.3333333333333333,
+      "mean_pair_distance_m": 1834.4897663480679,
+      "mean_nearest_distance_m": 356.68342534909647
+    },
+    {
+      "method": "uniform_patch",
+      "region": "svaneti",
+      "budget": 4,
+      "n": 3,
+      "unique_originals_mean": 4.0,
+      "repeat_fraction_mean": 0.0,
+      "mean_pair_distance_m": 10765.803729676327,
+      "mean_nearest_distance_m": 4742.728849389571
+    },
+    {
+      "method": "uniform_patch",
+      "region": "svaneti",
+      "budget": 10,
+      "n": 3,
+      "unique_originals_mean": 8.333333333333334,
+      "repeat_fraction_mean": 0.16666666666666663,
+      "mean_pair_distance_m": 15032.871808655587,
+      "mean_nearest_distance_m": 2196.677785924848
+    },
+    {
+      "method": "uniform_patch",
+      "region": "svaneti",
+      "budget": 16,
+      "n": 3,
+      "unique_originals_mean": 11.666666666666666,
+      "repeat_fraction_mean": 0.2708333333333333,
+      "mean_pair_distance_m": 17934.506564462758,
+      "mean_nearest_distance_m": 890.7713917129499
+    },
+    {
+      "method": "uniform_patch",
+      "region": "tonga",
+      "budget": 3,
+      "n": 3,
+      "unique_originals_mean": 2.6666666666666665,
+      "repeat_fraction_mean": 0.11111111111111112,
+      "mean_pair_distance_m": 2122.340496040041,
+      "mean_nearest_distance_m": 1428.4419029311293
+    },
+    {
+      "method": "uniform_patch",
+      "region": "tonga",
+      "budget": 9,
+      "n": 3,
+      "unique_originals_mean": 6.666666666666667,
+      "repeat_fraction_mean": 0.25925925925925924,
+      "mean_pair_distance_m": 2209.6998132700605,
+      "mean_nearest_distance_m": 512.7235601151566
+    },
+    {
+      "method": "uniform_patch",
+      "region": "tonga",
+      "budget": 15,
+      "n": 3,
+      "unique_originals_mean": 9.666666666666666,
+      "repeat_fraction_mean": 0.3555555555555556,
+      "mean_pair_distance_m": 2201.8980613922463,
+      "mean_nearest_distance_m": 292.1347123201431
+    }
+  ]
+}

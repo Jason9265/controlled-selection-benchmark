@@ -1,0 +1,12 @@
+{
+  "protocol": "v4f-oem-confirmation-fixed-trainer-uniform-random-20260930",
+  "manifest": "confirmation/manifest.json",
+  "architectures": ["resnet18_unet", "segformer_b0"],
+  "seed_pairs": [[2026, 17], [2027, 42], [2028, 73]],
+  "variants": {"resnet18_unet": {"name": "lr_0p01", "lr_multiplier": 0.01, "freeze_encoder": false, "anchor_lambda": 0.0}, "segformer_b0": {"name": "lr_0p1", "lr_multiplier": 0.1, "freeze_encoder": false, "anchor_lambda": 0.0}},
+  "budget_fractions": [0.01, 0.03, 0.05],
+  "strategy": "uniform_random_patch",
+  "adaptation": {"steps": 300, "source_target_batch": [4, 4]},
+  "evaluation_policy": "all 36 adaptation checkpoints must exist before any confirmation test-label evaluation",
+  "status": "frozen after development selection receipt"
+}

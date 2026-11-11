@@ -1,0 +1,558 @@
+{
+  "generated_at": 1790679847.2602177,
+  "analysis_scope": "Post-completion descriptive interpretation, not model selection or new confirmatory hypothesis tests",
+  "source_adaptation": [
+    {
+      "dataset": "oem",
+      "architecture": "resnet18_unet",
+      "region": "daressalaam",
+      "source_only": {
+        "mean": 0.36706819593250417,
+        "sample_sd": 0.012201161657857527,
+        "values": [
+          0.35470557932586155,
+          0.36739778408026036,
+          0.3791012243913905
+        ],
+        "n": 3
+      },
+      "auc_minus_source_mean_range_pp": [
+        -1.207167033866563,
+        0.7991626679127062
+      ],
+      "budget_means_above_source": 19,
+      "budget_mean_count": 36
+    },
+    {
+      "dataset": "oem",
+      "architecture": "resnet18_unet",
+      "region": "zanzibar",
+      "source_only": {
+        "mean": 0.2323791890170782,
+        "sample_sd": 0.016985405719644405,
+        "values": [
+          0.21308600596115138,
+          0.2450809111705308,
+          0.2389706499195525
+        ],
+        "n": 3
+      },
+      "auc_minus_source_mean_range_pp": [
+        3.4534542259160803,
+        9.70251083462384
+      ],
+      "budget_means_above_source": 36,
+      "budget_mean_count": 36
+    },
+    {
+      "dataset": "oem",
+      "architecture": "resnet18_unet",
+      "region": "coxsbazar",
+      "source_only": {
+        "mean": 0.18537852753320525,
+        "sample_sd": 0.009447202279245594,
+        "values": [
+          0.17732495744159582,
+          0.18303313575396551,
+          0.19577748940405443
+        ],
+        "n": 3
+      },
+      "auc_minus_source_mean_range_pp": [
+        8.144289668988023,
+        14.505764364353421
+      ],
+      "budget_means_above_source": 36,
+      "budget_mean_count": 36
+    },
+    {
+      "dataset": "oem",
+      "architecture": "segformer_b0",
+      "region": "daressalaam",
+      "source_only": {
+        "mean": 0.39615554957179094,
+        "sample_sd": 0.008094447385326137,
+        "values": [
+          0.39765348590994265,
+          0.40339640108271696,
+          0.38741676172271305
+        ],
+        "n": 3
+      },
+      "auc_minus_source_mean_range_pp": [
+        -0.0950386072048226,
+        2.6852554636334958
+      ],
+      "budget_means_above_source": 27,
+      "budget_mean_count": 36
+    },
+    {
+      "dataset": "oem",
+      "architecture": "segformer_b0",
+      "region": "zanzibar",
+      "source_only": {
+        "mean": 0.2981386194507493,
+        "sample_sd": 0.033651617947408015,
+        "values": [
+          0.32626145575106125,
+          0.3072991940940145,
+          0.26085520850717214
+        ],
+        "n": 3
+      },
+      "auc_minus_source_mean_range_pp": [
+        3.933526975785578,
+        13.763795580258531
+      ],
+      "budget_means_above_source": 36,
+      "budget_mean_count": 36
+    },
+    {
+      "dataset": "oem",
+      "architecture": "segformer_b0",
+      "region": "coxsbazar",
+      "source_only": {
+        "mean": 0.23395799072013104,
+        "sample_sd": 0.00818322092121336,
+        "values": [
+          0.24079907538970358,
+          0.2361823376715212,
+          0.22489255909916842
+        ],
+        "n": 3
+      },
+      "auc_minus_source_mean_range_pp": [
+        10.924184974487897,
+        17.920627985968913
+      ],
+      "budget_means_above_source": 36,
+      "budget_mean_count": 36
+    },
+    {
+      "dataset": "loveda",
+      "architecture": "resnet18_unet",
+      "region": "urban",
+      "source_only": {
+        "mean": 0.43787510460904394,
+        "sample_sd": 0.018941323603154942,
+        "values": [
+          0.4393935035476959,
+          0.4560115286630834,
+          0.4182202816163526
+        ],
+        "n": 3
+      },
+      "auc_minus_source_mean_range_pp": [
+        -5.31319488315512,
+        -3.1581761411142937
+      ],
+      "budget_means_above_source": 0,
+      "budget_mean_count": 27
+    },
+    {
+      "dataset": "loveda",
+      "architecture": "segformer_b0",
+      "region": "urban",
+      "source_only": {
+        "mean": 0.42112810782976656,
+        "sample_sd": 0.03403679084458537,
+        "values": [
+          0.3854530718680033,
+          0.4246837496088591,
+          0.45324750201243713
+        ],
+        "n": 3
+      },
+      "auc_minus_source_mean_range_pp": [
+        0.23153773790266508,
+        1.531518454270664
+      ],
+      "budget_means_above_source": 24,
+      "budget_mean_count": 27
+    }
+  ],
+  "oem_component_auc": [
+    {
+      "architecture": "resnet18_unet",
+      "region": "daressalaam",
+      "comparisons": {
+        "geo_coverage-geo_entropy": {
+          "mean_pp": 0.49838288874124453,
+          "sd_pp": 1.377432911452511,
+          "values_pp": [
+            -0.11231420690360205,
+            2.075583715163959,
+            -0.4681208420366234
+          ],
+          "positive_seeds": 1
+        },
+        "geo_coverage-coverage": {
+          "mean_pp": 1.2648981245329631,
+          "sd_pp": 1.3693352087376895,
+          "values_pp": [
+            0.5339247418758852,
+            2.8446077563768934,
+            0.4161618753461105
+          ],
+          "positive_seeds": 3
+        },
+        "geo_coverage-entropy": {
+          "mean_pp": 1.867387466105889,
+          "sd_pp": 2.0466346799205404,
+          "values_pp": [
+            3.0272018379663255,
+            3.0706898809161274,
+            -0.49572932056478614
+          ],
+          "positive_seeds": 2
+        },
+        "joint_proxy-entropy": {
+          "mean_pp": 1.3762672670806275,
+          "sd_pp": 1.9317400742700357,
+          "values_pp": [
+            3.1750546603626417,
+            1.6191925494765946,
+            -0.6654454085973538
+          ],
+          "positive_seeds": 2
+        },
+        "joint_proxy-quota_entropy": {
+          "mean_pp": -0.30554283165470003,
+          "sd_pp": 0.8560434999775917,
+          "values_pp": [
+            -0.49263488248738607,
+            -1.052566789785414,
+            0.6285731773087
+          ],
+          "positive_seeds": 1
+        }
+      }
+    },
+    {
+      "architecture": "resnet18_unet",
+      "region": "zanzibar",
+      "comparisons": {
+        "geo_coverage-geo_entropy": {
+          "mean_pp": 0.9533905022018451,
+          "sd_pp": 2.6070073683581905,
+          "values_pp": [
+            3.906742390797385,
+            -1.0280347712393778,
+            -0.018536112952471928
+          ],
+          "positive_seeds": 1
+        },
+        "geo_coverage-coverage": {
+          "mean_pp": 3.3902878872346816,
+          "sd_pp": 2.0572152938509696,
+          "values_pp": [
+            3.314854578364529,
+            5.484182337286908,
+            1.3718267460526068
+          ],
+          "positive_seeds": 3
+        },
+        "geo_coverage-entropy": {
+          "mean_pp": 1.0568119999266434,
+          "sd_pp": 2.342637103961957,
+          "values_pp": [
+            2.112716812540316,
+            2.685650582770988,
+            -1.6279313955313734
+          ],
+          "positive_seeds": 2
+        },
+        "joint_proxy-entropy": {
+          "mean_pp": -2.2788140792603233,
+          "sd_pp": 3.174519102026999,
+          "values_pp": [
+            -5.560777652951265,
+            -2.0517303986653133,
+            0.776065813835608
+          ],
+          "positive_seeds": 1
+        },
+        "joint_proxy-quota_entropy": {
+          "mean_pp": -2.1936535821607723,
+          "sd_pp": 3.832546420448182,
+          "values_pp": [
+            -4.715119891470448,
+            -4.082534340853466,
+            2.2166934858415974
+          ],
+          "positive_seeds": 1
+        }
+      }
+    },
+    {
+      "architecture": "resnet18_unet",
+      "region": "coxsbazar",
+      "comparisons": {
+        "geo_coverage-geo_entropy": {
+          "mean_pp": -0.6642790506136086,
+          "sd_pp": 3.320153846919877,
+          "values_pp": [
+            -2.232271820067205,
+            3.1494814459580023,
+            -2.910046777731623
+          ],
+          "positive_seeds": 1
+        },
+        "geo_coverage-coverage": {
+          "mean_pp": -1.354780499513264,
+          "sd_pp": 1.690273671980066,
+          "values_pp": [
+            -0.7201138817296227,
+            -3.270526708563326,
+            -0.07370090824684317
+          ],
+          "positive_seeds": 0
+        },
+        "geo_coverage-entropy": {
+          "mean_pp": -2.5751923074013137,
+          "sd_pp": 1.965533630627501,
+          "values_pp": [
+            -3.9934302469991856,
+            -0.331546272627109,
+            -3.400600402577647
+          ],
+          "positive_seeds": 0
+        },
+        "joint_proxy-entropy": {
+          "mean_pp": 2.291106133866616,
+          "sd_pp": 3.862330513407467,
+          "values_pp": [
+            -1.6169397977592703,
+            6.106037410700055,
+            2.384220788659064
+          ],
+          "positive_seeds": 2
+        },
+        "joint_proxy-quota_entropy": {
+          "mean_pp": -0.2259551662505892,
+          "sd_pp": 1.6636407575885863,
+          "values_pp": [
+            0.8426523663472851,
+            0.6222239882369252,
+            -2.142741853335978
+          ],
+          "positive_seeds": 2
+        }
+      }
+    },
+    {
+      "architecture": "segformer_b0",
+      "region": "daressalaam",
+      "comparisons": {
+        "geo_coverage-geo_entropy": {
+          "mean_pp": -0.7791807847870867,
+          "sd_pp": 1.4999914991751373,
+          "values_pp": [
+            0.634738185244943,
+            -0.619768896063555,
+            -2.3525116435426483
+          ],
+          "positive_seeds": 1
+        },
+        "geo_coverage-coverage": {
+          "mean_pp": -0.09597954641518507,
+          "sd_pp": 0.5049021380757639,
+          "values_pp": [
+            0.4058975429835632,
+            -0.08998286700941938,
+            -0.603853315219699
+          ],
+          "positive_seeds": 1
+        },
+        "geo_coverage-entropy": {
+          "mean_pp": -0.8250569962547194,
+          "sd_pp": 1.158272242173585,
+          "values_pp": [
+            0.5068647340832455,
+            -1.5962935242331333,
+            -1.3857421986142704
+          ],
+          "positive_seeds": 1
+        },
+        "joint_proxy-entropy": {
+          "mean_pp": -1.4529933059240479,
+          "sd_pp": 0.7740091107790844,
+          "values_pp": [
+            -0.6452806819436385,
+            -2.188195873915494,
+            -1.525503361913011
+          ],
+          "positive_seeds": 0
+        },
+        "joint_proxy-quota_entropy": {
+          "mean_pp": -0.4072716603986337,
+          "sd_pp": 1.5251289424386978,
+          "values_pp": [
+            0.8430557445986253,
+            0.041589462839458635,
+            -2.106460188633985
+          ],
+          "positive_seeds": 2
+        }
+      }
+    },
+    {
+      "architecture": "segformer_b0",
+      "region": "zanzibar",
+      "comparisons": {
+        "geo_coverage-geo_entropy": {
+          "mean_pp": 1.0759269996348002,
+          "sd_pp": 2.9698883849408224,
+          "values_pp": [
+            -1.981045328555242,
+            1.2585204646201664,
+            3.950305862839476
+          ],
+          "positive_seeds": 2
+        },
+        "geo_coverage-coverage": {
+          "mean_pp": 0.006675938562361594,
+          "sd_pp": 0.33369078241267763,
+          "values_pp": [
+            0.353989524948628,
+            -0.022483474720902397,
+            -0.31147823454064083
+          ],
+          "positive_seeds": 1
+        },
+        "geo_coverage-entropy": {
+          "mean_pp": 1.0823083032888907,
+          "sd_pp": 3.2851581877508735,
+          "values_pp": [
+            -2.529527601542725,
+            1.8841120361193509,
+            3.892340475290046
+          ],
+          "positive_seeds": 2
+        },
+        "joint_proxy-entropy": {
+          "mean_pp": 2.506093535224772,
+          "sd_pp": 5.282118638697252,
+          "values_pp": [
+            -2.3173868559634156,
+            1.6849859150161794,
+            8.150681546621552
+          ],
+          "positive_seeds": 2
+        },
+        "joint_proxy-quota_entropy": {
+          "mean_pp": 2.775855227209121,
+          "sd_pp": 4.5956684337920395,
+          "values_pp": [
+            -2.5252925029559115,
+            5.217759711267089,
+            5.6350984733161855
+          ],
+          "positive_seeds": 2
+        }
+      }
+    },
+    {
+      "architecture": "segformer_b0",
+      "region": "coxsbazar",
+      "comparisons": {
+        "geo_coverage-geo_entropy": {
+          "mean_pp": 1.501386161376476,
+          "sd_pp": 1.9785544732264115,
+          "values_pp": [
+            0.3610402861011275,
+            0.3570952565604468,
+            3.786022941467854
+          ],
+          "positive_seeds": 3
+        },
+        "geo_coverage-coverage": {
+          "mean_pp": 0.15335721850820253,
+          "sd_pp": 0.9703955902787843,
+          "values_pp": [
+            -0.5949549324412717,
+            -0.19476732682073283,
+            1.2497939147866122
+          ],
+          "positive_seeds": 1
+        },
+        "geo_coverage-entropy": {
+          "mean_pp": 0.8963854343828181,
+          "sd_pp": 0.9091077780659498,
+          "values_pp": [
+            1.6377355959064033,
+            1.1693538152103777,
+            -0.11793310796832657
+          ],
+          "positive_seeds": 2
+        },
+        "joint_proxy-entropy": {
+          "mean_pp": 2.755878644628751,
+          "sd_pp": 2.610657644011361,
+          "values_pp": [
+            4.784543038479305,
+            3.672588631882051,
+            -0.18949573647510376
+          ],
+          "positive_seeds": 2
+        },
+        "joint_proxy-quota_entropy": {
+          "mean_pp": 1.7250286499548424,
+          "sd_pp": 2.295932998332103,
+          "values_pp": [
+            3.9969908452736624,
+            1.7722420291722496,
+            -0.5941469245813846
+          ],
+          "positive_seeds": 2
+        }
+      }
+    }
+  ],
+  "raw_result_sha256": {
+    "oem/resnet18_unet": "d8a6b61b3f1c8fda4f2bf2c09d3fd7e3be0832da9eb89642ac7de0bb7c13ed1e",
+    "oem/segformer_b0": "9149ba7ad9e5e603f55ee79098df29d77d3d6807a022d7c44ca2ae9da45f7e0b",
+    "loveda/resnet18_unet": "89ff655c0a6d83716c3446e99fe82aa57df12351eb434cd99d2201c80150fce9",
+    "loveda/segformer_b0": "84f42b39c239139f0f345a66eaebb4a392d11a6ea398e73e9635555b1eb0a3d3"
+  },
+  "evaluation_counts": {
+    "oem/resnet18_unet": {
+      "adaptations": 324,
+      "source_only": 12
+    },
+    "oem/segformer_b0": {
+      "adaptations": 324,
+      "source_only": 12
+    },
+    "loveda/resnet18_unet": {
+      "adaptations": 81,
+      "source_only": 3
+    },
+    "loveda/segformer_b0": {
+      "adaptations": 81,
+      "source_only": 3
+    }
+  },
+  "architecture_comparison": {
+    "oem": {
+      "mean_difference_range_pp": [
+        2.0145340888111485,
+        12.611251428582554
+      ],
+      "positive_mean_cells": 36,
+      "mean_cells": 36,
+      "positive_paired_values": 108,
+      "paired_values": 108
+    },
+    "loveda": {
+      "mean_difference_range_pp": [
+        2.675279559144017,
+        4.137873530741354
+      ],
+      "positive_mean_cells": 9,
+      "mean_cells": 9,
+      "positive_paired_values": 20,
+      "paired_values": 27
+    }
+  }
+}

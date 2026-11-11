@@ -1,0 +1,430 @@
+{
+  "pass": true,
+  "random_controls": {
+    "expected": 54,
+    "completed": 54
+  },
+  "ripu_acquisition_only": {
+    "expected": 18,
+    "completed": 18
+  },
+  "total_blind_holdout_scores": 72,
+  "receipt_static_audits": [
+    {
+      "file": "control_receipts.json",
+      "expected": 54,
+      "actual": 54,
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "ripu_receipts.json",
+      "expected": 18,
+      "actual": 18,
+      "pass": true,
+      "errors": []
+    }
+  ],
+  "representative_replay": {
+    "pass": true,
+    "receipt_index": 0,
+    "receipt_file": "ripu_receipts.json",
+    "source_validation_only": true,
+    "target_holdout_accessed": false,
+    "original_model_sha256": "c334660a7f5ccb6552ad3c0fb80d05ccc847723e17f09bf48288e833f69d0a67",
+    "replay_model_sha256": "c334660a7f5ccb6552ad3c0fb80d05ccc847723e17f09bf48288e833f69d0a67",
+    "original_source_validation_miou": 0.7041921593578495,
+    "replay_source_validation_miou": 0.7041921593578495
+  },
+  "source_diagnostics": {
+    "pass": true,
+    "expected": 6,
+    "completed": 6,
+    "errors": [],
+    "records": [
+      {
+        "status": "complete",
+        "direction": "potsdam_to_vaihingen",
+        "seed": 2026,
+        "selection_seed": 17,
+        "source_selected_crops": 34,
+        "before_source_val_miou": 0.7156595915908767,
+        "after_source_val_miou": 0.7169315291157922,
+        "final_loss": 0.1644703447818756,
+        "finite_loss": true,
+        "source_checkpoint_sha256": "7f95dbcac9977f990255133cb2ab867cec764e10f303f420b4debf4731c114f7",
+        "model_sha256": "4840acfeb2388eb3787002170dd8c143b1c2098fa46136b275d152c3749e069d",
+        "config_sha256": "a002462a2c6f3f8a3648e4474f89095cba63a9743c66c6222c0f1c43ff747d26",
+        "environment": {
+          "torch": "2.14.0+cu130",
+          "cuda": "13.0",
+          "cudnn": 92400,
+          "deterministic_cudnn": true,
+          "deterministic_algorithms_requested": true,
+          "deterministic_algorithms_enforced": false
+        },
+        "target_labels_read": false,
+        "target_holdout_labels_read": false
+      },
+      {
+        "status": "complete",
+        "direction": "potsdam_to_vaihingen",
+        "seed": 2027,
+        "selection_seed": 42,
+        "source_selected_crops": 34,
+        "before_source_val_miou": 0.7264271664450646,
+        "after_source_val_miou": 0.7229425370629327,
+        "final_loss": 0.37172526121139526,
+        "finite_loss": true,
+        "source_checkpoint_sha256": "532431f5f5e97fb2bcf1a9b7bd07c1898e31e0727fab307facfb2b57e53f190e",
+        "model_sha256": "f2c76521628bd595ddfcc4da6b48d62bf5465f347c4fa486005400e8129f0965",
+        "config_sha256": "a002462a2c6f3f8a3648e4474f89095cba63a9743c66c6222c0f1c43ff747d26",
+        "environment": {
+          "torch": "2.14.0+cu130",
+          "cuda": "13.0",
+          "cudnn": 92400,
+          "deterministic_cudnn": true,
+          "deterministic_algorithms_requested": true,
+          "deterministic_algorithms_enforced": false
+        },
+        "target_labels_read": false,
+        "target_holdout_labels_read": false
+      },
+      {
+        "status": "complete",
+        "direction": "potsdam_to_vaihingen",
+        "seed": 2028,
+        "selection_seed": 73,
+        "source_selected_crops": 34,
+        "before_source_val_miou": 0.7213415685613702,
+        "after_source_val_miou": 0.6757769281343794,
+        "final_loss": 0.2143409550189972,
+        "finite_loss": true,
+        "source_checkpoint_sha256": "f62390f5012a3088e9e453cc99b4e0c09ab8e426e63287afc0300619c31b4f79",
+        "model_sha256": "c52b8309ffadeba110dc6f47d820513483fe8e3aebb7e00c1ef1eb3abb6c5ec6",
+        "config_sha256": "a002462a2c6f3f8a3648e4474f89095cba63a9743c66c6222c0f1c43ff747d26",
+        "environment": {
+          "torch": "2.14.0+cu130",
+          "cuda": "13.0",
+          "cudnn": 92400,
+          "deterministic_cudnn": true,
+          "deterministic_algorithms_requested": true,
+          "deterministic_algorithms_enforced": false
+        },
+        "target_labels_read": false,
+        "target_holdout_labels_read": false
+      },
+      {
+        "status": "complete",
+        "direction": "vaihingen_to_potsdam",
+        "seed": 2026,
+        "selection_seed": 17,
+        "source_selected_crops": 4,
+        "before_source_val_miou": 0.608782894469331,
+        "after_source_val_miou": 0.5709379489864799,
+        "final_loss": 0.1551526039838791,
+        "finite_loss": true,
+        "source_checkpoint_sha256": "008adb40954364036824572cb1ae4ed5576f3fabea9cfb26ba310185be7efb64",
+        "model_sha256": "d25d0282ad8a2824ea95c521c6f318697efc43df3aa38f8ad12dc1c1b3049a52",
+        "config_sha256": "a002462a2c6f3f8a3648e4474f89095cba63a9743c66c6222c0f1c43ff747d26",
+        "environment": {
+          "torch": "2.14.0+cu130",
+          "cuda": "13.0",
+          "cudnn": 92400,
+          "deterministic_cudnn": true,
+          "deterministic_algorithms_requested": true,
+          "deterministic_algorithms_enforced": false
+        },
+        "target_labels_read": false,
+        "target_holdout_labels_read": false
+      },
+      {
+        "status": "complete",
+        "direction": "vaihingen_to_potsdam",
+        "seed": 2027,
+        "selection_seed": 42,
+        "source_selected_crops": 4,
+        "before_source_val_miou": 0.6143825813847518,
+        "after_source_val_miou": 0.5682998276187198,
+        "final_loss": 0.14965525269508362,
+        "finite_loss": true,
+        "source_checkpoint_sha256": "29fadd2cc2c04ac137463942428b39feb57543878336b0f09a48435dcb5e1d8e",
+        "model_sha256": "0faa6194f39454782a5dc83270b948ee30be91c4fca4555cfd45467823d82468",
+        "config_sha256": "a002462a2c6f3f8a3648e4474f89095cba63a9743c66c6222c0f1c43ff747d26",
+        "environment": {
+          "torch": "2.14.0+cu130",
+          "cuda": "13.0",
+          "cudnn": 92400,
+          "deterministic_cudnn": true,
+          "deterministic_algorithms_requested": true,
+          "deterministic_algorithms_enforced": false
+        },
+        "target_labels_read": false,
+        "target_holdout_labels_read": false
+      },
+      {
+        "status": "complete",
+        "direction": "vaihingen_to_potsdam",
+        "seed": 2028,
+        "selection_seed": 73,
+        "source_selected_crops": 4,
+        "before_source_val_miou": 0.6050741750936904,
+        "after_source_val_miou": 0.5657322981257726,
+        "final_loss": 0.17442956566810608,
+        "finite_loss": true,
+        "source_checkpoint_sha256": "7bbe48c24302b0f63e9acea6551fd27aae59834f04649be0608fce311fe6463e",
+        "model_sha256": "13167422065bea93ef9102b075e132a965188b1086c8e27328be8327d111d698",
+        "config_sha256": "a002462a2c6f3f8a3648e4474f89095cba63a9743c66c6222c0f1c43ff747d26",
+        "environment": {
+          "torch": "2.14.0+cu130",
+          "cuda": "13.0",
+          "cudnn": 92400,
+          "deterministic_cudnn": true,
+          "deterministic_algorithms_requested": true,
+          "deterministic_algorithms_enforced": false
+        },
+        "target_labels_read": false,
+        "target_holdout_labels_read": false
+      }
+    ],
+    "scope": "Source-train/source-validation-only diagnostic. It is a stability audit, not a hyperparameter selection gate."
+  },
+  "paired_comparisons": [
+    {
+      "direction": "potsdam_to_vaihingen",
+      "budget_fraction": 0.01,
+      "control_method": "patch_uniform",
+      "n": 3,
+      "ripu_minus_control_mean": -0.011251396980051046,
+      "ripu_minus_control_sd": 0.021889749355179965,
+      "paired_differences": [
+        0.006457318734190531,
+        -0.0357250431579223,
+        -0.004486466516421372
+      ]
+    },
+    {
+      "direction": "potsdam_to_vaihingen",
+      "budget_fraction": 0.01,
+      "control_method": "original_uniform",
+      "n": 3,
+      "ripu_minus_control_mean": -0.011664800901545555,
+      "ripu_minus_control_sd": 0.022956196548116762,
+      "paired_differences": [
+        -0.027333431847503253,
+        -0.022346896073324518,
+        0.01468592521619111
+      ]
+    },
+    {
+      "direction": "potsdam_to_vaihingen",
+      "budget_fraction": 0.01,
+      "control_method": "original_quota",
+      "n": 3,
+      "ripu_minus_control_mean": -0.02405938878249005,
+      "ripu_minus_control_sd": 0.003428998534123446,
+      "paired_differences": [
+        -0.026944943348962913,
+        -0.02026858848404456,
+        -0.02496463451446268
+      ]
+    },
+    {
+      "direction": "potsdam_to_vaihingen",
+      "budget_fraction": 0.03,
+      "control_method": "patch_uniform",
+      "n": 3,
+      "ripu_minus_control_mean": -0.015569590298492031,
+      "ripu_minus_control_sd": 0.014356902723861649,
+      "paired_differences": [
+        -0.004483676640447853,
+        -0.031787168647606445,
+        -0.010437925607421794
+      ]
+    },
+    {
+      "direction": "potsdam_to_vaihingen",
+      "budget_fraction": 0.03,
+      "control_method": "original_uniform",
+      "n": 3,
+      "ripu_minus_control_mean": -0.012692798654026505,
+      "ripu_minus_control_sd": 0.007717888285487907,
+      "paired_differences": [
+        -0.017702739145309898,
+        -0.01657070955976314,
+        -0.0038049472570064746
+      ]
+    },
+    {
+      "direction": "potsdam_to_vaihingen",
+      "budget_fraction": 0.03,
+      "control_method": "original_quota",
+      "n": 3,
+      "ripu_minus_control_mean": -0.02353545925957773,
+      "ripu_minus_control_sd": 0.02771667418854818,
+      "paired_differences": [
+        -0.03950014103912386,
+        -0.03957520674347659,
+        0.00846897000386726
+      ]
+    },
+    {
+      "direction": "potsdam_to_vaihingen",
+      "budget_fraction": 0.05,
+      "control_method": "patch_uniform",
+      "n": 3,
+      "ripu_minus_control_mean": -0.008281522501954242,
+      "ripu_minus_control_sd": 0.014856431128418644,
+      "paired_differences": [
+        0.0020488839759370547,
+        -0.0015860523884041466,
+        -0.025307399093395633
+      ]
+    },
+    {
+      "direction": "potsdam_to_vaihingen",
+      "budget_fraction": 0.05,
+      "control_method": "original_uniform",
+      "n": 3,
+      "ripu_minus_control_mean": -0.0071250966371267,
+      "ripu_minus_control_sd": 0.008389789843093451,
+      "paired_differences": [
+        0.0024858573688418817,
+        -0.010876654320313983,
+        -0.012984492959908
+      ]
+    },
+    {
+      "direction": "potsdam_to_vaihingen",
+      "budget_fraction": 0.05,
+      "control_method": "original_quota",
+      "n": 3,
+      "ripu_minus_control_mean": -0.02189827458060743,
+      "ripu_minus_control_sd": 0.00817301915277359,
+      "paired_differences": [
+        -0.030487493462547977,
+        -0.020989995206271372,
+        -0.014217335073002935
+      ]
+    },
+    {
+      "direction": "vaihingen_to_potsdam",
+      "budget_fraction": 0.01,
+      "control_method": "patch_uniform",
+      "n": 3,
+      "ripu_minus_control_mean": -0.0009722362739666979,
+      "ripu_minus_control_sd": 0.028494217201475703,
+      "paired_differences": [
+        -0.02963133200530832,
+        -0.000639566196617869,
+        0.027354189380026095
+      ]
+    },
+    {
+      "direction": "vaihingen_to_potsdam",
+      "budget_fraction": 0.01,
+      "control_method": "original_uniform",
+      "n": 3,
+      "ripu_minus_control_mean": -0.009821113920971403,
+      "ripu_minus_control_sd": 0.03021987270069323,
+      "paired_differences": [
+        -0.044658397932853755,
+        0.005861602380139996,
+        0.00933345378979955
+      ]
+    },
+    {
+      "direction": "vaihingen_to_potsdam",
+      "budget_fraction": 0.01,
+      "control_method": "original_quota",
+      "n": 3,
+      "ripu_minus_control_mean": -0.017098803247082756,
+      "ripu_minus_control_sd": 0.03826180897921136,
+      "paired_differences": [
+        -0.05567459407108988,
+        -0.016462913037965432,
+        0.020841097367807038
+      ]
+    },
+    {
+      "direction": "vaihingen_to_potsdam",
+      "budget_fraction": 0.03,
+      "control_method": "patch_uniform",
+      "n": 3,
+      "ripu_minus_control_mean": -0.022777469199171268,
+      "ripu_minus_control_sd": 0.010655639787619353,
+      "paired_differences": [
+        -0.014096170403855468,
+        -0.03466920777014271,
+        -0.019567029423515625
+      ]
+    },
+    {
+      "direction": "vaihingen_to_potsdam",
+      "budget_fraction": 0.03,
+      "control_method": "original_uniform",
+      "n": 3,
+      "ripu_minus_control_mean": -0.002445768127242842,
+      "ripu_minus_control_sd": 0.019283578225231548,
+      "paired_differences": [
+        0.019103009088241696,
+        -0.018077526347922257,
+        -0.008362787122047965
+      ]
+    },
+    {
+      "direction": "vaihingen_to_potsdam",
+      "budget_fraction": 0.03,
+      "control_method": "original_quota",
+      "n": 3,
+      "ripu_minus_control_mean": -0.012032143661222405,
+      "ripu_minus_control_sd": 0.011578141070922783,
+      "paired_differences": [
+        0.001058076772513905,
+        -0.016223969491253043,
+        -0.020930538264928078
+      ]
+    },
+    {
+      "direction": "vaihingen_to_potsdam",
+      "budget_fraction": 0.05,
+      "control_method": "patch_uniform",
+      "n": 3,
+      "ripu_minus_control_mean": 0.0008863344773262597,
+      "ripu_minus_control_sd": 0.006282640163355835,
+      "paired_differences": [
+        0.0044344624332833815,
+        -0.006367661838585725,
+        0.004592202837281123
+      ]
+    },
+    {
+      "direction": "vaihingen_to_potsdam",
+      "budget_fraction": 0.05,
+      "control_method": "original_uniform",
+      "n": 3,
+      "ripu_minus_control_mean": 0.007620340184840109,
+      "ripu_minus_control_sd": 0.011959043494745199,
+      "paired_differences": [
+        0.009178541593784506,
+        -0.005041425523160559,
+        0.01872390448389638
+      ]
+    },
+    {
+      "direction": "vaihingen_to_potsdam",
+      "budget_fraction": 0.05,
+      "control_method": "original_quota",
+      "n": 3,
+      "ripu_minus_control_mean": 0.004828906808568141,
+      "ripu_minus_control_sd": 0.004726572998158547,
+      "paired_differences": [
+        0.00984364896994594,
+        0.0004561234147172355,
+        0.00418694804104125
+      ]
+    }
+  ],
+  "errors": [],
+  "interpretation_boundary": "This ledger establishes the frozen ISPRS comparison. RIPU here is an acquisition-only, label-blind approximation, not a full original RIPU reproduction and not evidence for a universal method claim."
+}

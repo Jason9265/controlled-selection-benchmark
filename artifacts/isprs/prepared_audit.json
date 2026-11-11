@@ -1,0 +1,122 @@
+{
+  "pass": true,
+  "failures": [],
+  "total_crops": 4815,
+  "domain_crop_counts": {
+    "potsdam": 4356,
+    "vaihingen": 459
+  },
+  "group_crop_counts": {
+    "top_mosaic_09cm_area1": 15,
+    "top_mosaic_09cm_area10": 12,
+    "top_mosaic_09cm_area11": 15,
+    "top_mosaic_09cm_area12": 15,
+    "top_mosaic_09cm_area13": 20,
+    "top_mosaic_09cm_area14": 15,
+    "top_mosaic_09cm_area15": 15,
+    "top_mosaic_09cm_area16": 15,
+    "top_mosaic_09cm_area17": 8,
+    "top_mosaic_09cm_area2": 20,
+    "top_mosaic_09cm_area20": 12,
+    "top_mosaic_09cm_area21": 12,
+    "top_mosaic_09cm_area22": 12,
+    "top_mosaic_09cm_area23": 12,
+    "top_mosaic_09cm_area24": 12,
+    "top_mosaic_09cm_area26": 15,
+    "top_mosaic_09cm_area27": 18,
+    "top_mosaic_09cm_area28": 15,
+    "top_mosaic_09cm_area29": 15,
+    "top_mosaic_09cm_area3": 15,
+    "top_mosaic_09cm_area30": 15,
+    "top_mosaic_09cm_area31": 12,
+    "top_mosaic_09cm_area32": 12,
+    "top_mosaic_09cm_area33": 12,
+    "top_mosaic_09cm_area34": 8,
+    "top_mosaic_09cm_area35": 15,
+    "top_mosaic_09cm_area37": 9,
+    "top_mosaic_09cm_area38": 28,
+    "top_mosaic_09cm_area4": 12,
+    "top_mosaic_09cm_area5": 12,
+    "top_mosaic_09cm_area6": 12,
+    "top_mosaic_09cm_area7": 12,
+    "top_mosaic_09cm_area8": 12,
+    "top_potsdam_2_10": 121,
+    "top_potsdam_2_11": 121,
+    "top_potsdam_2_12": 121,
+    "top_potsdam_2_13": 121,
+    "top_potsdam_2_14": 121,
+    "top_potsdam_3_10": 121,
+    "top_potsdam_3_11": 121,
+    "top_potsdam_3_12": 121,
+    "top_potsdam_3_13": 121,
+    "top_potsdam_3_14": 121,
+    "top_potsdam_4_10": 121,
+    "top_potsdam_4_11": 121,
+    "top_potsdam_4_13": 121,
+    "top_potsdam_4_14": 121,
+    "top_potsdam_4_15": 121,
+    "top_potsdam_5_10": 121,
+    "top_potsdam_5_11": 121,
+    "top_potsdam_5_12": 121,
+    "top_potsdam_5_13": 121,
+    "top_potsdam_5_14": 121,
+    "top_potsdam_5_15": 121,
+    "top_potsdam_6_10": 121,
+    "top_potsdam_6_11": 121,
+    "top_potsdam_6_12": 121,
+    "top_potsdam_6_13": 121,
+    "top_potsdam_6_14": 121,
+    "top_potsdam_6_15": 121,
+    "top_potsdam_6_8": 121,
+    "top_potsdam_6_9": 121,
+    "top_potsdam_7_10": 121,
+    "top_potsdam_7_11": 121,
+    "top_potsdam_7_12": 121,
+    "top_potsdam_7_13": 121,
+    "top_potsdam_7_7": 121,
+    "top_potsdam_7_8": 121,
+    "top_potsdam_7_9": 121
+  },
+  "directions": {
+    "potsdam_to_vaihingen": {
+      "group_counts": {
+        "source_train": 28,
+        "source_val": 8,
+        "target_pool": 24,
+        "target_holdout": 9
+      },
+      "crop_counts": {
+        "source_train": 3388,
+        "source_val": 968,
+        "target_pool": 327,
+        "target_holdout": 132
+      },
+      "target_pool_budget_crops": {
+        "0.01": 4,
+        "0.03": 10,
+        "0.05": 17
+      }
+    },
+    "vaihingen_to_potsdam": {
+      "group_counts": {
+        "source_train": 25,
+        "source_val": 8,
+        "target_pool": 27,
+        "target_holdout": 9
+      },
+      "crop_counts": {
+        "source_train": 342,
+        "source_val": 117,
+        "target_pool": 3267,
+        "target_holdout": 1089
+      },
+      "target_pool_budget_crops": {
+        "0.01": 33,
+        "0.03": 99,
+        "0.05": 164
+      }
+    }
+  },
+  "target_holdout_label_access_for_selection": false,
+  "target_holdout_labels_materialized_for_delayed_evaluation": true
+}

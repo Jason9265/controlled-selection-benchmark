@@ -1,0 +1,19 @@
+{
+  "protocol": "v4f-oem-development-training-stability-diagnostic-20260930",
+  "purpose": "Mahé development-only adaptation-stability diagnosis; Svaneti and Tonga labels are inaccessible",
+  "manifest": "prepared/manifest.json",
+  "architectures": ["resnet18_unet", "segformer_b0"],
+  "seed_pairs": [[2026, 17], [2027, 42], [2028, 73]],
+  "query": {"strategy": "random", "budget_patches": 10, "selection": "uniform patch without replacement; identical selected indices for variants within a paired seed"},
+  "adaptation": {"steps": 300, "batch": 8, "source_target_per_batch": [4, 4], "checkpoints": [50, 150, 300]},
+  "variants": [
+    {"name": "baseline", "lr_multiplier": 1.0, "freeze_encoder": false, "anchor_lambda": 0.0},
+    {"name": "lr_0p1", "lr_multiplier": 0.1, "freeze_encoder": false, "anchor_lambda": 0.0},
+    {"name": "lr_0p01", "lr_multiplier": 0.01, "freeze_encoder": false, "anchor_lambda": 0.0},
+    {"name": "head_only", "lr_multiplier": 1.0, "freeze_encoder": true, "anchor_lambda": 0.0},
+    {"name": "lr_0p1_anchor", "lr_multiplier": 0.1, "freeze_encoder": false, "anchor_lambda": 1.0}
+  ],
+  "selection": {"development_selection": "per architecture, choose after all trajectories using mean Mahé fixed-eight-class mIoU at step 300; ties by lower source-validation loss then lexical variant", "no_confirmation_access": true},
+  "primary_metric": "fixed-eight-class mIoU; empty union IoU=0",
+  "status": "frozen before diagnostic execution"
+}

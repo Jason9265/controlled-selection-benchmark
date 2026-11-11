@@ -1,0 +1,13 @@
+{
+  "protocol": "v4f-oem-confirmation-ripu-patch-adapted-20260930",
+  "manifest": "confirmation/manifest.json",
+  "architectures": ["resnet18_unet", "segformer_b0"],
+  "seed_pairs": [[2026, 17], [2027, 42], [2028, 73]],
+  "variants": {"resnet18_unet": {"name": "lr_0p01", "lr_multiplier": 0.01, "freeze_encoder": false, "anchor_lambda": 0.0}, "segformer_b0": {"name": "lr_0p1", "lr_multiplier": 0.1, "freeze_encoder": false, "anchor_lambda": 0.0}},
+  "budget_fractions": [0.01, 0.03, 0.05],
+  "strategy": "ripu_patch_adapted",
+  "selection": "rank 256×256 pool patches by the mean of the verified RIPU local 33×33 impurity×uncertainty score from the paired source model; use nested descending-score prefixes; target labels do not enter selection",
+  "adaptation_scope": "acquisition-only adaptation; no RIPU-specific training losses, hence not a full RIPU reproduction",
+  "evaluation_policy": "all adaptation checkpoints complete before evaluation",
+  "status": "frozen before execution"
+}

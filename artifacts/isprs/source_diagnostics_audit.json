@@ -1,0 +1,153 @@
+{
+  "pass": true,
+  "expected": 6,
+  "completed": 6,
+  "errors": [],
+  "records": [
+    {
+      "status": "complete",
+      "direction": "potsdam_to_vaihingen",
+      "seed": 2026,
+      "selection_seed": 17,
+      "source_selected_crops": 34,
+      "before_source_val_miou": 0.7156595915908767,
+      "after_source_val_miou": 0.7169315291157922,
+      "final_loss": 0.1644703447818756,
+      "finite_loss": true,
+      "source_checkpoint_sha256": "7f95dbcac9977f990255133cb2ab867cec764e10f303f420b4debf4731c114f7",
+      "model_sha256": "4840acfeb2388eb3787002170dd8c143b1c2098fa46136b275d152c3749e069d",
+      "config_sha256": "a002462a2c6f3f8a3648e4474f89095cba63a9743c66c6222c0f1c43ff747d26",
+      "environment": {
+        "torch": "2.14.0+cu130",
+        "cuda": "13.0",
+        "cudnn": 92400,
+        "deterministic_cudnn": true,
+        "deterministic_algorithms_requested": true,
+        "deterministic_algorithms_enforced": false
+      },
+      "target_labels_read": false,
+      "target_holdout_labels_read": false
+    },
+    {
+      "status": "complete",
+      "direction": "potsdam_to_vaihingen",
+      "seed": 2027,
+      "selection_seed": 42,
+      "source_selected_crops": 34,
+      "before_source_val_miou": 0.7264271664450646,
+      "after_source_val_miou": 0.7229425370629327,
+      "final_loss": 0.37172526121139526,
+      "finite_loss": true,
+      "source_checkpoint_sha256": "532431f5f5e97fb2bcf1a9b7bd07c1898e31e0727fab307facfb2b57e53f190e",
+      "model_sha256": "f2c76521628bd595ddfcc4da6b48d62bf5465f347c4fa486005400e8129f0965",
+      "config_sha256": "a002462a2c6f3f8a3648e4474f89095cba63a9743c66c6222c0f1c43ff747d26",
+      "environment": {
+        "torch": "2.14.0+cu130",
+        "cuda": "13.0",
+        "cudnn": 92400,
+        "deterministic_cudnn": true,
+        "deterministic_algorithms_requested": true,
+        "deterministic_algorithms_enforced": false
+      },
+      "target_labels_read": false,
+      "target_holdout_labels_read": false
+    },
+    {
+      "status": "complete",
+      "direction": "potsdam_to_vaihingen",
+      "seed": 2028,
+      "selection_seed": 73,
+      "source_selected_crops": 34,
+      "before_source_val_miou": 0.7213415685613702,
+      "after_source_val_miou": 0.6757769281343794,
+      "final_loss": 0.2143409550189972,
+      "finite_loss": true,
+      "source_checkpoint_sha256": "f62390f5012a3088e9e453cc99b4e0c09ab8e426e63287afc0300619c31b4f79",
+      "model_sha256": "c52b8309ffadeba110dc6f47d820513483fe8e3aebb7e00c1ef1eb3abb6c5ec6",
+      "config_sha256": "a002462a2c6f3f8a3648e4474f89095cba63a9743c66c6222c0f1c43ff747d26",
+      "environment": {
+        "torch": "2.14.0+cu130",
+        "cuda": "13.0",
+        "cudnn": 92400,
+        "deterministic_cudnn": true,
+        "deterministic_algorithms_requested": true,
+        "deterministic_algorithms_enforced": false
+      },
+      "target_labels_read": false,
+      "target_holdout_labels_read": false
+    },
+    {
+      "status": "complete",
+      "direction": "vaihingen_to_potsdam",
+      "seed": 2026,
+      "selection_seed": 17,
+      "source_selected_crops": 4,
+      "before_source_val_miou": 0.608782894469331,
+      "after_source_val_miou": 0.5709379489864799,
+      "final_loss": 0.1551526039838791,
+      "finite_loss": true,
+      "source_checkpoint_sha256": "008adb40954364036824572cb1ae4ed5576f3fabea9cfb26ba310185be7efb64",
+      "model_sha256": "d25d0282ad8a2824ea95c521c6f318697efc43df3aa38f8ad12dc1c1b3049a52",
+      "config_sha256": "a002462a2c6f3f8a3648e4474f89095cba63a9743c66c6222c0f1c43ff747d26",
+      "environment": {
+        "torch": "2.14.0+cu130",
+        "cuda": "13.0",
+        "cudnn": 92400,
+        "deterministic_cudnn": true,
+        "deterministic_algorithms_requested": true,
+        "deterministic_algorithms_enforced": false
+      },
+      "target_labels_read": false,
+      "target_holdout_labels_read": false
+    },
+    {
+      "status": "complete",
+      "direction": "vaihingen_to_potsdam",
+      "seed": 2027,
+      "selection_seed": 42,
+      "source_selected_crops": 4,
+      "before_source_val_miou": 0.6143825813847518,
+      "after_source_val_miou": 0.5682998276187198,
+      "final_loss": 0.14965525269508362,
+      "finite_loss": true,
+      "source_checkpoint_sha256": "29fadd2cc2c04ac137463942428b39feb57543878336b0f09a48435dcb5e1d8e",
+      "model_sha256": "0faa6194f39454782a5dc83270b948ee30be91c4fca4555cfd45467823d82468",
+      "config_sha256": "a002462a2c6f3f8a3648e4474f89095cba63a9743c66c6222c0f1c43ff747d26",
+      "environment": {
+        "torch": "2.14.0+cu130",
+        "cuda": "13.0",
+        "cudnn": 92400,
+        "deterministic_cudnn": true,
+        "deterministic_algorithms_requested": true,
+        "deterministic_algorithms_enforced": false
+      },
+      "target_labels_read": false,
+      "target_holdout_labels_read": false
+    },
+    {
+      "status": "complete",
+      "direction": "vaihingen_to_potsdam",
+      "seed": 2028,
+      "selection_seed": 73,
+      "source_selected_crops": 4,
+      "before_source_val_miou": 0.6050741750936904,
+      "after_source_val_miou": 0.5657322981257726,
+      "final_loss": 0.17442956566810608,
+      "finite_loss": true,
+      "source_checkpoint_sha256": "7bbe48c24302b0f63e9acea6551fd27aae59834f04649be0608fce311fe6463e",
+      "model_sha256": "13167422065bea93ef9102b075e132a965188b1086c8e27328be8327d111d698",
+      "config_sha256": "a002462a2c6f3f8a3648e4474f89095cba63a9743c66c6222c0f1c43ff747d26",
+      "environment": {
+        "torch": "2.14.0+cu130",
+        "cuda": "13.0",
+        "cudnn": 92400,
+        "deterministic_cudnn": true,
+        "deterministic_algorithms_requested": true,
+        "deterministic_algorithms_enforced": false
+      },
+      "target_labels_read": false,
+      "target_holdout_labels_read": false
+    }
+  ],
+  "scope": "Source-train/source-validation-only diagnostic. It is a stability audit, not a hyperparameter selection gate."
+}

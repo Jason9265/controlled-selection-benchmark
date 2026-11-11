@@ -1,0 +1,13 @@
+{
+  "protocol": "v4f-oem-confirmation-original-quota-random-20260930",
+  "manifest": "confirmation/manifest.json",
+  "architectures": ["resnet18_unet", "segformer_b0"],
+  "seed_pairs": [[2026, 17], [2027, 42], [2028, 73]],
+  "variants": {"resnet18_unet": {"name": "lr_0p01", "lr_multiplier": 0.01, "freeze_encoder": false, "anchor_lambda": 0.0}, "segformer_b0": {"name": "lr_0p1", "lr_multiplier": 0.1, "freeze_encoder": false, "anchor_lambda": 0.0}},
+  "budget_fractions": [0.01, 0.03, 0.05],
+  "strategy": "original_quota_random",
+  "selection": "shuffle original-image groups and patches by selection seed; take one patch from every available original before a second patch from any original; nested prefixes define all budgets",
+  "adaptation": {"steps": 300, "source_target_batch": [4, 4]},
+  "evaluation_policy": "all adaptation checkpoints complete before evaluation",
+  "status": "frozen before original-level quota control execution"
+}

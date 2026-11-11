@@ -1,0 +1,88 @@
+{
+  "status": "claim-scoped evidence complete",
+  "scope": "Controlled evidence for conditional/non-universal selection effects; not a submission-readiness certificate.",
+  "checks": {
+    "oem_saved_record_audit": true,
+    "loveda_saved_record_audit": true,
+    "v4f_confirmation_summary": true,
+    "isprs_blind_holdout_ledger": true,
+    "isprs_static_receipts": true,
+    "isprs_representative_replay": true,
+    "isprs_source_diagnostics": true
+  },
+  "evidence_sources": [
+    {
+      "path": "baseline_v2/reports/oem_result_audit.json",
+      "sha256": "86926d993d9f4e1240da48983d585480bc9c66f4fce6d4d12b5226bfa90822ee",
+      "verified_adaptations": 648,
+      "scope": "OEM saved-record audit"
+    },
+    {
+      "path": "baseline_v2/reports/loveda_result_audit.json",
+      "sha256": "d7da89482247d44db3d5ad1e83820d64350fd78e8be21a06e1cdb152d353299b",
+      "verified_adaptations": 162,
+      "scope": "LoveDA saved-record audit"
+    },
+    {
+      "path": "baseline_v4f/reports/confirmation_method_summary.json",
+      "sha256": "4e6464c00e12645a47aebcded79294052525b0ea2d7a38057fa1fa23705adfad",
+      "records": 180,
+      "scope": "two-region confirmation summary"
+    },
+    {
+      "path": "baseline_v5/isprs_external/final_evidence_audit.json",
+      "sha256": "f23ac94e1666fcc587d7a27f8606e14088c50918bd1090fbf24fbf444394efbc",
+      "blind_holdout_scores": 72,
+      "scope": "ISPRS frozen random/RIPU comparison"
+    }
+  ],
+  "citation_primary_records": [
+    {
+      "key": "cai_spatial",
+      "authors": "Lile Cai; Xun Xu; Lining Zhang; Chuan-Sheng Foo",
+      "title": "Exploring Spatial Diversity for Region-based Active Learning",
+      "year": 2021,
+      "doi": "10.1109/TIP.2021.3120041",
+      "local_primary_copy": "baseline/sources/cai_spatial.txt",
+      "local_primary_sha256": "d552cdb8ec2494c71b2767c8cbaacd6f44ce0caf5a5804adfec549b7d393a2d1"
+    },
+    {
+      "key": "ripu",
+      "authors": "Binhui Xie; Longhui Yuan; Shuang Li; Chi Harold Liu; Xinjing Cheng",
+      "title": "Towards Fewer Annotations: Active Learning via Region Impurity and Prediction Uncertainty for Domain Adaptive Semantic Segmentation",
+      "year": 2022,
+      "venue": "CVPR",
+      "local_primary_copy": "baseline/sources/ripu_readme.txt",
+      "local_primary_sha256": "4180bab8a6757834f11e5c656768ae785072af04249a9d890c5f8b681b8a4a76"
+    },
+    {
+      "key": "rc2ada",
+      "authors": "Jiaxu Guo; Juepeng Zheng; Yu Liang; Yibin Wen; Baozhu Yu; Juncheng Hu; Jianxi Huang; Haohuan Fu",
+      "title": "Toward Cross-Regional Land Cover Mapping Using Regional Consistency and Certainty-Based Active Domain Adaptation With Limited Annotations",
+      "year": 2026,
+      "doi": "10.1109/JSTARS.2026.3658553",
+      "local_primary_copy": "baseline/sources/rc2ada_author.txt",
+      "local_primary_sha256": "9d25eac11f7bce5568b304d80fe3839063b99aa66afe18fc4c92cad3c7a20c6a"
+    }
+  ],
+  "supported_claims": [
+    "Under the listed frozen protocols, target-label adaptation can improve source-only performance in some domain-direction, architecture, and budget cells.",
+    "No tested structured selection rule has a stable advantage over the specified random and original-image controls across the tested conditions.",
+    "Original-image grouping and geographic/spatial proxies must be separated analytically because they do not yield interchangeable selections or effects.",
+    "The ISPRS experiment was evaluated with receipt-level holdout separation and one-time blind scoring."
+  ],
+  "unsupported_claims": [
+    "A new joint selector is universally effective or superior.",
+    "The acquisition-only Cai/RIPU adaptations are faithful reproductions of their complete original methods.",
+    "RC2ADA has been faithfully reproduced.",
+    "The study is ready for a TGRS method-effectiveness submission.",
+    "The results establish annotation-time savings, SOTA performance, or generalization to arbitrary regions."
+  ],
+  "limitations": [
+    "The v2 audits verify saved records, not an independent full retraining.",
+    "The ISPRS RIPU implementation is an acquisition-only, label-blind adaptation rather than a full original-method reproduction.",
+    "The representative ISPRS replay is one receipt; CUDA loss uses warn-only deterministic handling.",
+    "RC2ADA equations/text remain unresolved and author code was not verified.",
+    "The heterogeneous OEM, LoveDA, v4f, and ISPRS protocols must not be pooled into a single effect size."
+  ]
+}
