@@ -25,8 +25,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 3127,
-      "sha256": "1abb60f114a3eb1a209aab14fc4829f7686ed989e20467c4d3cf6ef7c54d91c6"
+      "bytes": 3429,
+      "sha256": "209b0729d79f1b5448caa6ea5c6738c26885684cfb5913a34cb12bdcf6d76609"
     },
     {
       "path": "RELEASE_NOTES.md",
@@ -75,33 +75,33 @@
     },
     {
       "path": "artifacts/figures/figure_1_isprs_budget_curves.pdf",
-      "bytes": 29510,
-      "sha256": "4cb41bc309a1b160c24f292ff89ae148bd03333cdef16f5cf09c1a4557640dbb"
+      "bytes": 18537,
+      "sha256": "5d320af1ccfb611f5dd037c956b867750fd15a76a824d2892aa3441cafc51f7e"
     },
     {
       "path": "artifacts/figures/figure_1_isprs_budget_curves.png",
-      "bytes": 287101,
-      "sha256": "bd90e3628cd682326bc329ebbb7801d1c05afa83c9d2fff5a7b88546bea3277a"
+      "bytes": 417807,
+      "sha256": "928fb03f39c4652bfb44ae434735cfe06df58d2f3533f48dd7a2add8682ebbbe"
     },
     {
       "path": "artifacts/figures/figure_1_isprs_budget_curves.svg",
-      "bytes": 72809,
-      "sha256": "7aeffc05cad284a47f1e1e842e1a9d894acd065a5716ff450d8de067d29cd33e"
+      "bytes": 41990,
+      "sha256": "3332b5a344b6e5cf3f6db2aef4bb168859fba7f6741d63b119927f2921d7b455"
     },
     {
       "path": "artifacts/figures/figure_2_frozen_protocol.pdf",
-      "bytes": 13955,
-      "sha256": "665126bb81a6f3ed888536a651743e5fe99fd9b99db26a5f378a7a034c460cbe"
+      "bytes": 12657,
+      "sha256": "568f0de1e9a29cb6797de256c36d4c3dcb9524638a4d00d1484694f5bf5d91bf"
     },
     {
       "path": "artifacts/figures/figure_2_frozen_protocol.png",
-      "bytes": 144430,
-      "sha256": "ef2dab6315c33f96aab4bfc1922564c744b9e162598cc0c98195c84f82d633e0"
+      "bytes": 187694,
+      "sha256": "76d3c10f97831a38cb92388eda18c857ee95e73fbd9560b81787f32432f3bd70"
     },
     {
       "path": "artifacts/figures/figure_2_frozen_protocol.svg",
-      "bytes": 41707,
-      "sha256": "4f75f92974d9ce05fa504cf1f05890f46ffe281011d9ee826efdf3bf09fd63b1"
+      "bytes": 4733,
+      "sha256": "2516f89e8f36aa6dd0d52baa459e10cf30ea895ed6939395218737fcf374bcec"
     },
     {
       "path": "artifacts/isprs/control_receipts.json",

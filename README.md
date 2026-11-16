@@ -20,6 +20,11 @@ scores, and the 54/18 ISPRS receipt sets. The second recreates the released
 audit result. The third recreates the released pairwise table and copies the
 data-linked figure assets into `outputs/rebuilt`.
 
+The released ISPRS figure shows the three paired seed-level mIoU values as
+filled markers at each direction and budget; the companion table retains the
+mean and sample standard deviation. The protocol figure records the frozen,
+label-blind selection boundary and one-time target-holdout scoring flow.
+
 ## Dataset-dependent ISPRS reproduction
 
 After obtaining official archives yourself, use a separate local workspace:
