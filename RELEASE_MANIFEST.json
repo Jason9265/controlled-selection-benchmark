@@ -75,18 +75,18 @@
     },
     {
       "path": "artifacts/figures/figure_1_isprs_budget_curves.pdf",
-      "bytes": 18537,
-      "sha256": "5d320af1ccfb611f5dd037c956b867750fd15a76a824d2892aa3441cafc51f7e"
+      "bytes": 18697,
+      "sha256": "250ab99022d646f89a6cedb490bf0a45f67ec8e4f4b6f46f920e533566122378"
     },
     {
       "path": "artifacts/figures/figure_1_isprs_budget_curves.png",
-      "bytes": 417807,
-      "sha256": "928fb03f39c4652bfb44ae434735cfe06df58d2f3533f48dd7a2add8682ebbbe"
+      "bytes": 418606,
+      "sha256": "18b5f36967aa2bb42cee4206991ea1dd9eaf3889761d555cfe5bd522d4425112"
     },
     {
       "path": "artifacts/figures/figure_1_isprs_budget_curves.svg",
-      "bytes": 41990,
-      "sha256": "3332b5a344b6e5cf3f6db2aef4bb168859fba7f6741d63b119927f2921d7b455"
+      "bytes": 41635,
+      "sha256": "81e0c6fc7f4d12e135ccb075efe5f65844bef4f177ca0301020c636d085a1bc1"
     },
     {
       "path": "artifacts/figures/figure_2_frozen_protocol.pdf",
