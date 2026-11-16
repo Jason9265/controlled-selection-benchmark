@@ -32,7 +32,7 @@ def main():
         rows.append({"path": str(relative), "bytes": path.stat().st_size, "sha256": digest(path)})
     output = {
         "release": "0.1.0",
-        "scope": "Code, metadata, result summaries, receipts, audits, and figures only; no raw data or model weights.",
+        "scope": "Code, metadata, minimal score rows, result summaries, receipts, audits, and figures only; no raw data or model weights.",
         "file_count": len(rows),
         "files": rows,
     }

@@ -3,8 +3,10 @@
 ## What is released
 
 The release includes frozen experiment receipts, result summaries, protocol JSON,
-record-level audits, hashes, and figure-generation inputs. These are sufficient to
-inspect the reported evidence without access to source imagery.
+record-level audits, hashes, figure-generation inputs, and a normalized 1062-row
+score file. The score rows are sufficient to independently recompute all 228
+condition cells, strongest-control results, fixed-control sensitivities, and the
+absence of a universal named method reported in the paper.
 
 ## What is not released
 
@@ -24,9 +26,11 @@ third-party source tree is included. The public release must retain this boundar
    use the public labelled portion for an internal cross-region evaluation; they are
    not ISPRS leaderboard scores.
 
-The OpenEarthMap and LoveDA materials are released only as archival evidence
-summaries and derived condition-cell rows in this package. The full run matrices
-are not distributed; their source hashes are recorded with the derived summary.
+The OpenEarthMap and LoveDA materials include the minimal score records required
+for paper-level descriptive re-analysis, but not full training directories,
+intermediate tensors, checkpoints, logs, imagery, or labels. Reproducing the
+training process still requires the original datasets and local protocol setup;
+source hashes are recorded with the derived summary.
 Their original data and licences remain authoritative.
 LoveDA is academic/non-commercial under its dataset licence; OpenEarthMap imagery
 and labels retain their original attribution and licence requirements.

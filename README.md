@@ -21,17 +21,35 @@ scores, and the 54/18 ISPRS receipt sets. The second recreates the released
 audit result. The third recreates the released pairwise table and copies the
 data-linked figure assets into `outputs/rebuilt`.
 
-`artifacts/evidence/cross_protocol_consistency_summary.json` adds 228 derived
-condition cells. For every structured method, region/direction, architecture,
-and budget, it stores the three differences from the strongest same-seed random
-control, their mean sign, and whether all three are positive. The four protocol
-layers remain separate; this is a post-completion descriptive harmonization,
-not a preregistered hypothesis or equivalence test.
+`artifacts/evidence/cross_protocol_score_rows.csv` releases the 1062 minimal
+fixed-class mIoU records used by the paper (648 OEM, 162 LoveDA, 180 v4f, and
+72 ISPRS). Its fields identify the layer, named method, region/direction,
+architecture, absolute and fractional budget, paired seeds, and score. It
+contains no imagery, labels, weights, checkpoints, or private paths.
 
-The OEM and LoveDA full run matrices are not redistributed. Their condition-cell
-rows can be rebuilt with `scripts/build_cross_protocol_consistency.py` when the
-original local run matrices are available; source hashes in the released JSON
-bind the derived rows to those inputs.
+`artifacts/evidence/cross_protocol_consistency_summary.json` is rebuilt from
+that CSV and contains 228 condition cells. It reports the strongest-control
+envelope, each named method, and sensitivity to each of three fixed controls.
+The layers remain separate; cells share data and models and are descriptive
+conditions rather than independent samples. This is a post-completion
+harmonization, not a preregistered hypothesis or equivalence test.
+
+The builder accepts `--score-output` to write the normalized CSV before reading
+it back to compute the summary. Source hashes bind the public records to the
+saved inputs. Full OEM and LoveDA training directories are not redistributed,
+but their paper-level descriptive results are independently recomputable from
+the released score rows.
+
+```bash
+python scripts/build_cross_protocol_consistency.py \
+  --oem-root OEM_RUN_ROOT --loveda-root LOVEDA_RUN_ROOT \
+  --v4f-summary V4F_SUMMARY.json \
+  --isprs-control-summary CONTROL_SUMMARY.json \
+  --isprs-ripu-summary RIPU_SUMMARY.json \
+  --isprs-audit FINAL_EVIDENCE_AUDIT.json \
+  --score-output artifacts/evidence/cross_protocol_score_rows.csv \
+  --output artifacts/evidence/cross_protocol_consistency_summary.json
+```
 
 The released ISPRS figure shows the three paired seed-level mIoU values as
 filled markers at each direction and budget; the companion table retains the
@@ -82,8 +100,8 @@ not a full RIPU reproduction.
 - `selection_benchmark/`: command implementation.
 - `reference_protocols/`: source code and frozen settings for OEM/LoveDA v2 and
   v4f archival evidence; it contains no data, checkpoints, or result directories.
-- `scripts/build_cross_protocol_consistency.py`: rebuilds the derived 228-cell
-  summary from OEM, LoveDA, v4f, and ISPRS records.
+- `scripts/build_cross_protocol_consistency.py`: builds the normalized 1062-row
+  score file and derives the 228-cell envelope and fixed-control summaries.
 
 Read [DATA_ACCESS.md](DATA_ACCESS.md) and [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)
 before using the package. Create a GitHub release from this directory, then archive
