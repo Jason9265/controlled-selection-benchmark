@@ -11,12 +11,12 @@
     {
       "path": "CITATION.cff",
       "bytes": 848,
-      "sha256": "f247292be88563985fecb6468b1bfa977709863bca682d61c5ffe05364bf840b"
+      "sha256": "9c9343ee716551d2af20240b3084d21541b7d2a9a79b86c60e01e824faa0bcfb"
     },
     {
       "path": "DATA_ACCESS.md",
-      "bytes": 1964,
-      "sha256": "7f4fdec50aa5328148d489def6f7c599db0540145eae54e966821e7371669463"
+      "bytes": 2178,
+      "sha256": "559c57b4f990e3b4e74099f78a9373a995116050f15abe8327c6b3cbb1f5d4e9"
     },
     {
       "path": "LICENSE",
@@ -25,13 +25,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 5201,
-      "sha256": "24683fa87990766ad4c4ff299ab04080fdb03e4897d443627575374a0e7fb722"
+      "bytes": 5231,
+      "sha256": "06740f5d39ae74b97f5e3a3f60a641d4a86a333877e418c16709bf0875e59127"
     },
     {
       "path": "RELEASE_NOTES.md",
-      "bytes": 1041,
-      "sha256": "fbdf5936a75d810c20d8a23ce0beab771d80b9e54df2922d8cb2a1bf7e2ea5c7"
+      "bytes": 1024,
+      "sha256": "3ee2e459054ae268e7c1bb39d4ef4fbacbe813b670f1ba4817886813dfd9c1f8"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",

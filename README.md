@@ -104,6 +104,6 @@ not a full RIPU reproduction.
   score file and derives the 228-cell envelope and fixed-control summaries.
 
 Read [DATA_ACCESS.md](DATA_ACCESS.md) and [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)
-before using the package. Create a GitHub release from this directory, then archive
-that exact release tarball in Zenodo and add the version-specific DOI to
-`CITATION.cff`.
+before using the package. Version `v0.1.0` is archived at
+[doi:10.5281/zenodo.24137437](https://doi.org/10.5281/zenodo.24137437); the
+GitHub Release and Zenodo record distribute the same tagged tarball.

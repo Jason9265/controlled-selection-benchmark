@@ -34,3 +34,7 @@ source hashes are recorded with the derived summary.
 Their original data and licences remain authoritative.
 LoveDA is academic/non-commercial under its dataset licence; OpenEarthMap imagery
 and labels retain their original attribution and licence requirements.
+
+The immutable `v0.1.0` software archive is identified by
+`doi:10.5281/zenodo.24137437`. Its release contains only the materials described
+above and does not broaden the original datasets' access or licence terms.
