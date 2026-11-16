@@ -1,6 +1,7 @@
 # Controlled Selection Benchmark
 
-This is the auditable companion package for *When Do Structured Query Rules Help?*
+This is the auditable companion package for *Do Acquisition-Level Structured
+Query Rules Consistently Help?*
 It supports a conditional finding: across the recorded frozen protocols, no tested
 structured selector showed a stable advantage over the specified patch-random and
 original-image controls. It does **not** propose a new method or establish a
@@ -19,6 +20,18 @@ saved-record adaptations, 180 v4f confirmation records, 72 ISPRS blind-holdout
 scores, and the 54/18 ISPRS receipt sets. The second recreates the released
 audit result. The third recreates the released pairwise table and copies the
 data-linked figure assets into `outputs/rebuilt`.
+
+`artifacts/evidence/cross_protocol_consistency_summary.json` adds 228 derived
+condition cells. For every structured method, region/direction, architecture,
+and budget, it stores the three differences from the strongest same-seed random
+control, their mean sign, and whether all three are positive. The four protocol
+layers remain separate; this is a post-completion descriptive harmonization,
+not a preregistered hypothesis or equivalence test.
+
+The OEM and LoveDA full run matrices are not redistributed. Their condition-cell
+rows can be rebuilt with `scripts/build_cross_protocol_consistency.py` when the
+original local run matrices are available; source hashes in the released JSON
+bind the derived rows to those inputs.
 
 The released ISPRS figure shows the three paired seed-level mIoU values as
 filled markers at each direction and budget; the companion table retains the
@@ -69,6 +82,8 @@ not a full RIPU reproduction.
 - `selection_benchmark/`: command implementation.
 - `reference_protocols/`: source code and frozen settings for OEM/LoveDA v2 and
   v4f archival evidence; it contains no data, checkpoints, or result directories.
+- `scripts/build_cross_protocol_consistency.py`: rebuilds the derived 228-cell
+  summary from OEM, LoveDA, v4f, and ISPRS records.
 
 Read [DATA_ACCESS.md](DATA_ACCESS.md) and [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)
 before using the package. Create a GitHub release from this directory, then archive

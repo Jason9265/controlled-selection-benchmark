@@ -55,6 +55,28 @@ class ReleaseTests(unittest.TestCase):
             self.assertEqual(path.stat().st_size, row["bytes"])
             self.assertEqual(hashlib.sha256(path.read_bytes()).hexdigest(), row["sha256"])
 
+    def test_cross_protocol_consistency_summary(self):
+        data = json.loads((ROOT / "artifacts/evidence/cross_protocol_consistency_summary.json").read_text())
+        self.assertEqual(len(data["condition_cells"]), 228)
+        expected = {
+            "oem_v2": (162, [72, 90, 0], 21, [-10.87, 7.74]),
+            "loveda_v2": (36, [4, 32, 0], 2, [-5.64, 3.78]),
+            "v4f": (24, [4, 20, 0], 0, [-6.06, 1.28]),
+            "isprs": (6, [1, 5, 0], 0, [-2.98, 0.08]),
+        }
+        for layer, (cells, outcomes, consistent, value_range) in expected.items():
+            summary = data["summary_by_layer"][layer]
+            rows = [row for row in data["condition_cells"] if row["layer"] == layer]
+            recomputed = [sum(row["mean_outcome"] == name for row in rows) for name in ("win", "loss", "tie")]
+            self.assertEqual(summary["condition_cells"], cells)
+            self.assertEqual(summary["mean_wins_losses_ties"], outcomes)
+            self.assertEqual(recomputed, outcomes)
+            self.assertEqual(sum(row["three_seed_consistent_win"] for row in rows), consistent)
+            observed_range = [round(min(row["mean_difference_pp"] for row in rows), 2),
+                              round(max(row["mean_difference_pp"] for row in rows), 2)]
+            self.assertEqual(observed_range, value_range)
+            self.assertEqual(summary["universal_methods"], [])
+
 
 if __name__ == "__main__":
     unittest.main()

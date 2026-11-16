@@ -1,7 +1,7 @@
 {
   "release": "0.1.0",
   "scope": "Code, metadata, result summaries, receipts, audits, and figures only; no raw data or model weights.",
-  "file_count": 68,
+  "file_count": 70,
   "files": [
     {
       "path": ".gitignore",
@@ -10,13 +10,13 @@
     },
     {
       "path": "CITATION.cff",
-      "bytes": 834,
-      "sha256": "a303c24c9f07c037ad2fa9705f298990b9953416caba0b5ddd032b126a5a3d1a"
+      "bytes": 848,
+      "sha256": "f247292be88563985fecb6468b1bfa977709863bca682d61c5ffe05364bf840b"
     },
     {
       "path": "DATA_ACCESS.md",
-      "bytes": 1550,
-      "sha256": "f8c3d13ecbc475713b118e1455690641b819f618dac131aceb71d828a478468e"
+      "bytes": 1684,
+      "sha256": "fda05cff4afa9e47a7b430bec32418a2845a1600faaa378a4241903db6279d89"
     },
     {
       "path": "LICENSE",
@@ -25,13 +25,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 3429,
-      "sha256": "209b0729d79f1b5448caa6ea5c6738c26885684cfb5913a34cb12bdcf6d76609"
+      "bytes": 4311,
+      "sha256": "1391d3d36792ec4f7d6a46709c6f1007dbdfae476ec9c620d0a743ec60a9b400"
     },
     {
       "path": "RELEASE_NOTES.md",
-      "bytes": 768,
-      "sha256": "d7ce5a95a15f3731459cf8f49b3e1fe498fe91810ba70c0812afc6dc2e674a07"
+      "bytes": 968,
+      "sha256": "177cde2d0d5cd4edbabe312e3fc6c3619aebb49a5f1765a98daf590cd0a00658"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -42,6 +42,11 @@
       "path": "artifacts/evidence/confirmation_method_summary.json",
       "bytes": 95967,
       "sha256": "4e6464c00e12645a47aebcded79294052525b0ea2d7a38057fa1fa23705adfad"
+    },
+    {
+      "path": "artifacts/evidence/cross_protocol_consistency_summary.json",
+      "bytes": 162921,
+      "sha256": "f9eb8bb041742b82792d55d607111c090b4246fec762f53b85bb546efd3d2579"
     },
     {
       "path": "artifacts/evidence/interpretation_facts.json",
@@ -314,6 +319,11 @@
       "sha256": "c7ee6be61976388e9ae438ffe4a1a5eba48346e11d7a18bb660d470f65d315f3"
     },
     {
+      "path": "scripts/build_cross_protocol_consistency.py",
+      "bytes": 8901,
+      "sha256": "a02aeaf69cd7f3e37022b789d5eff21f9b8ec2e0795e36eae6597c0b392c8a22"
+    },
+    {
       "path": "scripts/build_release_manifest.py",
       "bytes": 1372,
       "sha256": "6b5ebe3d042e51283277c9c73441ddcba233d053781de563abd2e18199ab0cf6"
@@ -340,8 +350,8 @@
     },
     {
       "path": "tests/test_release.py",
-      "bytes": 2512,
-      "sha256": "69d96839884342064aa84cabc8ebdf601b7c6f36a45632271c6e0a5a888d16c0"
+      "bytes": 3915,
+      "sha256": "db8e071d90000c637b62c171a4ce03d55cad6d05f83e67a62e927d40bc470e32"
     }
   ]
 }

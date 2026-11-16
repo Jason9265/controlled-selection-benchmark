@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this release, please cite the accompanying IGARSS 2027 submission and this archived release."
-title: "Controlled Selection Benchmark for Cross-Region Remote-Sensing Segmentation"
+title: "Acquisition-Level Controlled Selection Benchmark for Cross-Region Remote-Sensing Segmentation"
 type: software
 authors:
   - family-names: "Feng"
@@ -12,7 +12,7 @@ date-released: 2026-11-11
 doi: "10.5281/zenodo.24137437"
 license: MIT
 repository-code: "https://github.com/Jason9265/controlled-selection-benchmark"
-abstract: "Audit and reproduction material for a controlled empirical evaluation of target-region selection strategies."
+abstract: "Audit and reproduction material for a controlled assessment of acquisition-level structured query rules."
 keywords:
   - remote sensing
   - semantic segmentation

@@ -25,6 +25,8 @@ third-party source tree is included. The public release must retain this boundar
    not ISPRS leaderboard scores.
 
 The OpenEarthMap and LoveDA materials are released only as archival evidence
-summaries in this package. Their original data and licences remain authoritative.
+summaries and derived condition-cell rows in this package. The full run matrices
+are not distributed; their source hashes are recorded with the derived summary.
+Their original data and licences remain authoritative.
 LoveDA is academic/non-commercial under its dataset licence; OpenEarthMap imagery
 and labels retain their original attribution and licence requirements.

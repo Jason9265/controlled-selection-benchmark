@@ -1,0 +1,6713 @@
+{
+  "schema_version": 1,
+  "analysis_scope": "Post-completion descriptive harmonization; not preregistered and not a hypothesis or equivalence test.",
+  "estimand": "For each structured-method condition cell and paired seed, method mIoU minus the strongest of three controls in that seed.",
+  "rules": {
+    "mean_outcome": "win/loss/tie from the sign of the mean of three paired-seed differences; exact zero is a tie",
+    "three_seed_consistent_win": "all three paired-seed differences are strictly positive",
+    "equivalence_margin": null,
+    "cross_protocol_pooling": false
+  },
+  "controls_by_layer": {
+    "oem_v2": [
+      "random",
+      "uniform_random",
+      "original_uniform_random"
+    ],
+    "loveda_v2": [
+      "random",
+      "uniform_random",
+      "original_uniform_random"
+    ],
+    "v4f": [
+      "uniform_patch",
+      "original_uniform",
+      "original_quota"
+    ],
+    "isprs": [
+      "patch_uniform",
+      "original_uniform",
+      "original_quota"
+    ]
+  },
+  "source_provenance": [
+    {
+      "path_hint": "oem_v2/resnet18_unet/all_results.json",
+      "sha256": "d8a6b61b3f1c8fda4f2bf2c09d3fd7e3be0832da9eb89642ac7de0bb7c13ed1e"
+    },
+    {
+      "path_hint": "oem_v2/segformer_b0/all_results.json",
+      "sha256": "9149ba7ad9e5e603f55ee79098df29d77d3d6807a022d7c44ca2ae9da45f7e0b"
+    },
+    {
+      "path_hint": "loveda_v2/resnet18_unet/all_results.json",
+      "sha256": "89ff655c0a6d83716c3446e99fe82aa57df12351eb434cd99d2201c80150fce9"
+    },
+    {
+      "path_hint": "loveda_v2/segformer_b0/all_results.json",
+      "sha256": "84f42b39c239139f0f345a66eaebb4a392d11a6ea398e73e9635555b1eb0a3d3"
+    },
+    {
+      "path_hint": "v4f/confirmation_method_summary.json",
+      "sha256": "4e6464c00e12645a47aebcded79294052525b0ea2d7a38057fa1fa23705adfad"
+    },
+    {
+      "path_hint": "isprs/final_evidence_audit.json",
+      "sha256": "f23ac94e1666fcc587d7a27f8606e14088c50918bd1090fbf24fbf444394efbc"
+    }
+  ],
+  "summary_by_layer": {
+    "oem_v2": {
+      "condition_cells": 162,
+      "mean_wins_losses_ties": [
+        72,
+        90,
+        0
+      ],
+      "three_seed_consistent_wins": 21,
+      "mean_difference_range_pp": [
+        -10.871643108244532,
+        7.743256153897474
+      ],
+      "universal_methods": []
+    },
+    "loveda_v2": {
+      "condition_cells": 36,
+      "mean_wins_losses_ties": [
+        4,
+        32,
+        0
+      ],
+      "three_seed_consistent_wins": 2,
+      "mean_difference_range_pp": [
+        -5.637363313000178,
+        3.7849245348153295
+      ],
+      "universal_methods": []
+    },
+    "v4f": {
+      "condition_cells": 24,
+      "mean_wins_losses_ties": [
+        4,
+        20,
+        0
+      ],
+      "three_seed_consistent_wins": 0,
+      "mean_difference_range_pp": [
+        -6.062961234021876,
+        1.2842074647090123
+      ],
+      "universal_methods": []
+    },
+    "isprs": {
+      "condition_cells": 6,
+      "mean_wins_losses_ties": [
+        1,
+        5,
+        0
+      ],
+      "three_seed_consistent_wins": 0,
+      "mean_difference_range_pp": [
+        -2.983775779667408,
+        0.0751249545246302
+      ],
+      "universal_methods": []
+    }
+  },
+  "condition_cells": [
+    {
+      "layer": "oem_v2",
+      "method": "cai_spatial",
+      "region_or_direction": "coxsbazar",
+      "architecture": "resnet18_unet",
+      "budget": 5,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -6.436838842546705,
+        -6.273514664773961,
+        10.59914454611154
+      ],
+      "mean_difference_pp": -0.7037363204030417,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "cai_spatial",
+      "region_or_direction": "coxsbazar",
+      "architecture": "resnet18_unet",
+      "budget": 13,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -3.8153071321759544,
+        -9.963815515242347,
+        -9.754726203108666
+      ],
+      "mean_difference_pp": -7.844616283508988,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "cai_spatial",
+      "region_or_direction": "coxsbazar",
+      "architecture": "resnet18_unet",
+      "budget": 21,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -6.534352692101219,
+        -12.000169465352533,
+        -9.693749686581722
+      ],
+      "mean_difference_pp": -9.409423948011826,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "cai_spatial",
+      "region_or_direction": "coxsbazar",
+      "architecture": "segformer_b0",
+      "budget": 5,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -3.1135708312025,
+        0.8500453237379579,
+        -1.7179650849272754
+      ],
+      "mean_difference_pp": -1.3271635307972725,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "cai_spatial",
+      "region_or_direction": "coxsbazar",
+      "architecture": "segformer_b0",
+      "budget": 13,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        5.180670352974159,
+        2.5738950119430615,
+        -1.3875569966055101
+      ],
+      "mean_difference_pp": 2.12233612277057,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "cai_spatial",
+      "region_or_direction": "coxsbazar",
+      "architecture": "segformer_b0",
+      "budget": 21,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        0.09603846790737225,
+        0.4815860684452278,
+        -2.1511428888796704
+      ],
+      "mean_difference_pp": -0.5245061175090234,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "cai_spatial",
+      "region_or_direction": "daressalaam",
+      "architecture": "resnet18_unet",
+      "budget": 5,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -3.481346636622995,
+        -1.0080132808341913,
+        -1.2169004383988713
+      ],
+      "mean_difference_pp": -1.9020867852853527,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "cai_spatial",
+      "region_or_direction": "daressalaam",
+      "architecture": "resnet18_unet",
+      "budget": 15,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -1.4491417832483977,
+        1.6038363666046052,
+        -2.432919052137872
+      ],
+      "mean_difference_pp": -0.7594081562605548,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "cai_spatial",
+      "region_or_direction": "daressalaam",
+      "architecture": "resnet18_unet",
+      "budget": 24,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        2.285259911846549,
+        1.4536565508506905,
+        0.004951609668712997
+      ],
+      "mean_difference_pp": 1.247956024121984,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": true
+    },
+    {
+      "layer": "oem_v2",
+      "method": "cai_spatial",
+      "region_or_direction": "daressalaam",
+      "architecture": "segformer_b0",
+      "budget": 5,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -1.9780192484825432,
+        -0.790965874484606,
+        1.8591667755231855
+      ],
+      "mean_difference_pp": -0.3032727824813212,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "cai_spatial",
+      "region_or_direction": "daressalaam",
+      "architecture": "segformer_b0",
+      "budget": 15,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        1.8019062355260629,
+        2.0805730069517026,
+        1.6449407723176046
+      ],
+      "mean_difference_pp": 1.8424733382651233,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": true
+    },
+    {
+      "layer": "oem_v2",
+      "method": "cai_spatial",
+      "region_or_direction": "daressalaam",
+      "architecture": "segformer_b0",
+      "budget": 24,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        1.4210541725545034,
+        1.5034384669429912,
+        3.5879137655960456
+      ],
+      "mean_difference_pp": 2.17080213503118,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": true
+    },
+    {
+      "layer": "oem_v2",
+      "method": "cai_spatial",
+      "region_or_direction": "zanzibar",
+      "architecture": "resnet18_unet",
+      "budget": 5,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        1.0672886165913553,
+        5.333703940818912,
+        0.9372650494943346
+      ],
+      "mean_difference_pp": 2.446085868968201,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": true
+    },
+    {
+      "layer": "oem_v2",
+      "method": "cai_spatial",
+      "region_or_direction": "zanzibar",
+      "architecture": "resnet18_unet",
+      "budget": 15,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        1.0654006753893275,
+        9.84502634592716,
+        -4.595678033362099
+      ],
+      "mean_difference_pp": 2.1049163293181294,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "cai_spatial",
+      "region_or_direction": "zanzibar",
+      "architecture": "resnet18_unet",
+      "budget": 24,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -0.9826126328448814,
+        3.06683812589445,
+        -4.728556934108397
+      ],
+      "mean_difference_pp": -0.8814438136862761,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "cai_spatial",
+      "region_or_direction": "zanzibar",
+      "architecture": "segformer_b0",
+      "budget": 5,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        3.0747356186839547,
+        -2.9163653747959097,
+        -1.531680244847372
+      ],
+      "mean_difference_pp": -0.4577700003197757,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "cai_spatial",
+      "region_or_direction": "zanzibar",
+      "architecture": "segformer_b0",
+      "budget": 15,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        3.362508783767498,
+        10.341700145106515,
+        -0.8848749618495966
+      ],
+      "mean_difference_pp": 4.273111322341472,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "cai_spatial",
+      "region_or_direction": "zanzibar",
+      "architecture": "segformer_b0",
+      "budget": 24,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        4.391626925428177,
+        -0.4199161176388577,
+        1.8333985716528112
+      ],
+      "mean_difference_pp": 1.9350364598140437,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "core_set",
+      "region_or_direction": "coxsbazar",
+      "architecture": "resnet18_unet",
+      "budget": 5,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        5.337556961228474,
+        -5.336127606576096,
+        -1.9782195484974618
+      ],
+      "mean_difference_pp": -0.6589300646150281,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "core_set",
+      "region_or_direction": "coxsbazar",
+      "architecture": "resnet18_unet",
+      "budget": 13,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -1.0461590470278614,
+        -12.620279540778927,
+        -2.817787992935472
+      ],
+      "mean_difference_pp": -5.494742193580753,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "core_set",
+      "region_or_direction": "coxsbazar",
+      "architecture": "resnet18_unet",
+      "budget": 21,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -3.6078345206289497,
+        -0.7305879649274205,
+        -12.266079512232391
+      ],
+      "mean_difference_pp": -5.534833999262921,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "core_set",
+      "region_or_direction": "coxsbazar",
+      "architecture": "segformer_b0",
+      "budget": 5,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -2.0099406444016976,
+        5.765801137551829,
+        1.5092301931765695
+      ],
+      "mean_difference_pp": 1.755030228775567,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "core_set",
+      "region_or_direction": "coxsbazar",
+      "architecture": "segformer_b0",
+      "budget": 13,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        3.6799954340916208,
+        6.496498505274212,
+        -1.3021531671133846
+      ],
+      "mean_difference_pp": 2.9581135907508163,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "core_set",
+      "region_or_direction": "coxsbazar",
+      "architecture": "segformer_b0",
+      "budget": 21,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        4.824936324942042,
+        0.5029657323859127,
+        0.5852629481253924
+      ],
+      "mean_difference_pp": 1.9710550018177824,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": true
+    },
+    {
+      "layer": "oem_v2",
+      "method": "core_set",
+      "region_or_direction": "daressalaam",
+      "architecture": "resnet18_unet",
+      "budget": 5,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -1.7072098192928153,
+        -2.210725502948968,
+        -1.4597242085072626
+      ],
+      "mean_difference_pp": -1.7925531769163487,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "core_set",
+      "region_or_direction": "daressalaam",
+      "architecture": "resnet18_unet",
+      "budget": 15,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -1.8492011669278774,
+        0.4119305397776607,
+        -3.303817474085186
+      ],
+      "mean_difference_pp": -1.5803627004118008,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "core_set",
+      "region_or_direction": "daressalaam",
+      "architecture": "resnet18_unet",
+      "budget": 24,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -3.32236810421917,
+        2.004607808631653,
+        -2.296627959519859
+      ],
+      "mean_difference_pp": -1.204796085035792,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "core_set",
+      "region_or_direction": "daressalaam",
+      "architecture": "segformer_b0",
+      "budget": 5,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -3.3304206452510976,
+        0.41634117050220465,
+        0.20136689339745883
+      ],
+      "mean_difference_pp": -0.9042375271171448,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "core_set",
+      "region_or_direction": "daressalaam",
+      "architecture": "segformer_b0",
+      "budget": 15,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -0.36565200065739045,
+        -1.231044826908706,
+        -1.0166746990476205
+      ],
+      "mean_difference_pp": -0.8711238422045723,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "core_set",
+      "region_or_direction": "daressalaam",
+      "architecture": "segformer_b0",
+      "budget": 24,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -1.4836984634748807,
+        0.43924957480661053,
+        0.5472885108324999
+      ],
+      "mean_difference_pp": -0.16572012594525676,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "core_set",
+      "region_or_direction": "zanzibar",
+      "architecture": "resnet18_unet",
+      "budget": 5,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        0.3196733625487336,
+        -2.944892499078533,
+        -2.204184594400116
+      ],
+      "mean_difference_pp": -1.609801243643305,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "core_set",
+      "region_or_direction": "zanzibar",
+      "architecture": "resnet18_unet",
+      "budget": 15,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        1.36254879898553,
+        -2.129940565335148,
+        9.020009420389519
+      ],
+      "mean_difference_pp": 2.7508725513466334,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "core_set",
+      "region_or_direction": "zanzibar",
+      "architecture": "resnet18_unet",
+      "budget": 24,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -1.3814509269793884,
+        1.3405128613241502,
+        3.9284618293004394
+      ],
+      "mean_difference_pp": 1.2958412545484004,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "core_set",
+      "region_or_direction": "zanzibar",
+      "architecture": "segformer_b0",
+      "budget": 5,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -0.3260847146660917,
+        9.87484254161629,
+        8.901461269727218
+      ],
+      "mean_difference_pp": 6.150073032225805,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "core_set",
+      "region_or_direction": "zanzibar",
+      "architecture": "segformer_b0",
+      "budget": 15,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        3.622872389058762,
+        11.663748582826516,
+        5.202566957858612
+      ],
+      "mean_difference_pp": 6.82972930991463,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": true
+    },
+    {
+      "layer": "oem_v2",
+      "method": "core_set",
+      "region_or_direction": "zanzibar",
+      "architecture": "segformer_b0",
+      "budget": 24,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        4.212680475066099,
+        2.7868739371790516,
+        3.8999974799701134
+      ],
+      "mean_difference_pp": 3.6331839640717547,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": true
+    },
+    {
+      "layer": "oem_v2",
+      "method": "coverage",
+      "region_or_direction": "coxsbazar",
+      "architecture": "resnet18_unet",
+      "budget": 5,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        0.8368009794239462,
+        -1.6808915690262771,
+        3.485482930807318
+      ],
+      "mean_difference_pp": 0.8804641137349957,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "coverage",
+      "region_or_direction": "coxsbazar",
+      "architecture": "resnet18_unet",
+      "budget": 13,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -9.129861247811261,
+        -2.9137196409366073,
+        -14.96653576829685
+      ],
+      "mean_difference_pp": -9.003372219014906,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "coverage",
+      "region_or_direction": "coxsbazar",
+      "architecture": "resnet18_unet",
+      "budget": 21,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -9.70935351183857,
+        -2.10124527242157,
+        -8.077706405758677
+      ],
+      "mean_difference_pp": -6.629435063339606,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "coverage",
+      "region_or_direction": "coxsbazar",
+      "architecture": "segformer_b0",
+      "budget": 5,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -3.1135708312025,
+        -1.6942986473022392,
+        0.5222333699734072
+      ],
+      "mean_difference_pp": -1.428545369510444,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "coverage",
+      "region_or_direction": "coxsbazar",
+      "architecture": "segformer_b0",
+      "budget": 13,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        6.354346302242253,
+        3.392180510011472,
+        -3.300068862219041
+      ],
+      "mean_difference_pp": 2.148819316678228,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "coverage",
+      "region_or_direction": "coxsbazar",
+      "architecture": "segformer_b0",
+      "budget": 21,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        1.716939186637223,
+        -1.9485923853027054,
+        -10.314977222123067
+      ],
+      "mean_difference_pp": -3.5155434735961832,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "coverage",
+      "region_or_direction": "daressalaam",
+      "architecture": "resnet18_unet",
+      "budget": 5,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -3.420074376180354,
+        -1.6021529389949107,
+        -1.357516469250375
+      ],
+      "mean_difference_pp": -2.1265812614752133,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "coverage",
+      "region_or_direction": "daressalaam",
+      "architecture": "resnet18_unet",
+      "budget": 15,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -2.284863340321708,
+        -0.8770501549331233,
+        -2.798617720887453
+      ],
+      "mean_difference_pp": -1.9868437387140947,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "coverage",
+      "region_or_direction": "daressalaam",
+      "architecture": "resnet18_unet",
+      "budget": 24,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        1.2529162369961155,
+        -2.0628122143056316,
+        -2.8004159731965017
+      ],
+      "mean_difference_pp": -1.2034373168353392,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "coverage",
+      "region_or_direction": "daressalaam",
+      "architecture": "segformer_b0",
+      "budget": 5,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -1.4165054362190177,
+        -0.508060553884121,
+        0.040163784257973845
+      ],
+      "mean_difference_pp": -0.6281340686150549,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "coverage",
+      "region_or_direction": "daressalaam",
+      "architecture": "segformer_b0",
+      "budget": 15,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        1.2012191911455972,
+        0.5486424800015266,
+        0.1469438934636469
+      ],
+      "mean_difference_pp": 0.6322685215369236,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": true
+    },
+    {
+      "layer": "oem_v2",
+      "method": "coverage",
+      "region_or_direction": "daressalaam",
+      "architecture": "segformer_b0",
+      "budget": 24,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        3.0314830755018396,
+        2.1863004338309233,
+        1.3882420027743758
+      ],
+      "mean_difference_pp": 2.202008504035713,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": true
+    },
+    {
+      "layer": "oem_v2",
+      "method": "coverage",
+      "region_or_direction": "zanzibar",
+      "architecture": "resnet18_unet",
+      "budget": 5,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        4.494248515953158,
+        2.0528440138281976,
+        3.19480586865426
+      ],
+      "mean_difference_pp": 3.2472994661452055,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": true
+    },
+    {
+      "layer": "oem_v2",
+      "method": "coverage",
+      "region_or_direction": "zanzibar",
+      "architecture": "resnet18_unet",
+      "budget": 15,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        2.4375045519450964,
+        0.5095002554590555,
+        -4.718045491060025
+      ],
+      "mean_difference_pp": -0.5903468945519575,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "coverage",
+      "region_or_direction": "zanzibar",
+      "architecture": "resnet18_unet",
+      "budget": 24,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -3.5490406677257393,
+        -3.010413516570576,
+        -12.877771370899893
+      ],
+      "mean_difference_pp": -6.479075185065402,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "coverage",
+      "region_or_direction": "zanzibar",
+      "architecture": "segformer_b0",
+      "budget": 5,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -1.7194810975181773,
+        6.5003841164845975,
+        2.9401900475050535
+      ],
+      "mean_difference_pp": 2.5736976888238243,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "coverage",
+      "region_or_direction": "zanzibar",
+      "architecture": "segformer_b0",
+      "budget": 15,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        1.303781241676083,
+        8.425160973493584,
+        2.555840645476004
+      ],
+      "mean_difference_pp": 4.094927620215224,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": true
+    },
+    {
+      "layer": "oem_v2",
+      "method": "coverage",
+      "region_or_direction": "zanzibar",
+      "architecture": "segformer_b0",
+      "budget": 24,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -1.1401046707465612,
+        -2.468880776609467,
+        3.143342634784335
+      ],
+      "mean_difference_pp": -0.15521427085723105,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "entropy",
+      "region_or_direction": "coxsbazar",
+      "architecture": "resnet18_unet",
+      "budget": 5,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        2.852950252665348,
+        -6.273514664773961,
+        -0.4654847897479414
+      ],
+      "mean_difference_pp": -1.2953497339521847,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "entropy",
+      "region_or_direction": "coxsbazar",
+      "architecture": "resnet18_unet",
+      "budget": 13,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -6.229212157479358,
+        -7.444785799771758,
+        -5.861336753782053
+      ],
+      "mean_difference_pp": -6.511778237011057,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "entropy",
+      "region_or_direction": "coxsbazar",
+      "architecture": "resnet18_unet",
+      "budget": 21,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -4.433535504665537,
+        -0.20241160274845904,
+        -9.029538736909803
+      ],
+      "mean_difference_pp": -4.555161948107933,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "entropy",
+      "region_or_direction": "coxsbazar",
+      "architecture": "segformer_b0",
+      "budget": 5,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -3.1135708312025,
+        0.8500453237379579,
+        0.3831655884266816
+      ],
+      "mean_difference_pp": -0.6267866396792868,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "entropy",
+      "region_or_direction": "coxsbazar",
+      "architecture": "segformer_b0",
+      "budget": 13,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        3.9660766839757833,
+        1.0601933702160782,
+        -4.517962013658316
+      ],
+      "mean_difference_pp": 0.1694360135111818,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "entropy",
+      "region_or_direction": "coxsbazar",
+      "architecture": "segformer_b0",
+      "budget": 21,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -2.437283690220582,
+        -5.285446644876535,
+        -2.2692150466780356
+      ],
+      "mean_difference_pp": -3.3306484605917177,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "entropy",
+      "region_or_direction": "daressalaam",
+      "architecture": "resnet18_unet",
+      "budget": 5,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -3.481346636622995,
+        -2.58805218734951,
+        -2.0987457850372704
+      ],
+      "mean_difference_pp": -2.7227148696699253,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "entropy",
+      "region_or_direction": "daressalaam",
+      "architecture": "resnet18_unet",
+      "budget": 15,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -5.2132924304139845,
+        -0.5848840930214594,
+        -1.509110225963295
+      ],
+      "mean_difference_pp": -2.4357622497995797,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "entropy",
+      "region_or_direction": "daressalaam",
+      "architecture": "resnet18_unet",
+      "budget": 24,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -3.0239342446991446,
+        -2.5387325948907966,
+        -0.8489141733160621
+      ],
+      "mean_difference_pp": -2.1371936709686676,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "entropy",
+      "region_or_direction": "daressalaam",
+      "architecture": "segformer_b0",
+      "budget": 5,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -0.5792332442963621,
+        -0.790965874484606,
+        1.3323821975437744
+      ],
+      "mean_difference_pp": -0.012605640412397904,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "entropy",
+      "region_or_direction": "daressalaam",
+      "architecture": "segformer_b0",
+      "budget": 15,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        1.4252577677692058,
+        3.9461530711858597,
+        0.4834783994914327
+      ],
+      "mean_difference_pp": 1.9516297461488328,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": true
+    },
+    {
+      "layer": "oem_v2",
+      "method": "entropy",
+      "region_or_direction": "daressalaam",
+      "architecture": "segformer_b0",
+      "budget": 24,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        1.2019043936281837,
+        1.6880956502757338,
+        2.543290649619684
+      ],
+      "mean_difference_pp": 1.8110968978412005,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": true
+    },
+    {
+      "layer": "oem_v2",
+      "method": "entropy",
+      "region_or_direction": "zanzibar",
+      "architecture": "resnet18_unet",
+      "budget": 5,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        1.0672886165913553,
+        -0.16679227557014897,
+        0.5668012254644833
+      ],
+      "mean_difference_pp": 0.48909918882856324,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "entropy",
+      "region_or_direction": "zanzibar",
+      "architecture": "resnet18_unet",
+      "budget": 15,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        1.484964248758086,
+        8.500960266283176,
+        -2.7493512429974554
+      ],
+      "mean_difference_pp": 2.412191090681269,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "entropy",
+      "region_or_direction": "zanzibar",
+      "architecture": "resnet18_unet",
+      "budget": 24,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        7.345303760662192,
+        -5.598988032133878,
+        -1.448253026577645
+      ],
+      "mean_difference_pp": 0.0993542339835564,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "entropy",
+      "region_or_direction": "zanzibar",
+      "architecture": "segformer_b0",
+      "budget": 5,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -1.0578037361228532,
+        -2.9163653747959097,
+        -1.531680244847372
+      ],
+      "mean_difference_pp": -1.8352831185887117,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "entropy",
+      "region_or_direction": "zanzibar",
+      "architecture": "segformer_b0",
+      "budget": 15,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        2.5341487380707903,
+        9.59676625001395,
+        -1.6611020980186797
+      ],
+      "mean_difference_pp": 3.48993763002202,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "entropy",
+      "region_or_direction": "zanzibar",
+      "architecture": "segformer_b0",
+      "budget": 24,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        7.702105858277725,
+        -2.5292846380551683,
+        -0.7349346900648535
+      ],
+      "mean_difference_pp": 1.4792955100525678,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "geo_coverage",
+      "region_or_direction": "coxsbazar",
+      "architecture": "resnet18_unet",
+      "budget": 5,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        2.3760077430178383,
+        -1.6808915690262771,
+        3.485482930807318
+      ],
+      "mean_difference_pp": 1.39353303493296,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "geo_coverage",
+      "region_or_direction": "coxsbazar",
+      "architecture": "resnet18_unet",
+      "budget": 13,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -9.190609676823847,
+        -8.4577838796129,
+        -14.96653576829685
+      ],
+      "mean_difference_pp": -10.871643108244532,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "geo_coverage",
+      "region_or_direction": "coxsbazar",
+      "architecture": "resnet18_unet",
+      "budget": 21,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -14.007518944325776,
+        -4.095223629322298,
+        -8.372510038746073
+      ],
+      "mean_difference_pp": -8.825084204131382,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "geo_coverage",
+      "region_or_direction": "coxsbazar",
+      "architecture": "segformer_b0",
+      "budget": 5,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -3.1135708312025,
+        -1.6942986473022392,
+        0.5222333699734072
+      ],
+      "mean_difference_pp": -1.428545369510444,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "geo_coverage",
+      "region_or_direction": "coxsbazar",
+      "architecture": "segformer_b0",
+      "budget": 13,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        4.7404658829224395,
+        3.226669726629783,
+        -3.0445613626830403
+      ],
+      "mean_difference_pp": 1.6408580822897274,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "geo_coverage",
+      "region_or_direction": "coxsbazar",
+      "architecture": "segformer_b0",
+      "budget": 21,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        2.56488029551174,
+        -2.396640125822241,
+        -5.826816562048603
+      ],
+      "mean_difference_pp": -1.886192130786368,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "geo_coverage",
+      "region_or_direction": "daressalaam",
+      "architecture": "resnet18_unet",
+      "budget": 5,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -3.420074376180354,
+        0.6474686669069141,
+        -2.1936816003499446
+      ],
+      "mean_difference_pp": -1.6554291032077948,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "geo_coverage",
+      "region_or_direction": "daressalaam",
+      "architecture": "resnet18_unet",
+      "budget": 15,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -1.075863171277125,
+        2.3989999299126206,
+        -1.5974646654697167
+      ],
+      "mean_difference_pp": -0.09144263561140702,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "geo_coverage",
+      "region_or_direction": "daressalaam",
+      "architecture": "resnet18_unet",
+      "budget": 24,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        0.9549314569334943,
+        0.5320685713870899,
+        -2.6499832486175046
+      ],
+      "mean_difference_pp": -0.38766107343230677,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "geo_coverage",
+      "region_or_direction": "daressalaam",
+      "architecture": "segformer_b0",
+      "budget": 5,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -1.4951582110279416,
+        -0.508060553884121,
+        0.5278300698404181
+      ],
+      "mean_difference_pp": -0.49179623169054815,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "geo_coverage",
+      "region_or_direction": "daressalaam",
+      "architecture": "segformer_b0",
+      "budget": 15,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        2.284016662149546,
+        1.0256865791273995,
+        -0.5373329444635755
+      ],
+      "mean_difference_pp": 0.9241234322711233,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "geo_coverage",
+      "region_or_direction": "daressalaam",
+      "architecture": "segformer_b0",
+      "budget": 24,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        2.546758901322954,
+        0.7992796749698994,
+        -0.25862787650958174
+      ],
+      "mean_difference_pp": 1.0291368999277573,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "geo_coverage",
+      "region_or_direction": "zanzibar",
+      "architecture": "resnet18_unet",
+      "budget": 5,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        4.494248515953158,
+        15.540714077085005,
+        3.19480586865426
+      ],
+      "mean_difference_pp": 7.743256153897474,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": true
+    },
+    {
+      "layer": "oem_v2",
+      "method": "geo_coverage",
+      "region_or_direction": "zanzibar",
+      "architecture": "resnet18_unet",
+      "budget": 15,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        5.670702410704092,
+        2.435844911823448,
+        -6.467391873941236
+      ],
+      "mean_difference_pp": 0.5463851495287683,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "geo_coverage",
+      "region_or_direction": "zanzibar",
+      "architecture": "resnet18_unet",
+      "budget": 24,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        3.6213720724333043,
+        1.0917731182528811,
+        -3.3925494125952085
+      ],
+      "mean_difference_pp": 0.4401985926969923,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "geo_coverage",
+      "region_or_direction": "zanzibar",
+      "architecture": "segformer_b0",
+      "budget": 5,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -1.7194810975181773,
+        6.5003841164845975,
+        2.9401900475050535
+      ],
+      "mean_difference_pp": 2.5736976888238243,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "geo_coverage",
+      "region_or_direction": "zanzibar",
+      "architecture": "segformer_b0",
+      "budget": 15,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -0.08124334623398344,
+        7.4524032672569795,
+        2.109643176740467
+      ],
+      "mean_difference_pp": 3.160267699254488,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "geo_coverage",
+      "region_or_direction": "zanzibar",
+      "architecture": "segformer_b0",
+      "budget": 24,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        3.278458564624448,
+        -0.5102114011538261,
+        2.7701847451655714
+      ],
+      "mean_difference_pp": 1.8461439695453976,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "geo_entropy",
+      "region_or_direction": "coxsbazar",
+      "architecture": "resnet18_unet",
+      "budget": 5,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -6.436838842546705,
+        -6.273514664773961,
+        -0.4654847897479414
+      ],
+      "mean_difference_pp": -4.391946099022869,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "geo_entropy",
+      "region_or_direction": "coxsbazar",
+      "architecture": "resnet18_unet",
+      "budget": 13,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -3.8153071321759544,
+        -7.444785799771758,
+        -8.288753965149699
+      ],
+      "mean_difference_pp": -6.516282299032471,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "geo_entropy",
+      "region_or_direction": "coxsbazar",
+      "architecture": "resnet18_unet",
+      "budget": 21,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -7.016190167788217,
+        -14.12652247708889,
+        -6.136918813558623
+      ],
+      "mean_difference_pp": -9.093210486145244,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "geo_entropy",
+      "region_or_direction": "coxsbazar",
+      "architecture": "segformer_b0",
+      "budget": 5,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -3.1135708312025,
+        0.8500453237379579,
+        0.3831655884266816
+      ],
+      "mean_difference_pp": -0.6267866396792868,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "geo_entropy",
+      "region_or_direction": "coxsbazar",
+      "architecture": "segformer_b0",
+      "budget": 13,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        5.180670352974159,
+        2.223353476970835,
+        -9.699538599148338
+      ],
+      "mean_difference_pp": -0.765171589734448,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "geo_entropy",
+      "region_or_direction": "coxsbazar",
+      "architecture": "segformer_b0",
+      "budget": 21,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        0.2403102110037858,
+        -4.362732623786347,
+        -7.521886073442724
+      ],
+      "mean_difference_pp": -3.8814361620750955,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "geo_entropy",
+      "region_or_direction": "daressalaam",
+      "architecture": "resnet18_unet",
+      "budget": 5,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -3.481346636622995,
+        -1.0080132808341913,
+        -1.2169004383988713
+      ],
+      "mean_difference_pp": -1.9020867852853527,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "geo_entropy",
+      "region_or_direction": "daressalaam",
+      "architecture": "resnet18_unet",
+      "budget": 15,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -1.4491417832483977,
+        -0.9610155135802656,
+        -2.432919052137872
+      ],
+      "mean_difference_pp": -1.6143587829888453,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "geo_entropy",
+      "region_or_direction": "daressalaam",
+      "architecture": "resnet18_unet",
+      "budget": 24,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        2.285259911846549,
+        0.7012832077810116,
+        0.004951609668712997
+      ],
+      "mean_difference_pp": 0.9971649097654245,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": true
+    },
+    {
+      "layer": "oem_v2",
+      "method": "geo_entropy",
+      "region_or_direction": "daressalaam",
+      "architecture": "segformer_b0",
+      "budget": 5,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -1.9780192484825432,
+        -0.790965874484606,
+        1.8591667755231855
+      ],
+      "mean_difference_pp": -0.3032727824813212,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "geo_entropy",
+      "region_or_direction": "daressalaam",
+      "architecture": "segformer_b0",
+      "budget": 15,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        1.8019062355260629,
+        2.0805730069517026,
+        1.6449407723176046
+      ],
+      "mean_difference_pp": 1.8424733382651233,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": true
+    },
+    {
+      "layer": "oem_v2",
+      "method": "geo_entropy",
+      "region_or_direction": "daressalaam",
+      "architecture": "segformer_b0",
+      "budget": 24,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        1.4210541725545034,
+        1.5034384669429912,
+        3.5879137655960456
+      ],
+      "mean_difference_pp": 2.17080213503118,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": true
+    },
+    {
+      "layer": "oem_v2",
+      "method": "geo_entropy",
+      "region_or_direction": "zanzibar",
+      "architecture": "resnet18_unet",
+      "budget": 5,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        1.0672886165913553,
+        5.333703940818912,
+        0.5668012254644833
+      ],
+      "mean_difference_pp": 2.322597927624917,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": true
+    },
+    {
+      "layer": "oem_v2",
+      "method": "geo_entropy",
+      "region_or_direction": "zanzibar",
+      "architecture": "resnet18_unet",
+      "budget": 15,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        1.0654006753893275,
+        9.84502634592716,
+        -6.142306384664897
+      ],
+      "mean_difference_pp": 1.58937354555053,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "geo_entropy",
+      "region_or_direction": "zanzibar",
+      "architecture": "resnet18_unet",
+      "budget": 24,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        0.6562744184664071,
+        1.131881498451398,
+        -1.0805722539461882
+      ],
+      "mean_difference_pp": 0.235861220990539,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "geo_entropy",
+      "region_or_direction": "zanzibar",
+      "architecture": "segformer_b0",
+      "budget": 5,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -1.0578037361228532,
+        -2.9163653747959097,
+        -1.531680244847372
+      ],
+      "mean_difference_pp": -1.8352831185887117,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "geo_entropy",
+      "region_or_direction": "zanzibar",
+      "architecture": "segformer_b0",
+      "budget": 15,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        1.4970129223183692,
+        10.341700145106515,
+        -2.1203214828521055
+      ],
+      "mean_difference_pp": 3.2394638615242592,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "geo_entropy",
+      "region_or_direction": "zanzibar",
+      "architecture": "segformer_b0",
+      "budget": 24,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        7.575800761141221,
+        -1.4605362258095944,
+        -0.010214291736310166
+      ],
+      "mean_difference_pp": 2.0350167478651056,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "joint_proxy",
+      "region_or_direction": "coxsbazar",
+      "architecture": "resnet18_unet",
+      "budget": 5,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -2.1532927746303776,
+        0.9369749905918878,
+        1.2954704929183687
+      ],
+      "mean_difference_pp": 0.026384236293292968,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "joint_proxy",
+      "region_or_direction": "coxsbazar",
+      "architecture": "resnet18_unet",
+      "budget": 13,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -4.242621358345378,
+        0.6017588064512969,
+        -3.5967390266359534
+      ],
+      "mean_difference_pp": -2.4125338595100114,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "joint_proxy",
+      "region_or_direction": "coxsbazar",
+      "architecture": "resnet18_unet",
+      "budget": 21,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -9.868233266674853,
+        0.9181591722397964,
+        -5.7828063192320975
+      ],
+      "mean_difference_pp": -4.9109601378890515,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "joint_proxy",
+      "region_or_direction": "coxsbazar",
+      "architecture": "segformer_b0",
+      "budget": 5,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        1.3506345759172922,
+        3.301862945527251,
+        0.623253811079566
+      ],
+      "mean_difference_pp": 1.7585837775080364,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": true
+    },
+    {
+      "layer": "oem_v2",
+      "method": "joint_proxy",
+      "region_or_direction": "coxsbazar",
+      "architecture": "segformer_b0",
+      "budget": 13,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        7.240174190361703,
+        4.745337158553953,
+        -2.9388297239702545
+      ],
+      "mean_difference_pp": 3.015560541648467,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "joint_proxy",
+      "region_or_direction": "coxsbazar",
+      "architecture": "segformer_b0",
+      "budget": 21,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        5.688488043805052,
+        -0.4171973158133724,
+        -6.425550794607454
+      ],
+      "mean_difference_pp": -0.3847533555385916,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "joint_proxy",
+      "region_or_direction": "daressalaam",
+      "architecture": "resnet18_unet",
+      "budget": 5,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        1.8118875001612245,
+        -1.344579721381839,
+        -1.674301860556382
+      ],
+      "mean_difference_pp": -0.40233136059233215,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "joint_proxy",
+      "region_or_direction": "daressalaam",
+      "architecture": "resnet18_unet",
+      "budget": 15,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -3.4010817459192877,
+        0.5547882951305705,
+        -3.3976449498500374
+      ],
+      "mean_difference_pp": -2.081312800212918,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "joint_proxy",
+      "region_or_direction": "daressalaam",
+      "architecture": "resnet18_unet",
+      "budget": 24,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        0.6747027242496484,
+        0.5102470546141991,
+        -0.14327028638939643
+      ],
+      "mean_difference_pp": 0.34722649749148365,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "joint_proxy",
+      "region_or_direction": "daressalaam",
+      "architecture": "segformer_b0",
+      "budget": 5,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -0.5630664047868217,
+        -1.1500037360414939,
+        1.0298917239831895
+      ],
+      "mean_difference_pp": -0.22772613894837535,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "joint_proxy",
+      "region_or_direction": "daressalaam",
+      "architecture": "segformer_b0",
+      "budget": 15,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        0.7263959914292517,
+        1.1100343131344226,
+        -0.9878819249970139
+      ],
+      "mean_difference_pp": 0.2828494598555535,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "joint_proxy",
+      "region_or_direction": "daressalaam",
+      "architecture": "segformer_b0",
+      "budget": 24,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -0.06520233509343387,
+        -1.1646608153067173,
+        -0.4554178894700778
+      ],
+      "mean_difference_pp": -0.5617603466234097,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "joint_proxy",
+      "region_or_direction": "zanzibar",
+      "architecture": "resnet18_unet",
+      "budget": 5,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -0.635841485786251,
+        1.0327755861742172,
+        1.6148160161067904
+      ],
+      "mean_difference_pp": 0.6705833721649189,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "joint_proxy",
+      "region_or_direction": "zanzibar",
+      "architecture": "resnet18_unet",
+      "budget": 15,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -2.489853592822411,
+        3.922962722219203,
+        -1.9522040005193475
+      ],
+      "mean_difference_pp": -0.17303162370751837,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "joint_proxy",
+      "region_or_direction": "zanzibar",
+      "architecture": "resnet18_unet",
+      "budget": 24,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -5.849886328042536,
+        -5.930041413190567,
+        -1.0188579807725195
+      ],
+      "mean_difference_pp": -4.266261907335207,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "joint_proxy",
+      "region_or_direction": "zanzibar",
+      "architecture": "segformer_b0",
+      "budget": 5,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -0.936121656059552,
+        5.299020134004145,
+        9.891374492827353
+      ],
+      "mean_difference_pp": 4.751424323590649,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "joint_proxy",
+      "region_or_direction": "zanzibar",
+      "architecture": "segformer_b0",
+      "budget": 15,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        1.8005188780962023,
+        6.5202795583928275,
+        5.130744366230655
+      ],
+      "mean_difference_pp": 4.483847600906562,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": true
+    },
+    {
+      "layer": "oem_v2",
+      "method": "joint_proxy",
+      "region_or_direction": "zanzibar",
+      "architecture": "segformer_b0",
+      "budget": 24,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -0.6688445848028801,
+        1.951699453435446,
+        6.64842848483897
+      ],
+      "mean_difference_pp": 2.643761117823845,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "quota_entropy",
+      "region_or_direction": "coxsbazar",
+      "architecture": "resnet18_unet",
+      "budget": 5,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -6.436838842546705,
+        3.463752552860794,
+        10.59914454611154
+      ],
+      "mean_difference_pp": 2.542019418808543,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "quota_entropy",
+      "region_or_direction": "coxsbazar",
+      "architecture": "resnet18_unet",
+      "budget": 13,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -8.508206339079036,
+        -0.09803588277137454,
+        -3.7026415267987165
+      ],
+      "mean_difference_pp": -4.1029612495497085,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "quota_entropy",
+      "region_or_direction": "coxsbazar",
+      "architecture": "resnet18_unet",
+      "budget": 21,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -0.4241267026803275,
+        -2.697924964531473,
+        -6.303707958755799
+      ],
+      "mean_difference_pp": -3.1419198753225337,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "quota_entropy",
+      "region_or_direction": "coxsbazar",
+      "architecture": "segformer_b0",
+      "budget": 5,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -2.840635744215203,
+        3.0299002986013344,
+        -1.7179650849272754
+      ],
+      "mean_difference_pp": -0.5095668435137147,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "quota_entropy",
+      "region_or_direction": "coxsbazar",
+      "architecture": "segformer_b0",
+      "budget": 13,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        2.7609713501892785,
+        1.8208420196614672,
+        -1.4789890816290951
+      ],
+      "mean_difference_pp": 1.0342747627405502,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "quota_entropy",
+      "region_or_direction": "coxsbazar",
+      "architecture": "segformer_b0",
+      "budget": 21,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        2.8502006631877297,
+        -1.3852125077915056,
+        -4.627425484957376
+      ],
+      "mean_difference_pp": -1.054145776520384,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "quota_entropy",
+      "region_or_direction": "daressalaam",
+      "architecture": "resnet18_unet",
+      "budget": 5,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -3.481346636622995,
+        -2.821937015512704,
+        -1.9046192547694851
+      ],
+      "mean_difference_pp": -2.7359676356350615,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "quota_entropy",
+      "region_or_direction": "daressalaam",
+      "architecture": "resnet18_unet",
+      "budget": 15,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        0.13193585804197605,
+        2.707015459526013,
+        -2.9697846411872675
+      ],
+      "mean_difference_pp": -0.04361110787309282,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "quota_entropy",
+      "region_or_direction": "daressalaam",
+      "architecture": "resnet18_unet",
+      "budget": 24,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        1.1774952161495211,
+        2.052335369018765,
+        -3.444598359744094
+      ],
+      "mean_difference_pp": -0.07158925819193596,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "quota_entropy",
+      "region_or_direction": "daressalaam",
+      "architecture": "segformer_b0",
+      "budget": 5,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -1.3269144800119592,
+        0.5994525316418309,
+        1.538548375336346
+      ],
+      "mean_difference_pp": 0.27036214232207256,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "quota_entropy",
+      "region_or_direction": "daressalaam",
+      "architecture": "segformer_b0",
+      "budget": 15,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -0.47385251586876675,
+        -0.04255982255068069,
+        1.9494979385043631
+      ],
+      "mean_difference_pp": 0.47769520002830523,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "quota_entropy",
+      "region_or_direction": "daressalaam",
+      "architecture": "segformer_b0",
+      "budget": 24,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -0.24219299107499648,
+        -0.8508467804973718,
+        1.672215804755911
+      ],
+      "mean_difference_pp": 0.19305867772784757,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "quota_entropy",
+      "region_or_direction": "zanzibar",
+      "architecture": "resnet18_unet",
+      "budget": 5,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        1.0672886165913553,
+        5.333703940818912,
+        0.9372650494943346
+      ],
+      "mean_difference_pp": 2.446085868968201,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": true
+    },
+    {
+      "layer": "oem_v2",
+      "method": "quota_entropy",
+      "region_or_direction": "zanzibar",
+      "architecture": "resnet18_unet",
+      "budget": 15,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        2.3825134751948362,
+        9.285723363217935,
+        -3.260080745195537
+      ],
+      "mean_difference_pp": 2.8027186977390777,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "quota_entropy",
+      "region_or_direction": "zanzibar",
+      "architecture": "resnet18_unet",
+      "budget": 24,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        1.8799226230434007,
+        -4.79286705463402,
+        -6.864322941551254
+      ],
+      "mean_difference_pp": -3.2590891243806244,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "quota_entropy",
+      "region_or_direction": "zanzibar",
+      "architecture": "segformer_b0",
+      "budget": 5,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        3.0747356186839547,
+        -2.0614379235817495,
+        1.1809160861847356
+      ],
+      "mean_difference_pp": 0.7314045937623136,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "quota_entropy",
+      "region_or_direction": "zanzibar",
+      "architecture": "segformer_b0",
+      "budget": 15,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        2.1138971317053445,
+        2.5014810677745416,
+        -0.5012996636184264
+      ],
+      "mean_difference_pp": 1.3713595119538198,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "quota_entropy",
+      "region_or_direction": "zanzibar",
+      "architecture": "segformer_b0",
+      "budget": 24,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        4.875417142565558,
+        -3.416424672180435,
+        4.4239483345660355
+      ],
+      "mean_difference_pp": 1.960980268317053,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "ripu_patch",
+      "region_or_direction": "coxsbazar",
+      "architecture": "resnet18_unet",
+      "budget": 5,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -6.555381710748814,
+        -8.253636246389808,
+        -2.66469291692871
+      ],
+      "mean_difference_pp": -5.824570291355777,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "ripu_patch",
+      "region_or_direction": "coxsbazar",
+      "architecture": "resnet18_unet",
+      "budget": 13,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -10.113317297799906,
+        -2.065915461925194,
+        -11.552438835858004
+      ],
+      "mean_difference_pp": -7.910557198527702,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "ripu_patch",
+      "region_or_direction": "coxsbazar",
+      "architecture": "resnet18_unet",
+      "budget": 21,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -3.061382059686535,
+        -1.587676328755827,
+        -14.287451436673255
+      ],
+      "mean_difference_pp": -6.312169941705206,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "ripu_patch",
+      "region_or_direction": "coxsbazar",
+      "architecture": "segformer_b0",
+      "budget": 5,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -11.193124185620162,
+        0.45232649292522575,
+        -9.433327159239719
+      ],
+      "mean_difference_pp": -6.7247082839782175,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "ripu_patch",
+      "region_or_direction": "coxsbazar",
+      "architecture": "segformer_b0",
+      "budget": 13,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -3.19795005418978,
+        1.7080102846156409,
+        -12.20342204867071
+      ],
+      "mean_difference_pp": -4.56445393941495,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "ripu_patch",
+      "region_or_direction": "coxsbazar",
+      "architecture": "segformer_b0",
+      "budget": 21,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        3.3203222314121925,
+        -4.127214639281784,
+        -6.662638005193328
+      ],
+      "mean_difference_pp": -2.4898434710209734,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "ripu_patch",
+      "region_or_direction": "daressalaam",
+      "architecture": "resnet18_unet",
+      "budget": 5,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -2.033296226764664,
+        -2.3449545296481524,
+        1.11749019276417
+      ],
+      "mean_difference_pp": -1.086920187882882,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "ripu_patch",
+      "region_or_direction": "daressalaam",
+      "architecture": "resnet18_unet",
+      "budget": 15,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        1.8044342042063843,
+        -0.8592717645827808,
+        -2.52747045821351
+      ],
+      "mean_difference_pp": -0.5274360061966354,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "ripu_patch",
+      "region_or_direction": "daressalaam",
+      "architecture": "resnet18_unet",
+      "budget": 24,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        4.700114853177018,
+        -2.0558707573563373,
+        -1.181030701631447
+      ],
+      "mean_difference_pp": 0.48773779806307793,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "ripu_patch",
+      "region_or_direction": "daressalaam",
+      "architecture": "segformer_b0",
+      "budget": 5,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -1.7184579982454151,
+        -0.5438254060543379,
+        -0.5204023898187304
+      ],
+      "mean_difference_pp": -0.9275619313728279,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "ripu_patch",
+      "region_or_direction": "daressalaam",
+      "architecture": "segformer_b0",
+      "budget": 15,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -0.7745520761596791,
+        -1.0956917299496938,
+        -2.2356697026739427
+      ],
+      "mean_difference_pp": -1.3686378362611051,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "ripu_patch",
+      "region_or_direction": "daressalaam",
+      "architecture": "segformer_b0",
+      "budget": 24,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -2.236664125048243,
+        -2.3017220090300325,
+        -1.1671657445522177
+      ],
+      "mean_difference_pp": -1.9018506262101644,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "ripu_patch",
+      "region_or_direction": "zanzibar",
+      "architecture": "resnet18_unet",
+      "budget": 5,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        0.4396460235378208,
+        -2.9513392088595825,
+        -1.289400011747177
+      ],
+      "mean_difference_pp": -1.2670310656896462,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "ripu_patch",
+      "region_or_direction": "zanzibar",
+      "architecture": "resnet18_unet",
+      "budget": 15,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -5.366113298773239,
+        -0.2910663176103445,
+        -4.138156093538386
+      ],
+      "mean_difference_pp": -3.2651119033073233,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "ripu_patch",
+      "region_or_direction": "zanzibar",
+      "architecture": "resnet18_unet",
+      "budget": 24,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        0.5411616359915383,
+        -11.42096794697547,
+        -4.564527931920975
+      ],
+      "mean_difference_pp": -5.148111414301636,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "ripu_patch",
+      "region_or_direction": "zanzibar",
+      "architecture": "segformer_b0",
+      "budget": 5,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -0.41186612747777795,
+        6.185104760808086,
+        -0.1273563287176538
+      ],
+      "mean_difference_pp": 1.8819607682042179,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "ripu_patch",
+      "region_or_direction": "zanzibar",
+      "architecture": "segformer_b0",
+      "budget": 15,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        2.5124490541734823,
+        8.647101928851608,
+        -0.70772384486254
+      ],
+      "mean_difference_pp": 3.4839423793875164,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "oem_v2",
+      "method": "ripu_patch",
+      "region_or_direction": "zanzibar",
+      "architecture": "segformer_b0",
+      "budget": 24,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        2.040618227098867,
+        -0.9718421931336152,
+        -0.6866020212317081
+      ],
+      "mean_difference_pp": 0.12739133757784793,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "loveda_v2",
+      "method": "cai_spatial",
+      "region_or_direction": "urban",
+      "architecture": "resnet18_unet",
+      "budget": 10,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -4.106171525537023,
+        -2.1854418626075622,
+        0.863443746210979
+      ],
+      "mean_difference_pp": -1.8093898806445352,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "loveda_v2",
+      "method": "cai_spatial",
+      "region_or_direction": "urban",
+      "architecture": "resnet18_unet",
+      "budget": 29,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -8.771275736849626,
+        -2.515690873520221,
+        -3.927504336477056
+      ],
+      "mean_difference_pp": -5.071490315615634,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "loveda_v2",
+      "method": "cai_spatial",
+      "region_or_direction": "urban",
+      "architecture": "resnet18_unet",
+      "budget": 48,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -8.45764437900493,
+        1.7786970658438594,
+        1.1087451073034327
+      ],
+      "mean_difference_pp": -1.8567340686192129,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "loveda_v2",
+      "method": "cai_spatial",
+      "region_or_direction": "urban",
+      "architecture": "segformer_b0",
+      "budget": 10,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -5.677077650685902,
+        -0.8012165920223524,
+        -0.8471293146485814
+      ],
+      "mean_difference_pp": -2.441807852452279,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "loveda_v2",
+      "method": "cai_spatial",
+      "region_or_direction": "urban",
+      "architecture": "segformer_b0",
+      "budget": 29,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -1.850346797539193,
+        -4.511133915154969,
+        1.2496274053826861
+      ],
+      "mean_difference_pp": -1.7039511024371585,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "loveda_v2",
+      "method": "cai_spatial",
+      "region_or_direction": "urban",
+      "architecture": "segformer_b0",
+      "budget": 48,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -4.363331013298211,
+        -2.4011001664531295,
+        2.1500022667707617
+      ],
+      "mean_difference_pp": -1.5381429709935261,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "loveda_v2",
+      "method": "coverage",
+      "region_or_direction": "urban",
+      "architecture": "resnet18_unet",
+      "budget": 10,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -1.163151805764756,
+        2.3748409895291367,
+        4.061826041518524
+      ],
+      "mean_difference_pp": 1.7578384084276346,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "loveda_v2",
+      "method": "coverage",
+      "region_or_direction": "urban",
+      "architecture": "resnet18_unet",
+      "budget": 29,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -9.021362017069045,
+        -0.7541740434192257,
+        -0.3099678139086681
+      ],
+      "mean_difference_pp": -3.361834624798979,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "loveda_v2",
+      "method": "coverage",
+      "region_or_direction": "urban",
+      "architecture": "resnet18_unet",
+      "budget": 48,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -9.473753946930124,
+        -2.126930142418737,
+        2.9186418301664463
+      ],
+      "mean_difference_pp": -2.8940140863941384,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "loveda_v2",
+      "method": "coverage",
+      "region_or_direction": "urban",
+      "architecture": "segformer_b0",
+      "budget": 10,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -4.455490569041149,
+        -1.7139176794838729,
+        0.28709587413272564
+      ],
+      "mean_difference_pp": -1.9607707914640986,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "loveda_v2",
+      "method": "coverage",
+      "region_or_direction": "urban",
+      "architecture": "segformer_b0",
+      "budget": 29,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        0.8532145586751749,
+        -0.6810516385224674,
+        -1.3754970093788732
+      ],
+      "mean_difference_pp": -0.4011113630753886,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "loveda_v2",
+      "method": "coverage",
+      "region_or_direction": "urban",
+      "architecture": "segformer_b0",
+      "budget": 48,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -3.7624937953072033,
+        0.1350927706453453,
+        2.138504037626343
+      ],
+      "mean_difference_pp": -0.49629899567850494,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "loveda_v2",
+      "method": "entropy",
+      "region_or_direction": "urban",
+      "architecture": "resnet18_unet",
+      "budget": 10,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -4.106171525537023,
+        -2.1854418626075622,
+        4.257121202911524
+      ],
+      "mean_difference_pp": -0.6781640617443537,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "loveda_v2",
+      "method": "entropy",
+      "region_or_direction": "urban",
+      "architecture": "resnet18_unet",
+      "budget": 29,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -4.535955502714517,
+        -7.647483463011973,
+        2.0526402653423483
+      ],
+      "mean_difference_pp": -3.376932900128047,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "loveda_v2",
+      "method": "entropy",
+      "region_or_direction": "urban",
+      "architecture": "resnet18_unet",
+      "budget": 48,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -5.129137842935383,
+        -2.5553328157929824,
+        1.857419587229897
+      ],
+      "mean_difference_pp": -1.9423503571661562,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "loveda_v2",
+      "method": "entropy",
+      "region_or_direction": "urban",
+      "architecture": "segformer_b0",
+      "budget": 10,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -3.968469781276313,
+        -2.3909843397331985,
+        1.0280702830128163
+      ],
+      "mean_difference_pp": -1.7771279459988982,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "loveda_v2",
+      "method": "entropy",
+      "region_or_direction": "urban",
+      "architecture": "segformer_b0",
+      "budget": 29,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -3.8125751954737055,
+        -0.6683038516100859,
+        -1.944616430582008
+      ],
+      "mean_difference_pp": -2.1418318258885995,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "loveda_v2",
+      "method": "entropy",
+      "region_or_direction": "urban",
+      "architecture": "segformer_b0",
+      "budget": 48,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -5.122768871917388,
+        -1.8392143597835198,
+        2.701844327082137
+      ],
+      "mean_difference_pp": -1.42004630153959,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "loveda_v2",
+      "method": "joint_proxy",
+      "region_or_direction": "urban",
+      "architecture": "resnet18_unet",
+      "budget": 10,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        0.9146670881447161,
+        4.088307329070434,
+        6.351799187230839
+      ],
+      "mean_difference_pp": 3.7849245348153295,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": true
+    },
+    {
+      "layer": "loveda_v2",
+      "method": "joint_proxy",
+      "region_or_direction": "urban",
+      "architecture": "resnet18_unet",
+      "budget": 29,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -5.220093291616845,
+        -1.0894899951620407,
+        -1.5592743950132104
+      ],
+      "mean_difference_pp": -2.622952560597365,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "loveda_v2",
+      "method": "joint_proxy",
+      "region_or_direction": "urban",
+      "architecture": "resnet18_unet",
+      "budget": 48,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -8.626549564629487,
+        -9.266163108627806,
+        0.9806227342567586
+      ],
+      "mean_difference_pp": -5.637363313000178,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "loveda_v2",
+      "method": "joint_proxy",
+      "region_or_direction": "urban",
+      "architecture": "segformer_b0",
+      "budget": 10,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -4.420944111629149,
+        -0.4551806248564827,
+        -2.212022456204271
+      ],
+      "mean_difference_pp": -2.362715730896634,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "loveda_v2",
+      "method": "joint_proxy",
+      "region_or_direction": "urban",
+      "architecture": "segformer_b0",
+      "budget": 29,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -5.857479395046422,
+        0.030894459858232803,
+        1.9576911480880366
+      ],
+      "mean_difference_pp": -1.2896312623667174,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "loveda_v2",
+      "method": "joint_proxy",
+      "region_or_direction": "urban",
+      "architecture": "segformer_b0",
+      "budget": 48,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -4.826268483753415,
+        -0.45915763298006174,
+        3.0548449055052274
+      ],
+      "mean_difference_pp": -0.7435270704094163,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "loveda_v2",
+      "method": "quota_entropy",
+      "region_or_direction": "urban",
+      "architecture": "resnet18_unet",
+      "budget": 10,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -0.7955080817425908,
+        0.7045886736698981,
+        0.863443746210979
+      ],
+      "mean_difference_pp": 0.2575081127127621,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "loveda_v2",
+      "method": "quota_entropy",
+      "region_or_direction": "urban",
+      "architecture": "resnet18_unet",
+      "budget": 29,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -5.661292099338228,
+        -3.1875568898007742,
+        0.024963759972190802
+      ],
+      "mean_difference_pp": -2.9412950763889367,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "loveda_v2",
+      "method": "quota_entropy",
+      "region_or_direction": "urban",
+      "architecture": "resnet18_unet",
+      "budget": 48,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -4.825553188452636,
+        -1.4708010080418665,
+        0.4423994243041185
+      ],
+      "mean_difference_pp": -1.9513182573967949,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "loveda_v2",
+      "method": "quota_entropy",
+      "region_or_direction": "urban",
+      "architecture": "segformer_b0",
+      "budget": 10,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -3.206276005519182,
+        0.2925855793530052,
+        -0.8106066786808974
+      ],
+      "mean_difference_pp": -1.241432368282358,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "loveda_v2",
+      "method": "quota_entropy",
+      "region_or_direction": "urban",
+      "architecture": "segformer_b0",
+      "budget": 29,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -6.353805075041363,
+        1.6250760022823163,
+        -0.04257325210878515
+      ],
+      "mean_difference_pp": -1.5904341082892772,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "loveda_v2",
+      "method": "quota_entropy",
+      "region_or_direction": "urban",
+      "architecture": "segformer_b0",
+      "budget": 48,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -4.180548607756773,
+        -1.017647851344633,
+        1.1225883177711782
+      ],
+      "mean_difference_pp": -1.3585360471100758,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "loveda_v2",
+      "method": "ripu_patch",
+      "region_or_direction": "urban",
+      "architecture": "resnet18_unet",
+      "budget": 10,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        3.7474875989054746,
+        2.5357196391767642,
+        2.5340540649755603
+      ],
+      "mean_difference_pp": 2.9390871010192665,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": true
+    },
+    {
+      "layer": "loveda_v2",
+      "method": "ripu_patch",
+      "region_or_direction": "urban",
+      "architecture": "resnet18_unet",
+      "budget": 29,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -9.723723768322756,
+        0.6772875830006353,
+        -2.224093695230045
+      ],
+      "mean_difference_pp": -3.7568432935173885,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "loveda_v2",
+      "method": "ripu_patch",
+      "region_or_direction": "urban",
+      "architecture": "resnet18_unet",
+      "budget": 48,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -2.5990808741458427,
+        0.08213646095747706,
+        0.6736540342397068
+      ],
+      "mean_difference_pp": -0.6144301263162196,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "loveda_v2",
+      "method": "ripu_patch",
+      "region_or_direction": "urban",
+      "architecture": "segformer_b0",
+      "budget": 10,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -1.7996262574586197,
+        -1.0638838340773005,
+        0.6641496241307332
+      ],
+      "mean_difference_pp": -0.733120155801729,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "loveda_v2",
+      "method": "ripu_patch",
+      "region_or_direction": "urban",
+      "architecture": "segformer_b0",
+      "budget": 29,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -2.0771529281223113,
+        2.409128234237423,
+        -2.309498481136912
+      ],
+      "mean_difference_pp": -0.6591743916739334,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "loveda_v2",
+      "method": "ripu_patch",
+      "region_or_direction": "urban",
+      "architecture": "segformer_b0",
+      "budget": 48,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -6.113992489907205,
+        1.2817305007644886,
+        0.03405899559649761
+      ],
+      "mean_difference_pp": -1.5994009978487398,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "v4f",
+      "method": "entropy",
+      "region_or_direction": "svaneti",
+      "architecture": "resnet18_unet",
+      "budget": 4,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -2.9167344844182486,
+        -1.160890184740404,
+        -3.9095404512721754
+      ],
+      "mean_difference_pp": -2.6623883734769427,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "v4f",
+      "method": "entropy",
+      "region_or_direction": "svaneti",
+      "architecture": "resnet18_unet",
+      "budget": 10,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -3.5132464019851986,
+        -1.44105103916628,
+        -4.382161292054521
+      ],
+      "mean_difference_pp": -3.1121529110686663,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "v4f",
+      "method": "entropy",
+      "region_or_direction": "svaneti",
+      "architecture": "resnet18_unet",
+      "budget": 16,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -2.819033414302541,
+        -1.6225023582268017,
+        -3.1896185689062104
+      ],
+      "mean_difference_pp": -2.543718113811851,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "v4f",
+      "method": "entropy",
+      "region_or_direction": "svaneti",
+      "architecture": "segformer_b0",
+      "budget": 4,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -6.242012187799039,
+        -4.0825403135185905,
+        -2.257157710482077
+      ],
+      "mean_difference_pp": -4.193903403933235,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "v4f",
+      "method": "entropy",
+      "region_or_direction": "svaneti",
+      "architecture": "segformer_b0",
+      "budget": 10,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -5.690834298806352,
+        -1.6894160779666656,
+        -0.8656351776726134
+      ],
+      "mean_difference_pp": -2.7486285181485433,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "v4f",
+      "method": "entropy",
+      "region_or_direction": "svaneti",
+      "architecture": "segformer_b0",
+      "budget": 16,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -9.1078068299017,
+        -6.836514128323312,
+        -1.9996091460672827
+      ],
+      "mean_difference_pp": -5.981310034764099,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "v4f",
+      "method": "entropy",
+      "region_or_direction": "tonga",
+      "architecture": "resnet18_unet",
+      "budget": 3,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -2.9123255874082874,
+        -2.136304824039387,
+        -1.4661115143601466
+      ],
+      "mean_difference_pp": -2.17158064193594,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "v4f",
+      "method": "entropy",
+      "region_or_direction": "tonga",
+      "architecture": "resnet18_unet",
+      "budget": 9,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -3.817388887255646,
+        -0.7429650507879249,
+        -2.8226908812427007
+      ],
+      "mean_difference_pp": -2.4610149397620904,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "v4f",
+      "method": "entropy",
+      "region_or_direction": "tonga",
+      "architecture": "resnet18_unet",
+      "budget": 15,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -2.4659435646499306,
+        -2.2840430495911,
+        -1.7222258301323845
+      ],
+      "mean_difference_pp": -2.157404148124472,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "v4f",
+      "method": "entropy",
+      "region_or_direction": "tonga",
+      "architecture": "segformer_b0",
+      "budget": 3,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -2.9392477218572797,
+        -3.188307938670931,
+        -3.142615606821708
+      ],
+      "mean_difference_pp": -3.0900570891166397,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "v4f",
+      "method": "entropy",
+      "region_or_direction": "tonga",
+      "architecture": "segformer_b0",
+      "budget": 9,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -4.992168087585175,
+        -0.2223587000003635,
+        0.44969702633183006
+      ],
+      "mean_difference_pp": -1.5882765870845696,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "v4f",
+      "method": "entropy",
+      "region_or_direction": "tonga",
+      "architecture": "segformer_b0",
+      "budget": 15,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -2.952066650847296,
+        2.863077490466759,
+        1.2880821316206714
+      ],
+      "mean_difference_pp": 0.3996976570800448,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "v4f",
+      "method": "ripu_patch_adapted",
+      "region_or_direction": "svaneti",
+      "architecture": "resnet18_unet",
+      "budget": 4,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -1.363438777387166,
+        -2.1130609722937344,
+        -5.820087746911772
+      ],
+      "mean_difference_pp": -3.0988624988642246,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "v4f",
+      "method": "ripu_patch_adapted",
+      "region_or_direction": "svaneti",
+      "architecture": "resnet18_unet",
+      "budget": 10,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -1.1572377584146643,
+        -0.5785878303544045,
+        -4.466149453235841
+      ],
+      "mean_difference_pp": -2.067325014001636,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "v4f",
+      "method": "ripu_patch_adapted",
+      "region_or_direction": "svaneti",
+      "architecture": "resnet18_unet",
+      "budget": 16,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -1.2150771500687163,
+        -2.5432295722020823,
+        -3.8696039850936
+      ],
+      "mean_difference_pp": -2.5426369024547997,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "v4f",
+      "method": "ripu_patch_adapted",
+      "region_or_direction": "svaneti",
+      "architecture": "segformer_b0",
+      "budget": 4,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -5.863679915365849,
+        -2.2849890019629227,
+        -4.218737493676156
+      ],
+      "mean_difference_pp": -4.122468803668309,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "v4f",
+      "method": "ripu_patch_adapted",
+      "region_or_direction": "svaneti",
+      "architecture": "segformer_b0",
+      "budget": 10,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -7.140616795768811,
+        -3.1393472804006506,
+        -4.186835225753654
+      ],
+      "mean_difference_pp": -4.822266433974372,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "v4f",
+      "method": "ripu_patch_adapted",
+      "region_or_direction": "svaneti",
+      "architecture": "segformer_b0",
+      "budget": 16,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -9.69806832083766,
+        -5.120296004024039,
+        -3.370519377203929
+      ],
+      "mean_difference_pp": -6.062961234021876,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "v4f",
+      "method": "ripu_patch_adapted",
+      "region_or_direction": "tonga",
+      "architecture": "resnet18_unet",
+      "budget": 3,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -2.7735789381693134,
+        -2.686774837311795,
+        -1.723536506172857
+      ],
+      "mean_difference_pp": -2.394630093884655,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "v4f",
+      "method": "ripu_patch_adapted",
+      "region_or_direction": "tonga",
+      "architecture": "resnet18_unet",
+      "budget": 9,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -0.7459317587425129,
+        -0.04153064765126668,
+        0.9710013799659079
+      ],
+      "mean_difference_pp": 0.06117965785737608,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "v4f",
+      "method": "ripu_patch_adapted",
+      "region_or_direction": "tonga",
+      "architecture": "resnet18_unet",
+      "budget": 15,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -0.3055176009884586,
+        -0.9626635069685308,
+        0.8998132086894706
+      ],
+      "mean_difference_pp": -0.12278929975583959,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "v4f",
+      "method": "ripu_patch_adapted",
+      "region_or_direction": "tonga",
+      "architecture": "segformer_b0",
+      "budget": 3,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -4.839273821001299,
+        -5.553034371880116,
+        -1.1974518293059344
+      ],
+      "mean_difference_pp": -3.8632533407291167,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "v4f",
+      "method": "ripu_patch_adapted",
+      "region_or_direction": "tonga",
+      "architecture": "segformer_b0",
+      "budget": 9,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -0.049122775713467126,
+        1.9984608254348668,
+        1.0876217362153218
+      ],
+      "mean_difference_pp": 1.0123199286455737,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "v4f",
+      "method": "ripu_patch_adapted",
+      "region_or_direction": "tonga",
+      "architecture": "segformer_b0",
+      "budget": 15,
+      "seed_pairs": [
+        {
+          "train_seed": 2026,
+          "selection_seed": 17
+        },
+        {
+          "train_seed": 2027,
+          "selection_seed": 42
+        },
+        {
+          "train_seed": 2028,
+          "selection_seed": 73
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -0.34445492549490253,
+        2.490758200327087,
+        1.7063191192948524
+      ],
+      "mean_difference_pp": 1.2842074647090123,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "isprs",
+      "method": "ripu_acquisition_only",
+      "region_or_direction": "potsdam_to_vaihingen",
+      "architecture": "deeplabv3plus_resnet101",
+      "budget": 0.01,
+      "seed_pairs": [
+        {
+          "pair_index": 1
+        },
+        {
+          "pair_index": 2
+        },
+        {
+          "pair_index": 3
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -2.7333431847503253,
+        -3.57250431579223,
+        -2.4964634514462682
+      ],
+      "mean_difference_pp": -2.934103650662941,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "isprs",
+      "method": "ripu_acquisition_only",
+      "region_or_direction": "potsdam_to_vaihingen",
+      "architecture": "deeplabv3plus_resnet101",
+      "budget": 0.03,
+      "seed_pairs": [
+        {
+          "pair_index": 1
+        },
+        {
+          "pair_index": 2
+        },
+        {
+          "pair_index": 3
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -3.9500141039123857,
+        -3.9575206743476588,
+        -1.0437925607421794
+      ],
+      "mean_difference_pp": -2.983775779667408,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "isprs",
+      "method": "ripu_acquisition_only",
+      "region_or_direction": "potsdam_to_vaihingen",
+      "architecture": "deeplabv3plus_resnet101",
+      "budget": 0.05,
+      "seed_pairs": [
+        {
+          "pair_index": 1
+        },
+        {
+          "pair_index": 2
+        },
+        {
+          "pair_index": 3
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -3.0487493462547977,
+        -2.098999520627137,
+        -2.5307399093395633
+      ],
+      "mean_difference_pp": -2.559496258740499,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "isprs",
+      "method": "ripu_acquisition_only",
+      "region_or_direction": "vaihingen_to_potsdam",
+      "architecture": "deeplabv3plus_resnet101",
+      "budget": 0.01,
+      "seed_pairs": [
+        {
+          "pair_index": 1
+        },
+        {
+          "pair_index": 2
+        },
+        {
+          "pair_index": 3
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -5.567459407108988,
+        -1.6462913037965432,
+        0.9333453789799551
+      ],
+      "mean_difference_pp": -2.093468443975192,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "isprs",
+      "method": "ripu_acquisition_only",
+      "region_or_direction": "vaihingen_to_potsdam",
+      "architecture": "deeplabv3plus_resnet101",
+      "budget": 0.03,
+      "seed_pairs": [
+        {
+          "pair_index": 1
+        },
+        {
+          "pair_index": 2
+        },
+        {
+          "pair_index": 3
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        -1.4096170403855468,
+        -3.4669207770142707,
+        -2.093053826492808
+      ],
+      "mean_difference_pp": -2.3231972146308753,
+      "mean_outcome": "loss",
+      "three_seed_consistent_win": false
+    },
+    {
+      "layer": "isprs",
+      "method": "ripu_acquisition_only",
+      "region_or_direction": "vaihingen_to_potsdam",
+      "architecture": "deeplabv3plus_resnet101",
+      "budget": 0.05,
+      "seed_pairs": [
+        {
+          "pair_index": 1
+        },
+        {
+          "pair_index": 2
+        },
+        {
+          "pair_index": 3
+        }
+      ],
+      "differences_vs_strongest_control_pp": [
+        0.44344624332833815,
+        -0.6367661838585725,
+        0.41869480410412496
+      ],
+      "mean_difference_pp": 0.0751249545246302,
+      "mean_outcome": "win",
+      "three_seed_consistent_win": false
+    }
+  ]
+}
